@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D0383FC1-24E2-4E18-B8E0-FDD3938128FB</string>
+	<key>IDESourceControlProjectName</key>
+	<string>HabuTemplate</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>D5FFE399-086F-4E45-AFD3-2D9159CDE69D</key>
+		<string>https://github.com/hthoang88/HabuTemplate.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>HabuTemplate/HabuTemplate.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>D5FFE399-086F-4E45-AFD3-2D9159CDE69D</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/hthoang88/HabuTemplate.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D5FFE399-086F-4E45-AFD3-2D9159CDE69D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D5FFE399-086F-4E45-AFD3-2D9159CDE69D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>HabuTemplate</string>
+		</dict>
+	</array>
+</dict>
+</plist>
