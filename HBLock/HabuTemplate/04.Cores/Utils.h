@@ -15,4 +15,8 @@
 
 //Object
 + (NSString*)autoDescribe:(id)instance;
+
++ (NSURL *)applicationDocumentsDirectory;
+
++ (NSString *)getRandStringLength:(int)len;
 @end

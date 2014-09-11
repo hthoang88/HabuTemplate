@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController">
             <connections>
+                <outlet property="bottomView" destination="N2L-bH-Sbx" id="AZS-ZM-LwA"/>
                 <outlet property="btn0" destination="Mtg-dX-pd3" id="rp7-VJ-M7G"/>
                 <outlet property="btn1" destination="9qb-tu-26A" id="pnU-YK-QUF"/>
                 <outlet property="btn2" destination="AZq-qv-PR9" id="zbX-vj-UeI"/>
@@ -17,6 +18,18 @@
                 <outlet property="btn7" destination="m89-Ez-Zs3" id="8lz-M4-LQH"/>
                 <outlet property="btn8" destination="BCI-ub-xiX" id="YtU-3q-xAs"/>
                 <outlet property="btn9" destination="DU3-ea-gYR" id="nS7-Ig-8fQ"/>
+                <outlet property="btnAbout" destination="pGq-Gp-tF4" id="ZiE-Q3-dFv"/>
+                <outlet property="btnFacebook" destination="D4q-f3-RdQ" id="Gd2-Jb-tuU"/>
+                <outlet property="btnInstagram" destination="zBR-VB-BUg" id="v9s-cw-Yqi"/>
+                <outlet property="btnLibrary" destination="x9W-S4-37H" id="Vkx-zC-XYx"/>
+                <outlet property="btnMore" destination="1WY-XP-kbe" id="CJA-BA-3g1"/>
+                <outlet property="btnMoreIcon" destination="KVR-JA-nKs" id="BtO-2I-UZF"/>
+                <outlet property="btnSave" destination="npE-F0-N8I" id="Lo5-nv-Dau"/>
+                <outlet property="btnShare" destination="bgX-GV-E0q" id="byH-k5-Mcf"/>
+                <outlet property="btnTakePhoto" destination="Pm3-p6-Mxc" id="C4y-fK-YFm"/>
+                <outlet property="btnYourLibrary" destination="vlY-tN-JaE" id="Skn-NU-Ofd"/>
+                <outlet property="selectPhotoView" destination="Zqi-Ld-yL5" id="XIs-fp-GWG"/>
+                <outlet property="topView" destination="d2k-MM-1Cl" id="Zo6-5g-rw0"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -25,10 +38,6 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="partern_iphone4.png" id="hfi-OF-etB">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                </imageView>
                 <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="9qb-tu-26A">
                     <rect key="frame" x="25" y="163" width="79" height="79"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -55,6 +64,9 @@
                     <state key="highlighted" backgroundImage="bg_number_drop.png">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="btnNumberTouchUpInside:" destination="-1" eventType="touchUpInside" id="0T6-0P-1mz"/>
+                    </connections>
                 </button>
                 <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="jai-QK-KNl">
                     <rect key="frame" x="215" y="163" width="79" height="79"/>
@@ -67,6 +79,9 @@
                     <state key="highlighted" backgroundImage="bg_number_drop.png">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="btnNumberTouchUpInside:" destination="-1" eventType="touchUpInside" id="3tP-O1-WnU"/>
+                    </connections>
                 </button>
                 <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="l2k-2d-IbL">
                     <rect key="frame" x="25" y="251" width="79" height="79"/>
@@ -79,6 +94,9 @@
                     <state key="highlighted" backgroundImage="bg_number_drop.png">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="btnNumberTouchUpInside:" destination="-1" eventType="touchUpInside" id="xY3-i8-EIV"/>
+                    </connections>
                 </button>
                 <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="amE-bj-xN2">
                     <rect key="frame" x="120" y="251" width="79" height="79"/>
@@ -170,15 +188,136 @@
                         <action selector="btnNumberTouchUpInside:" destination="-1" eventType="touchUpInside" id="T2x-jv-MO4"/>
                     </connections>
                 </button>
+                <view contentMode="scaleToFill" id="d2k-MM-1Cl" userLabel="View - top">
+                    <rect key="frame" x="0.0" y="44" width="320" height="101"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="npE-F0-N8I">
+                            <rect key="frame" x="237" y="12" width="57" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Save">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="btnSaveTouchUpInside:" destination="-1" eventType="touchUpInside" id="Wag-7n-UcN"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="bgX-GV-E0q">
+                            <rect key="frame" x="237" y="66" width="57" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Share">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="btnShareTouchUpInside:" destination="-1" eventType="touchUpInside" id="0Wh-jF-eDV"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="vlY-tN-JaE">
+                            <rect key="frame" x="20" y="12" width="114" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Your Library">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="btnYourLibraryTouchUpInside:" destination="-1" eventType="touchUpInside" id="v2t-JY-beP"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="KVR-JA-nKs">
+                            <rect key="frame" x="20" y="66" width="94" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="More Icon">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="btnMoreIconTouchUpInside:" destination="-1" eventType="touchUpInside" id="a9k-4T-3Ah"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" id="N2L-bH-Sbx" userLabel="View - bottom">
+                    <rect key="frame" x="0.0" y="514" width="320" height="54"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="pGq-Gp-tF4">
+                            <rect key="frame" x="206" y="12" width="114" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="About">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="btnAboutTouchUpInside:" destination="-1" eventType="touchUpInside" id="5rU-uC-qTY"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
+        <view contentMode="scaleToFill" id="Zqi-Ld-yL5" userLabel="View - select photo view">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="186"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Pm3-p6-Mxc">
+                    <rect key="frame" x="32" y="20" width="104" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Take Photo">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="btnTakePhotoTouchUpInside:" destination="-1" eventType="touchUpInside" id="Ywa-sf-aTt"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="x9W-S4-37H">
+                    <rect key="frame" x="190" y="20" width="104" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Library">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="btnLibraryTouchUpInside:" destination="-1" eventType="touchUpInside" id="GOX-6t-8Uu"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="D4q-f3-RdQ">
+                    <rect key="frame" x="32" y="80" width="104" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Facebook">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="btnFacebookTouchUpInside:" destination="-1" eventType="touchUpInside" id="RaX-To-Id9"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="zBR-VB-BUg">
+                    <rect key="frame" x="190" y="80" width="104" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Instagram">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="btnInstagramTouchUpInside:" destination="-1" eventType="touchUpInside" id="Fuk-HA-QyG"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1WY-XP-kbe">
+                    <rect key="frame" x="32" y="149" width="248" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="More from HB">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="btnMoreTouchUpInside:" destination="-1" eventType="touchUpInside" id="d8W-bU-6pI"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
     </objects>
     <resources>
         <image name="bg_number.png" width="131" height="133"/>
         <image name="bg_number_drop.png" width="640" height="1136"/>
-        <image name="partern_iphone4.png" width="301" height="533"/>
     </resources>
 </document>

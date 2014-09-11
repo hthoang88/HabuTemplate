@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13C1021" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="ParternModel" syncable="YES">
+        <attribute name="createdDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="parternId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="parternName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phoneType" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="items" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="PhotoItem" syncable="YES"/>
+    </entity>
+    <entity name="PhotoItem" syncable="YES">
+        <attribute name="itemId" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="partern" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ParternModel" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="ParternModel" positionX="-63" positionY="-18" width="128" height="118"/>
+        <element name="PhotoItem" positionX="-54" positionY="18" width="128" height="75"/>
+    </elements>
+</model>

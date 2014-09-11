@@ -14,3 +14,10 @@ typedef enum
     ENUM_API_REQUEST_TYPE_CHECK_SHOW_INVITE,
     
 }ENUM_API_REQUEST_TYPE;
+
+#define dataCenterInstanced                         [DataCenter shared]
+//CoreData
+#define sharedManageObjectContent               dataCenterInstanced.managedObjectContext
+#define kCDCategoryEntity                 @"CategoryModel"
+#define kCDStoryEntity                     @"StoryModel"
+#define kCDPageEntity                     @"PageModel"

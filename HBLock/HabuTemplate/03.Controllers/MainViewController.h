@@ -21,4 +21,35 @@
 @property (weak, nonatomic) IBOutlet UIButton *btn0;
 
 - (IBAction)btnNumberTouchUpInside:(id)sender;
+
+//Top
+@property (weak, nonatomic) IBOutlet UIView *topView;
+@property (weak, nonatomic) IBOutlet UIButton *btnSave;
+@property (weak, nonatomic) IBOutlet UIButton *btnShare;
+@property (weak, nonatomic) IBOutlet UIButton *btnYourLibrary;
+@property (weak, nonatomic) IBOutlet UIButton *btnMoreIcon;
+
+- (IBAction)btnSaveTouchUpInside:(id)sender;
+- (IBAction)btnShareTouchUpInside:(id)sender;
+- (IBAction)btnYourLibraryTouchUpInside:(id)sender;
+- (IBAction)btnMoreIconTouchUpInside:(id)sender;
+
+//Bottom
+@property (weak, nonatomic) IBOutlet UIView *bottomView;
+@property (weak, nonatomic) IBOutlet UIButton *btnAbout;
+
+- (IBAction)btnAboutTouchUpInside:(id)sender;
+
+@property (strong, nonatomic) IBOutlet UIView *selectPhotoView;
+@property (weak, nonatomic) IBOutlet UIButton *btnTakePhoto;
+@property (weak, nonatomic) IBOutlet UIButton *btnLibrary;
+@property (weak, nonatomic) IBOutlet UIButton *btnFacebook;
+@property (weak, nonatomic) IBOutlet UIButton *btnInstagram;
+@property (weak, nonatomic) IBOutlet UIButton *btnMore;
+
+- (IBAction)btnTakePhotoTouchUpInside:(id)sender;
+- (IBAction)btnLibraryTouchUpInside:(id)sender;
+- (IBAction)btnFacebookTouchUpInside:(id)sender;
+- (IBAction)btnInstagramTouchUpInside:(id)sender;
+- (IBAction)btnMoreTouchUpInside:(id)sender;
 @end

@@ -13,8 +13,11 @@
 #ifdef __OBJC__
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
-#import "Define.h"
-#import "HBMacros.h"
-#import "Utils.h"
-#import "APIManager.h"
+    #import <CoreData/CoreData.h>
+    #import <QuartzCore/QuartzCore.h>
+
+    #import "Define.h"
+    #import "HBMacros.h"
+    #import "Utils.h"
+    #import "APIManager.h"
 #endif
