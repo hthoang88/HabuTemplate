@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "65D55BDB196A3BB4005C557B"
-               BuildableName = "HabuTemplate.app"
-               BlueprintName = "HabuTemplate"
-               ReferencedContainer = "container:HabuTemplate.xcodeproj">
+               BuildableName = "HBLock.app"
+               BlueprintName = "HBLock"
+               ReferencedContainer = "container:HBLock.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,24 +28,14 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "65D55BF6196A3BB4005C557B"
-               BuildableName = "HabuTemplateTests.xctest"
-               BlueprintName = "HabuTemplateTests"
-               ReferencedContainer = "container:HabuTemplate.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "65D55BDB196A3BB4005C557B"
-            BuildableName = "HabuTemplate.app"
-            BlueprintName = "HabuTemplate"
-            ReferencedContainer = "container:HabuTemplate.xcodeproj">
+            BuildableName = "HBLock.app"
+            BlueprintName = "HBLock"
+            ReferencedContainer = "container:HBLock.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -62,9 +52,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "65D55BDB196A3BB4005C557B"
-            BuildableName = "HabuTemplate.app"
-            BlueprintName = "HabuTemplate"
-            ReferencedContainer = "container:HabuTemplate.xcodeproj">
+            BuildableName = "HBLock.app"
+            BlueprintName = "HBLock"
+            ReferencedContainer = "container:HBLock.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -80,9 +70,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "65D55BDB196A3BB4005C557B"
-            BuildableName = "HabuTemplate.app"
-            BlueprintName = "HabuTemplate"
-            ReferencedContainer = "container:HabuTemplate.xcodeproj">
+            BuildableName = "HBLock.app"
+            BlueprintName = "HBLock"
+            ReferencedContainer = "container:HBLock.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "MainViewController.h"
 
 @implementation AppDelegate
 
@@ -16,9 +17,10 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
-    [[APIManager sharedManager] operationWithType:0 andPostMethodKind:NO shouldCancelAllCurrentRequest:NO andParams:nil inView:self.window completeBlock:^(id responseObject) {
-        
-    }];
+    MainViewController *main = [[MainViewController alloc] init];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:main];
+    self.window.rootViewController =nav;
+    
     return YES;
 }
 

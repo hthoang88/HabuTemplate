@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		654A8A0919C18A1200077AC1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 654A8A0719C18A1200077AC1 /* MainViewController.m */; };
+		654A8A0A19C18A1200077AC1 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 654A8A0819C18A1200077AC1 /* MainViewController.xib */; };
+		654A8A1319C18B0900077AC1 /* partern_iphone4.png in Resources */ = {isa = PBXBuildFile; fileRef = 654A8A1119C18B0900077AC1 /* partern_iphone4.png */; };
+		654A8A1419C18B0900077AC1 /* partern_iphone5.png in Resources */ = {isa = PBXBuildFile; fileRef = 654A8A1219C18B0900077AC1 /* partern_iphone5.png */; };
+		654A8A1719C18B8A00077AC1 /* avatar_01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 654A8A1519C18B8A00077AC1 /* avatar_01.jpg */; };
+		654A8A1819C18B8A00077AC1 /* bg_number.png in Resources */ = {isa = PBXBuildFile; fileRef = 654A8A1619C18B8A00077AC1 /* bg_number.png */; };
 		65D55BE0196A3BB4005C557B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D55BDF196A3BB4005C557B /* Foundation.framework */; };
 		65D55BE2196A3BB4005C557B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D55BE1196A3BB4005C557B /* CoreGraphics.framework */; };
 		65D55BE4196A3BB4005C557B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D55BE3196A3BB4005C557B /* UIKit.framework */; };
@@ -50,14 +56,21 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		65D55BDC196A3BB4005C557B /* HabuTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HabuTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		654A8A0619C18A1200077AC1 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		654A8A0719C18A1200077AC1 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		654A8A0819C18A1200077AC1 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		654A8A1119C18B0900077AC1 /* partern_iphone4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = partern_iphone4.png; sourceTree = "<group>"; };
+		654A8A1219C18B0900077AC1 /* partern_iphone5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = partern_iphone5.png; sourceTree = "<group>"; };
+		654A8A1519C18B8A00077AC1 /* avatar_01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = avatar_01.jpg; sourceTree = "<group>"; };
+		654A8A1619C18B8A00077AC1 /* bg_number.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_number.png; sourceTree = "<group>"; };
+		65D55BDC196A3BB4005C557B /* HBLock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HBLock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65D55BDF196A3BB4005C557B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		65D55BE1196A3BB4005C557B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		65D55BE3196A3BB4005C557B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		65D55BE7196A3BB4005C557B /* HabuTemplate-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HabuTemplate-Info.plist"; sourceTree = "<group>"; };
+		65D55BE7196A3BB4005C557B /* HBLock-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HBLock-Info.plist"; sourceTree = "<group>"; };
 		65D55BE9196A3BB4005C557B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		65D55BEB196A3BB4005C557B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		65D55BED196A3BB4005C557B /* HabuTemplate-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HabuTemplate-Prefix.pch"; sourceTree = "<group>"; };
+		65D55BED196A3BB4005C557B /* HBLock-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HBLock-Prefix.pch"; sourceTree = "<group>"; };
 		65D55BEE196A3BB4005C557B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		65D55BEF196A3BB4005C557B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		65D55BF1196A3BB4005C557B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -146,6 +159,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		654A8A1019C18B0900077AC1 /* 03.Parterns */ = {
+			isa = PBXGroup;
+			children = (
+				654A8A1119C18B0900077AC1 /* partern_iphone4.png */,
+				654A8A1219C18B0900077AC1 /* partern_iphone5.png */,
+			);
+			path = 03.Parterns;
+			sourceTree = "<group>";
+		};
 		65D55BD3196A3BB4005C557B = {
 			isa = PBXGroup;
 			children = (
@@ -158,7 +180,7 @@
 		65D55BDD196A3BB4005C557B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				65D55BDC196A3BB4005C557B /* HabuTemplate.app */,
+				65D55BDC196A3BB4005C557B /* HBLock.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -195,10 +217,10 @@
 		65D55BE6196A3BB4005C557B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				65D55BE7196A3BB4005C557B /* HabuTemplate-Info.plist */,
+				65D55BE7196A3BB4005C557B /* HBLock-Info.plist */,
 				65D55BE8196A3BB4005C557B /* InfoPlist.strings */,
 				65D55BEB196A3BB4005C557B /* main.m */,
-				65D55BED196A3BB4005C557B /* HabuTemplate-Prefix.pch */,
+				65D55BED196A3BB4005C557B /* HBLock-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -226,6 +248,9 @@
 			children = (
 				65D55C52196A3DE6005C557B /* BaseViewController.h */,
 				65D55C53196A3DE6005C557B /* BaseViewController.m */,
+				654A8A0619C18A1200077AC1 /* MainViewController.h */,
+				654A8A0719C18A1200077AC1 /* MainViewController.m */,
+				654A8A0819C18A1200077AC1 /* MainViewController.xib */,
 			);
 			path = 03.Controllers;
 			sourceTree = "<group>";
@@ -261,6 +286,9 @@
 		65D55C14196A3C74005C557B /* 06.Resouces */ = {
 			isa = PBXGroup;
 			children = (
+				654A8A1519C18B8A00077AC1 /* avatar_01.jpg */,
+				654A8A1619C18B8A00077AC1 /* bg_number.png */,
+				654A8A1019C18B0900077AC1 /* 03.Parterns */,
 				65D55C15196A3C74005C557B /* 01.App_Icons */,
 				65D55C16196A3C74005C557B /* 02.App_Lauchings */,
 			);
@@ -412,9 +440,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		65D55BDB196A3BB4005C557B /* HabuTemplate */ = {
+		65D55BDB196A3BB4005C557B /* HBLock */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 65D55C08196A3BB4005C557B /* Build configuration list for PBXNativeTarget "HabuTemplate" */;
+			buildConfigurationList = 65D55C08196A3BB4005C557B /* Build configuration list for PBXNativeTarget "HBLock" */;
 			buildPhases = (
 				65D55BD8196A3BB4005C557B /* Sources */,
 				65D55BD9196A3BB4005C557B /* Frameworks */,
@@ -424,9 +452,9 @@
 			);
 			dependencies = (
 			);
-			name = HabuTemplate;
+			name = HBLock;
 			productName = HabuTemplate;
-			productReference = 65D55BDC196A3BB4005C557B /* HabuTemplate.app */;
+			productReference = 65D55BDC196A3BB4005C557B /* HBLock.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -438,7 +466,7 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Hoang Ho";
 			};
-			buildConfigurationList = 65D55BD7196A3BB4005C557B /* Build configuration list for PBXProject "HabuTemplate" */;
+			buildConfigurationList = 65D55BD7196A3BB4005C557B /* Build configuration list for PBXProject "HBLock" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -450,7 +478,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				65D55BDB196A3BB4005C557B /* HabuTemplate */,
+				65D55BDB196A3BB4005C557B /* HBLock */,
 			);
 		};
 /* End PBXProject section */
@@ -460,9 +488,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				654A8A1719C18B8A00077AC1 /* avatar_01.jpg in Resources */,
+				654A8A1819C18B8A00077AC1 /* bg_number.png in Resources */,
 				65D55C7D196A43A3005C557B /* README.mdown in Resources */,
 				65D55BEA196A3BB4005C557B /* InfoPlist.strings in Resources */,
 				65D55BF2196A3BB4005C557B /* Images.xcassets in Resources */,
+				654A8A1319C18B0900077AC1 /* partern_iphone4.png in Resources */,
+				654A8A0A19C18A1200077AC1 /* MainViewController.xib in Resources */,
+				654A8A1419C18B0900077AC1 /* partern_iphone5.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,6 +513,7 @@
 				65D55C7E196A43A3005C557B /* SVPullToRefresh.m in Sources */,
 				65D55C43196A3DB3005C557B /* AFURLConnectionOperation.m in Sources */,
 				65D55C49196A3DB3005C557B /* UIAlertView+AFNetworking.m in Sources */,
+				654A8A0919C18A1200077AC1 /* MainViewController.m in Sources */,
 				65D55C42196A3DB3005C557B /* AFSecurityPolicy.m in Sources */,
 				65D55C3E196A3DB3005C557B /* AFHTTPRequestOperation.m in Sources */,
 				65D55C46196A3DB3005C557B /* AFURLSessionManager.m in Sources */,
@@ -601,9 +635,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "HabuTemplate/HabuTemplate-Prefix.pch";
-				INFOPLIST_FILE = "HabuTemplate/HabuTemplate-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "HabuTemplate/HBLock-Prefix.pch";
+				INFOPLIST_FILE = "HabuTemplate/HBLock-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = HBLock;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -614,9 +649,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "HabuTemplate/HabuTemplate-Prefix.pch";
-				INFOPLIST_FILE = "HabuTemplate/HabuTemplate-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "HabuTemplate/HBLock-Prefix.pch";
+				INFOPLIST_FILE = "HabuTemplate/HBLock-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = HBLock;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -624,7 +660,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		65D55BD7196A3BB4005C557B /* Build configuration list for PBXProject "HabuTemplate" */ = {
+		65D55BD7196A3BB4005C557B /* Build configuration list for PBXProject "HBLock" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				65D55C06196A3BB4005C557B /* Debug */,
@@ -633,7 +669,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		65D55C08196A3BB4005C557B /* Build configuration list for PBXNativeTarget "HabuTemplate" */ = {
+		65D55C08196A3BB4005C557B /* Build configuration list for PBXNativeTarget "HBLock" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				65D55C09196A3BB4005C557B /* Debug */,
