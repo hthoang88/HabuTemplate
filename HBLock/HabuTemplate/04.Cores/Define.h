@@ -15,6 +15,38 @@ typedef enum
     
 }ENUM_API_REQUEST_TYPE;
 
+typedef enum
+{
+    enumPhotoViewType_Camera = 0,
+    enumPhotoViewType_Preview,
+    enumPhotoViewType_Num
+}enumPhotoViewType;
+
+typedef enum {
+	enumImageScalingType_Invalid,
+    enumImageScalingType_Left,
+    enumImageScalingType_Top,
+    enumImageScalingType_Right,
+    enumImageScalingType_Bottom,
+    enumImageScalingType_TargetSize,
+    enumImageScalingType_Center_ScaleSize,
+    enumImageScalingType_Center_FullSize,
+    enumImageScalingType_FullSize,
+    enumImageScalingType_FitSize // fit to size
+} enumImageScalingType;
+
+typedef enum
+{
+    enumPhoneType_iPhone4 = 0,
+    enumPhoneType_iPhone5,
+    enumPhoneType_iPhone6,
+    enumPhoneType_iPhonePlus,
+    enumPhoneType_iPad,
+    enumPhoneType_iPadMini
+}enumPhoneType;
+
+#define RANDOM_STRING_LENGHT                        10
+
 #define dataCenterInstanced                         [DataCenter shared]
 //CoreData
 #define sharedManageObjectContent               dataCenterInstanced.managedObjectContext

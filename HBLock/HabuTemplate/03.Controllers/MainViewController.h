@@ -8,7 +8,12 @@
 
 #import "BaseViewController.h"
 
+@class PatternModel;
 @interface MainViewController : BaseViewController
+
+@property (strong, nonatomic) PatternModel *pattern;
+
+@property (weak, nonatomic) IBOutlet UIImageView *imgBackground;
 @property (weak, nonatomic) IBOutlet UIButton *btn1;
 @property (weak, nonatomic) IBOutlet UIButton *btn2;
 @property (weak, nonatomic) IBOutlet UIButton *btn3;
@@ -37,6 +42,8 @@
 //Bottom
 @property (weak, nonatomic) IBOutlet UIView *bottomView;
 @property (weak, nonatomic) IBOutlet UIButton *btnAbout;
+@property (weak, nonatomic) IBOutlet UIButton *btnSelectBackground;
+- (IBAction)btnSelectBackgroundTouchUpInside:(id)sender;
 
 - (IBAction)btnAboutTouchUpInside:(id)sender;
 

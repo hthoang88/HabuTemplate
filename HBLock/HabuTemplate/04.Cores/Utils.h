@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "UIDevice+Resolutions.h"
 
 @interface Utils : NSObject
 + (void)showHUDForView:(UIView*)v;

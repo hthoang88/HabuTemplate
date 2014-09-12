@@ -137,6 +137,7 @@ CGFloat DegreesToRadians(CGFloat degrees);
 
 #define WIDTH_SCREEN        IS_IPHONE ? (IS_4_INCHES ? 568 : 480) : 1024
 #define HEIGH_SCREEN        IS_IPHONE ? 320 : 768
+#define HEIGHT_STATUS_BAR   20
 
 #define IS_IPAD	(UI_USER_INTERFACE_IDIOM()== UIUserInterfaceIdiomPad)
 #define IS_IPHONE (UI_USER_INTERFACE_IDIOM()== UIUserInterfaceIdiomPhone)
