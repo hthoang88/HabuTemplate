@@ -13,6 +13,7 @@
 #import "PhotoItem.h"
 #import "PatternModel.h"
 #import "PatternLibaryViewController.h"
+#import "PreviewViewController.h"
 
 @interface MainViewController ()<UIImagePickerControllerDelegate,UINavigationControllerDelegate, EffectCameraView_2_5_Delegate>{
     UIButton *activeButton;
@@ -184,6 +185,10 @@
         self.imgBackground.image = _nonCropOriginalImage;
     }
     [picker dismissViewControllerAnimated:YES completion:nil];
+    
+    PreviewViewController *previewVC = [[PreviewViewController alloc] init];
+    previewVC.currentImage = _nonCropOriginalImage;
+    [self.navigationController pushViewController:previewVC animated:YES];
 }
 
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker

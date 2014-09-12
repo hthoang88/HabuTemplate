@@ -200,6 +200,9 @@
 		656B2CF519C2F4B000830D74 /* GMGridViewNew.m in Sources */ = {isa = PBXBuildFile; fileRef = 656B2CEB19C2F4B000830D74 /* GMGridViewNew.m */; };
 		656B2CF619C2F4B000830D74 /* UIGestureRecognizer+GMGridViewAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 656B2CED19C2F4B000830D74 /* UIGestureRecognizer+GMGridViewAdditions.m */; };
 		656B2CF719C2F4B000830D74 /* UIView+GMGridViewAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 656B2CEF19C2F4B000830D74 /* UIView+GMGridViewAdditions.m */; };
+		656B2CFB19C3058200830D74 /* PreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 656B2CF919C3058200830D74 /* PreviewViewController.m */; };
+		656B2CFC19C3058200830D74 /* PreviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 656B2CFA19C3058200830D74 /* PreviewViewController.xib */; };
+		656B2D0019C30AAB00830D74 /* SPUserResizableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 656B2CFF19C30AAB00830D74 /* SPUserResizableView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		65D55BE0196A3BB4005C557B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D55BDF196A3BB4005C557B /* Foundation.framework */; };
 		65D55BE2196A3BB4005C557B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D55BE1196A3BB4005C557B /* CoreGraphics.framework */; };
 		65D55BE4196A3BB4005C557B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D55BE3196A3BB4005C557B /* UIKit.framework */; };
@@ -609,6 +612,11 @@
 		656B2CED19C2F4B000830D74 /* UIGestureRecognizer+GMGridViewAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIGestureRecognizer+GMGridViewAdditions.m"; sourceTree = "<group>"; };
 		656B2CEE19C2F4B000830D74 /* UIView+GMGridViewAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+GMGridViewAdditions.h"; sourceTree = "<group>"; };
 		656B2CEF19C2F4B000830D74 /* UIView+GMGridViewAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+GMGridViewAdditions.m"; sourceTree = "<group>"; };
+		656B2CF819C3058200830D74 /* PreviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreviewViewController.h; sourceTree = "<group>"; };
+		656B2CF919C3058200830D74 /* PreviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreviewViewController.m; sourceTree = "<group>"; };
+		656B2CFA19C3058200830D74 /* PreviewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PreviewViewController.xib; sourceTree = "<group>"; };
+		656B2CFE19C30AAB00830D74 /* SPUserResizableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPUserResizableView.h; sourceTree = "<group>"; };
+		656B2CFF19C30AAB00830D74 /* SPUserResizableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPUserResizableView.m; sourceTree = "<group>"; };
 		65D55BDC196A3BB4005C557B /* HBLock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HBLock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65D55BDF196A3BB4005C557B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		65D55BE1196A3BB4005C557B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -1077,6 +1085,15 @@
 			path = GridTable;
 			sourceTree = "<group>";
 		};
+		656B2CFD19C30A9E00830D74 /* SPUserResizableView */ = {
+			isa = PBXGroup;
+			children = (
+				656B2CFE19C30AAB00830D74 /* SPUserResizableView.h */,
+				656B2CFF19C30AAB00830D74 /* SPUserResizableView.m */,
+			);
+			path = SPUserResizableView;
+			sourceTree = "<group>";
+		};
 		65D55BD3196A3BB4005C557B = {
 			isa = PBXGroup;
 			children = (
@@ -1170,6 +1187,9 @@
 				656B2CDA19C2F42C00830D74 /* PatternLibaryViewController.h */,
 				656B2CDB19C2F42C00830D74 /* PatternLibaryViewController.m */,
 				656B2CDC19C2F42C00830D74 /* PatternLibaryViewController.xib */,
+				656B2CF819C3058200830D74 /* PreviewViewController.h */,
+				656B2CF919C3058200830D74 /* PreviewViewController.m */,
+				656B2CFA19C3058200830D74 /* PreviewViewController.xib */,
 			);
 			path = 03.Controllers;
 			sourceTree = "<group>";
@@ -1193,6 +1213,7 @@
 		65D55C13196A3C74005C557B /* 05.Libs */ = {
 			isa = PBXGroup;
 			children = (
+				656B2CFD19C30A9E00830D74 /* SPUserResizableView */,
 				656B2CDF19C2F4B000830D74 /* GridTable */,
 				656B2AD119C2D67A00830D74 /* GPUFilter */,
 				654A8A1919C1A90F00077AC1 /* UIActionSheet+Blocks */,
@@ -1448,6 +1469,7 @@
 				656B2CAC19C2DDAD00830D74 /* switch_camera_icon.png in Resources */,
 				656B2CB019C2DDC400830D74 /* VK_Social_close_icon.png in Resources */,
 				656B2AC219C2D16600830D74 /* message_camera@2x.png in Resources */,
+				656B2CFC19C3058200830D74 /* PreviewViewController.xib in Resources */,
 				656B2AC619C2D18900830D74 /* VK_Social_ButtonContainer.png in Resources */,
 				654A8A0A19C18A1200077AC1 /* MainViewController.xib in Resources */,
 				654A8A1419C18B0900077AC1 /* partern_iphone5.png in Resources */,
@@ -1508,6 +1530,7 @@
 				654A8A1C19C1A92000077AC1 /* UIActionSheet+Blocks.m in Sources */,
 				656B2C7819C2D67C00830D74 /* GPUImageRGBFilter.m in Sources */,
 				656B2C1519C2D67C00830D74 /* GPUImageBrightnessFilter.m in Sources */,
+				656B2CFB19C3058200830D74 /* PreviewViewController.m in Sources */,
 				654A8A2219C1AD3900077AC1 /* DataCenter.m in Sources */,
 				656B2C9119C2D67C00830D74 /* GPUImageThresholdedNonMaximumSuppressionFilter.m in Sources */,
 				65D55C42196A3DB3005C557B /* AFSecurityPolicy.m in Sources */,
@@ -1576,6 +1599,7 @@
 				656B2C9619C2D67C00830D74 /* GPUImageTransformFilter.m in Sources */,
 				656B2C6919C2D67C00830D74 /* GPUImagePerlinNoiseFilter.m in Sources */,
 				656B2C6119C2D67C00830D74 /* GPUImageNonMaximumSuppressionFilter.m in Sources */,
+				656B2D0019C30AAB00830D74 /* SPUserResizableView.m in Sources */,
 				656B2C5F19C2D67C00830D74 /* GPUImageMultiplyBlendFilter.m in Sources */,
 				656B2C3C19C2D67C00830D74 /* GPUImageGrayscaleFilter.m in Sources */,
 				656B2C3319C2D67C00830D74 /* GPUImageFastBlurFilter.m in Sources */,
