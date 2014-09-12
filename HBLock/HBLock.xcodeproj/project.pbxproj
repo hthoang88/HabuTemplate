@@ -203,6 +203,8 @@
 		656B2CFB19C3058200830D74 /* PreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 656B2CF919C3058200830D74 /* PreviewViewController.m */; };
 		656B2CFC19C3058200830D74 /* PreviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 656B2CFA19C3058200830D74 /* PreviewViewController.xib */; };
 		656B2D0019C30AAB00830D74 /* SPUserResizableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 656B2CFF19C30AAB00830D74 /* SPUserResizableView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		656B2D0319C30F5000830D74 /* PreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = 656B2D0219C30F5000830D74 /* PreviewView.m */; };
+		656B2D0519C30F6400830D74 /* PreviewView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 656B2D0419C30F6400830D74 /* PreviewView.xib */; };
 		65D55BE0196A3BB4005C557B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D55BDF196A3BB4005C557B /* Foundation.framework */; };
 		65D55BE2196A3BB4005C557B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D55BE1196A3BB4005C557B /* CoreGraphics.framework */; };
 		65D55BE4196A3BB4005C557B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D55BE3196A3BB4005C557B /* UIKit.framework */; };
@@ -617,6 +619,9 @@
 		656B2CFA19C3058200830D74 /* PreviewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PreviewViewController.xib; sourceTree = "<group>"; };
 		656B2CFE19C30AAB00830D74 /* SPUserResizableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPUserResizableView.h; sourceTree = "<group>"; };
 		656B2CFF19C30AAB00830D74 /* SPUserResizableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPUserResizableView.m; sourceTree = "<group>"; };
+		656B2D0119C30F5000830D74 /* PreviewView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreviewView.h; sourceTree = "<group>"; };
+		656B2D0219C30F5000830D74 /* PreviewView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreviewView.m; sourceTree = "<group>"; };
+		656B2D0419C30F6400830D74 /* PreviewView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PreviewView.xib; sourceTree = "<group>"; };
 		65D55BDC196A3BB4005C557B /* HBLock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HBLock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65D55BDF196A3BB4005C557B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		65D55BE1196A3BB4005C557B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -1171,6 +1176,9 @@
 			children = (
 				65D55C5C196A3E50005C557B /* BaseTableViewCell.h */,
 				65D55C5D196A3E50005C557B /* BaseTableViewCell.m */,
+				656B2D0119C30F5000830D74 /* PreviewView.h */,
+				656B2D0219C30F5000830D74 /* PreviewView.m */,
+				656B2D0419C30F6400830D74 /* PreviewView.xib */,
 			);
 			path = 02.Views;
 			sourceTree = "<group>";
@@ -1467,6 +1475,7 @@
 				656B2CF019C2F4B000830D74 /* close_x.png in Resources */,
 				656B2AC919C2D36100830D74 /* close_x_white.png in Resources */,
 				656B2CAC19C2DDAD00830D74 /* switch_camera_icon.png in Resources */,
+				656B2D0519C30F6400830D74 /* PreviewView.xib in Resources */,
 				656B2CB019C2DDC400830D74 /* VK_Social_close_icon.png in Resources */,
 				656B2AC219C2D16600830D74 /* message_camera@2x.png in Resources */,
 				656B2CFC19C3058200830D74 /* PreviewViewController.xib in Resources */,
@@ -1580,6 +1589,7 @@
 				656B2C3119C2D67C00830D74 /* GPUImageExposureFilter.m in Sources */,
 				656B2C2819C2D67C00830D74 /* GPUImageDifferenceBlendFilter.m in Sources */,
 				656B2C2719C2D67C00830D74 /* GPUImageDarkenBlendFilter.m in Sources */,
+				656B2D0319C30F5000830D74 /* PreviewView.m in Sources */,
 				656B2C2B19C2D67C00830D74 /* GPUimageDirectionalSobelEdgeDetectionFilter.m in Sources */,
 				656B2C5C19C2D67C00830D74 /* GPUImageMotionDetector.m in Sources */,
 				656B2C4519C2D67C00830D74 /* GPUImageHoughTransformLineDetector.m in Sources */,

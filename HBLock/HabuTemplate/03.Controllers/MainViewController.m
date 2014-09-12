@@ -14,11 +14,13 @@
 #import "PatternModel.h"
 #import "PatternLibaryViewController.h"
 #import "PreviewViewController.h"
+#import "PreviewView.h"
 
 @interface MainViewController ()<UIImagePickerControllerDelegate,UINavigationControllerDelegate, EffectCameraView_2_5_Delegate>{
     UIButton *activeButton;
     BOOL isShowingMenu;
     enumPhoneType phoneType;
+    PreviewView *preview;
 }
 
 @property (nonatomic, strong) EffectCameraView_2_5 *cameraHome;
@@ -186,9 +188,13 @@
     }
     [picker dismissViewControllerAnimated:YES completion:nil];
     
-    PreviewViewController *previewVC = [[PreviewViewController alloc] init];
-    previewVC.currentImage = _nonCropOriginalImage;
-    [self.navigationController pushViewController:previewVC animated:YES];
+    preview = [[PreviewView alloc] initWithFrame:self.view.bounds];
+    preview.imgBackground.image =_nonCropOriginalImage;
+    [self.view addSubview:preview];
+    [self.view bringSubviewToFront:preview];
+//    PreviewViewController *previewVC = [[PreviewViewController alloc] init];
+//    previewVC.currentImage = _nonCropOriginalImage;
+//    [self.navigationController pushViewController:previewVC animated:YES];
 }
 
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
