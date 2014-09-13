@@ -13,4 +13,6 @@
 @property (weak, nonatomic) IBOutlet UIImageView *imgBackground;
 @property (weak, nonatomic) IBOutlet UIImageView *imgNumberpad;
 
+@property (nonatomic, copy) void(^completeBlock)(UIImage *image, BOOL isCancel);
+
 @end

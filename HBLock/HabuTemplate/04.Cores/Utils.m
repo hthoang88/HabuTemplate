@@ -10,6 +10,13 @@
 #import "MBProgressHUD.h"
 #import <objc/runtime.h>
 
+#define _HEIGHT_IPHONE                                                       480
+#define _WIDTH_IPHONE                                                        320
+#define _HEIGHT_IPHONE_5                                                     568
+#define _WIDTH_IPHONE_5                                                      320
+#define _HEIGHT_IPAD                                                         1024
+#define _WIDTH_IPAD                                                          768
+
 @implementation Utils
 
 + (void)showHUDForView:(UIView*)v
@@ -106,6 +113,84 @@
         [randomString appendFormat: @"%C", [letters characterAtIndex: arc4random() % [letters length]]];
     }
     return randomString;
+}
+
+
++ (int)getDeviceWidth
+{
+#ifdef IS_SUPPORTED_LANDSCAPE
+    if ([UIDevice currentDevice].orientation == UIDeviceOrientationLandscapeLeft || [UIDevice currentDevice].orientation == UIDeviceOrientationLandscapeRight) {
+        if (IS_IPAD) {
+            return _HEIGHT_IPAD;
+        }
+        else if ([[UIDevice currentDevice] resolution] == UIDeviceResolution_iPhoneRetina4) {
+            return _HEIGHT_IPHONE_5;
+        }
+        else {
+            return _HEIGHT_IPHONE;
+        }
+    }
+    else {
+        if (IS_IPAD) {
+            return _WIDTH_IPAD;
+        }
+        else if ([[UIDevice currentDevice] resolution] == UIDeviceResolution_iPhoneRetina4) {
+            return _WIDTH_IPHONE_5;
+        }
+        else {
+            return _WIDTH_IPHONE;
+        }
+    }
+#else
+    if (IS_IPAD) {
+        return _WIDTH_IPAD;
+    }
+    else if ([[UIDevice currentDevice] resolution] == UIDeviceResolution_iPhoneRetina4) {
+        return _WIDTH_IPHONE_5;
+    }
+    else {
+        return _WIDTH_IPHONE;
+    }
+#endif
+}
+
+
++ (int)getDeviceHeight
+{
+#ifdef IS_SUPPORTED_LANDSCAPE
+    if ([UIDevice currentDevice].orientation == UIDeviceOrientationLandscapeLeft || [UIDevice currentDevice].orientation == UIDeviceOrientationLandscapeRight) {
+        if (IS_IPAD) {
+            return _WIDTH_IPAD;
+        }
+        else if ([[UIDevice currentDevice] resolution] == UIDeviceResolution_iPhoneRetina4) {
+            return _WIDTH_IPHONE_5;
+        }
+        else {
+            return _WIDTH_IPHONE;
+        }
+    }
+    else {
+        if (IS_IPAD) {
+            return _HEIGHT_IPAD;
+        }
+        else if ([[UIDevice currentDevice] resolution] == UIDeviceResolution_iPhoneRetina4) {
+            return _HEIGHT_IPHONE_5;
+        }
+        else {
+            return _HEIGHT_IPHONE;
+        }
+    }
+#else
+    if (IS_IPAD) {
+        return _HEIGHT_IPAD;
+    }
+    else if ([[UIDevice currentDevice] resolution] == UIDeviceResolution_iPhoneRetina4) {
+        return _HEIGHT_IPHONE_5;
+    }
+    else {
+        return _HEIGHT_IPHONE;
+    }
+#endif
 }
 
 @end

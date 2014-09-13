@@ -20,4 +20,7 @@
 + (NSURL *)applicationDocumentsDirectory;
 
 + (NSString *)getRandStringLength:(int)len;
+
++ (int)getDeviceHeight;
++ (int)getDeviceWidth;
 @end

@@ -135,8 +135,8 @@ CGFloat DegreesToRadians(CGFloat degrees);
 #define IS_PORTRAIT UIDeviceOrientationIsPortrait([[UIApplication sharedApplication]statusBarOrientation])
 #define IS_LANDSCAPE  UIDeviceOrientationIsLandscape([[UIApplication sharedApplication]statusBarOrientation])
 
-#define WIDTH_SCREEN        IS_IPHONE ? (IS_4_INCHES ? 568 : 480) : 1024
-#define HEIGH_SCREEN        IS_IPHONE ? 320 : 768
+#define WIDTH_SCREEN        [Utils getDeviceWidth]
+#define HEIGH_SCREEN        [Utils getDeviceHeight]
 #define HEIGHT_STATUS_BAR   20
 
 #define IS_IPAD	(UI_USER_INTERFACE_IDIOM()== UIUserInterfaceIdiomPad)

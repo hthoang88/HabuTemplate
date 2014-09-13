@@ -30,20 +30,15 @@
 //Top
 @property (weak, nonatomic) IBOutlet UIView *topView;
 @property (weak, nonatomic) IBOutlet UIButton *btnSave;
-@property (weak, nonatomic) IBOutlet UIButton *btnShare;
-@property (weak, nonatomic) IBOutlet UIButton *btnYourLibrary;
-@property (weak, nonatomic) IBOutlet UIButton *btnMoreIcon;
-
+@property (weak, nonatomic) IBOutlet UIButton *btnSelectBackground;
+- (IBAction)btnSelectBackgroundTouchUpInside:(id)sender;
 - (IBAction)btnSaveTouchUpInside:(id)sender;
-- (IBAction)btnShareTouchUpInside:(id)sender;
-- (IBAction)btnYourLibraryTouchUpInside:(id)sender;
-- (IBAction)btnMoreIconTouchUpInside:(id)sender;
 
 //Bottom
 @property (weak, nonatomic) IBOutlet UIView *bottomView;
+@property (weak, nonatomic) IBOutlet UIButton *btnYourLibrary;
 @property (weak, nonatomic) IBOutlet UIButton *btnAbout;
-@property (weak, nonatomic) IBOutlet UIButton *btnSelectBackground;
-- (IBAction)btnSelectBackgroundTouchUpInside:(id)sender;
+- (IBAction)btnYourLibraryTouchUpInside:(id)sender;
 
 - (IBAction)btnAboutTouchUpInside:(id)sender;
 

@@ -8,25 +8,82 @@
 
 #import "MainViewController.h"
 #import "UIActionSheet+Blocks.h"
-#import "EffectCameraView_2_5.h"
 #import "UIAlertView+CompletedBlock.h"
 #import "PhotoItem.h"
 #import "PatternModel.h"
 #import "PatternLibaryViewController.h"
-#import "PreviewViewController.h"
 #import "PreviewView.h"
+#import "HBLockCameraView.h"
 
-@interface MainViewController ()<UIImagePickerControllerDelegate,UINavigationControllerDelegate, EffectCameraView_2_5_Delegate>{
+@interface MainViewController ()<UIImagePickerControllerDelegate,UINavigationControllerDelegate, HBLockCameraViewDelegate>{
     UIButton *activeButton;
     BOOL isShowingMenu;
     enumPhoneType phoneType;
+    HBLockCameraView *cameraView;
     PreviewView *preview;
 }
 
-@property (nonatomic, strong) EffectCameraView_2_5 *cameraHome;
 @end
 
 @implementation MainViewController
+
+- (NSString*)getDesForButton:(UIButton*)btn
+{
+    return [NSString stringWithFormat:@"\"%.0f,%.0f,%.0f,%.0f\",",btn.frame.origin.x,btn.frame.origin.y,btn.frame.size.width,btn.frame.size.height];
+}
+
+- (void)testFrame
+{
+    NSMutableString *st = [NSMutableString string];
+    [st appendFormat:@"\"button0\" : %@",[self getDesForButton:self.btn0]];
+    [st appendFormat:@"\n\"button1\" : %@",[self getDesForButton:self.btn1]];
+    [st appendFormat:@"\n\"button2\" : %@",[self getDesForButton:self.btn2]];
+    [st appendFormat:@"\n\"button3\" : %@",[self getDesForButton:self.btn3]];
+    [st appendFormat:@"\n\"button4\" : %@",[self getDesForButton:self.btn4]];
+    [st appendFormat:@"\n\"button5\" : %@",[self getDesForButton:self.btn5]];
+    [st appendFormat:@"\n\"button6\" : %@",[self getDesForButton:self.btn6]];
+    [st appendFormat:@"\n\"button7\" : %@",[self getDesForButton:self.btn7]];
+    [st appendFormat:@"\n\"button8\" : %@",[self getDesForButton:self.btn8]];
+    [st appendFormat:@"\n\"button9\" : %@",[self getDesForButton:self.btn9]];
+}
+
+- (void)layoutPatternFromFile
+{
+    NSString* filePath = @"patterns";
+    NSString* fileRoot = [[NSBundle mainBundle]
+                          pathForResource:filePath ofType:@"txt"];
+    NSString* fileContents =
+    [NSString stringWithContentsOfFile:fileRoot
+                              encoding:NSUTF8StringEncoding error:nil];
+    NSData *webData = [fileContents dataUsingEncoding:NSUTF8StringEncoding];
+    
+    NSError *error;
+    NSDictionary *jsonDict = [NSJSONSerialization JSONObjectWithData:webData options:0 error:&error];
+    
+    NSArray *items = [jsonDict objectForKey:@"items"];
+    
+    int type = 2;//iphone 5
+    
+    for (NSDictionary *dict in items) {
+        if ([dict[@"type"] integerValue] == type) {
+            [self changeFrameForButton:self.btn0 withStr:dict[@"button0"]];
+            [self changeFrameForButton:self.btn1 withStr:dict[@"button1"]];
+            [self changeFrameForButton:self.btn2 withStr:dict[@"button2"]];
+            [self changeFrameForButton:self.btn3 withStr:dict[@"button3"]];
+            [self changeFrameForButton:self.btn4 withStr:dict[@"button4"]];
+            [self changeFrameForButton:self.btn5 withStr:dict[@"button5"]];
+            [self changeFrameForButton:self.btn6 withStr:dict[@"button6"]];
+            [self changeFrameForButton:self.btn7 withStr:dict[@"button7"]];
+            [self changeFrameForButton:self.btn8 withStr:dict[@"button8"]];
+            [self changeFrameForButton:self.btn9 withStr:dict[@"button9"]];
+        }
+    }
+}
+
+- (void)changeFrameForButton:(UIButton*)btn withStr:(NSString*)str{
+    NSArray *arr = [str componentsSeparatedByString:@","];
+    btn.frame = CGRectMake([arr[0] integerValue], [arr[1] integerValue], [arr[2] integerValue], [arr[3] integerValue]);
+}
 
 - (void)viewDidLoad
 {
@@ -45,13 +102,11 @@
     //    [self addLongestureForButton:self.btn9];
 }
 
-- (EffectCameraView_2_5 *)cameraHome
+- (void)viewDidAppear:(BOOL)animated
 {
-    if (!_cameraHome) {
-        _cameraHome = [[EffectCameraView_2_5 alloc] init];
-    }
-    
-    return _cameraHome;
+    [super viewDidAppear:animated];
+//    [self layoutPatternFromFile];
+    [self testFrame];
 }
 
 - (void)setPattern:(PatternModel *)pattern
@@ -87,7 +142,7 @@
 - (void)changeImage:(UIImage*)img forNumpadButton:(UIButton*)button
 {
     button.layer.borderWidth = 0.0f;
-    button.layer.cornerRadius = activeButton.frame.size.width/2;
+    button.layer.cornerRadius = button.frame.size.width/2;
     button.layer.masksToBounds = YES;
     [button setBackgroundImage:img forState:UIControlStateNormal];
     [button setBackgroundImage:img forState:UIControlStateHighlighted];
@@ -136,12 +191,27 @@
 
 - (IBAction)btnAboutTouchUpInside:(id)sender {
 }
+
+- (void)changeToPhotoPriviewViewWithImage:(UIImage*)image onCompletion:(void(^)(UIImage *image, BOOL isCancel))completion
+{
+    preview = [[PreviewView alloc] initWithFrame:self.view.bounds];
+    preview.imgBackground.image =image;
+    preview.completeBlock = completion;
+    [self.view addSubview:preview];
+    [self.view bringSubviewToFront:preview];
+}
+
 - (IBAction)btnTakePhotoTouchUpInside:(id)sender {
-    self.cameraHome.frame = CGRectMake(0, self.view.frame.size.height, WIDTH_SCREEN, self.view.frame.size.height);
-    self.cameraHome.delegate = self;
-    self.cameraHome.parentViewController = self;
-    [self.view addSubview:self.cameraHome];
-    [self.cameraHome show];
+    cameraView  = [[HBLockCameraView alloc] initWithFrame:self.view.bounds];
+    cameraView.frame = RECT_WITH_Y(cameraView.frame, HEIGH_SCREEN);
+    cameraView.delegate = self;
+    [self.view addSubview:cameraView];
+    [self.view bringSubviewToFront:cameraView];
+    [UIView animateWithDuration:0.5f animations:^{
+        cameraView.frame = self.view.bounds;
+    } completion:^(BOOL finished) {
+        [cameraView starCemera];
+    }];
 }
 
 - (IBAction)btnLibraryTouchUpInside:(id)sender {
@@ -170,31 +240,70 @@
 {
     if (self.selectPhotoView.superview) {
         [self hideSelectPhotoView];
+        activeButton = nil;
     }else{
         isShowingMenu = !isShowingMenu;
         [self showTopAndBottomView:isShowingMenu];
     }
+}
+
+#pragma mark - HBLockCameraDelegate
+- (void)HBLockDidCancel
+{
+    [UIView animateWithDuration:0.5f animations:^{
+        cameraView.frame = RECT_WITH_Y(cameraView.frame, HEIGH_SCREEN);
+    } completion:^(BOOL finished) {
+        [cameraView removeFromSuperview];
+        cameraView = nil;
+    }];
+}
+
+- (void)HBLockCameraDidSelectLibrary
+{
+    [UIView animateWithDuration:0.5f animations:^{
+        cameraView.frame = RECT_WITH_Y(cameraView.frame, HEIGH_SCREEN);
+    } completion:^(BOOL finished) {
+        [cameraView removeFromSuperview];
+        cameraView = nil;
+        [self btnLibraryTouchUpInside:self.btnLibrary];
+    }];
+}
+
+- (void)HBLockDidTakeImage:(UIImage *)img
+{
+    [UIView animateWithDuration:0.5f animations:^{
+        cameraView.frame = RECT_WITH_Y(cameraView.frame, HEIGH_SCREEN);
+    } completion:^(BOOL finished) {
+        [cameraView removeFromSuperview];
+        cameraView = nil;
+        if (activeButton) {
+            [self changeToPhotoPriviewViewWithImage:img onCompletion:^(UIImage *image, BOOL isCancel) {
+                if (!isCancel) {
+                    [self changeImage:image forNumpadButton:activeButton];
+                    activeButton = nil;
+                }
+            }];
+        }else{
+            self.imgBackground.image = img;
+        }
+    }];
 }
 #pragma mark - UIImagePickerControllerDelegate
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
     UIImage* _nonCropOriginalImage = [info objectForKey:UIImagePickerControllerOriginalImage];
+    [picker dismissViewControllerAnimated:YES completion:nil];
     if (activeButton) {
-        [self changeImage:_nonCropOriginalImage forNumpadButton:activeButton];
-        activeButton = nil;
+        [self changeToPhotoPriviewViewWithImage:_nonCropOriginalImage onCompletion:^(UIImage *image, BOOL isCancel) {
+            if (!isCancel) {
+                [self changeImage:image forNumpadButton:activeButton];
+                activeButton = nil;
+            }
+        }];
     }else{
         self.imgBackground.image = _nonCropOriginalImage;
     }
-    [picker dismissViewControllerAnimated:YES completion:nil];
-    
-    preview = [[PreviewView alloc] initWithFrame:self.view.bounds];
-    preview.imgBackground.image =_nonCropOriginalImage;
-    [self.view addSubview:preview];
-    [self.view bringSubviewToFront:preview];
-//    PreviewViewController *previewVC = [[PreviewViewController alloc] init];
-//    previewVC.currentImage = _nonCropOriginalImage;
-//    [self.navigationController pushViewController:previewVC animated:YES];
 }
 
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker

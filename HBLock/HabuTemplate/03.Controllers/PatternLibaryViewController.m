@@ -67,6 +67,7 @@
     self.gridView.actionDelegate = self;
     self.gridView.sortingDelegate = self;
     self.gridView.dataSource = self;
+    self.gridView.itemSpacing = 60;
     
 }
 - (void)loadOfflineData
@@ -97,7 +98,6 @@
     if (self.desks.count > 0) {
         PatternModel *temp = self.desks[0];
         UIImage *image = [UIImage imageWithData:temp.screenShot];
-        self.gridView.itemSpacing = 60;
         return CGSizeMake(image.size.width / 3, image.size.height/3);
     }
     return CGSizeMake(KOLLECTION_WIDTH_KARDS_CELL_AVATAR, KOLLECTION_HEIGHT_KARDS_CELL_AVATAR);

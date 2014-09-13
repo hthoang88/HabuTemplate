@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65371CE319C44F7F0017DE49 /* pattern_iphone5_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65371CE219C44F7F0017DE49 /* pattern_iphone5_2.jpg */; };
+		65371CE619C4524E0017DE49 /* partern_iphone4_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65371CE419C4524E0017DE49 /* partern_iphone4_2.jpg */; };
+		65371CE719C4524E0017DE49 /* partern_iphone4_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65371CE519C4524E0017DE49 /* partern_iphone4_3.jpg */; };
+		65371CE919C455BE0017DE49 /* patterns.txt in Resources */ = {isa = PBXBuildFile; fileRef = 65371CE819C455BE0017DE49 /* patterns.txt */; };
+		65371CED19C45BE70017DE49 /* UIImage+HBLock.m in Sources */ = {isa = PBXBuildFile; fileRef = 65371CEC19C45BE70017DE49 /* UIImage+HBLock.m */; };
+		65371CF119C4678B0017DE49 /* photo_from_facebook_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 65371CEE19C4678B0017DE49 /* photo_from_facebook_icon.png */; };
+		65371CF219C4678B0017DE49 /* photo_from_hbtechs_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 65371CEF19C4678B0017DE49 /* photo_from_hbtechs_icon.png */; };
+		65371CF319C4678B0017DE49 /* photo_from_instagram_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 65371CF019C4678B0017DE49 /* photo_from_instagram_icon.png */; };
+		65371CF719C4988F0017DE49 /* abount_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 65371CF419C4988F0017DE49 /* abount_icon.png */; };
+		65371CF819C4988F0017DE49 /* save_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 65371CF519C4988F0017DE49 /* save_icon.png */; };
+		65371CF919C4988F0017DE49 /* select_background_icon.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 65371CF619C4988F0017DE49 /* select_background_icon.PNG */; };
+		65371CFB19C49A5B0017DE49 /* collection_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 65371CFA19C49A5B0017DE49 /* collection_icon.png */; };
 		654A8A0919C18A1200077AC1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 654A8A0719C18A1200077AC1 /* MainViewController.m */; };
 		654A8A0A19C18A1200077AC1 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 654A8A0819C18A1200077AC1 /* MainViewController.xib */; };
 		654A8A1319C18B0900077AC1 /* partern_iphone4.png in Resources */ = {isa = PBXBuildFile; fileRef = 654A8A1119C18B0900077AC1 /* partern_iphone4.png */; };
@@ -200,11 +212,11 @@
 		656B2CF519C2F4B000830D74 /* GMGridViewNew.m in Sources */ = {isa = PBXBuildFile; fileRef = 656B2CEB19C2F4B000830D74 /* GMGridViewNew.m */; };
 		656B2CF619C2F4B000830D74 /* UIGestureRecognizer+GMGridViewAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 656B2CED19C2F4B000830D74 /* UIGestureRecognizer+GMGridViewAdditions.m */; };
 		656B2CF719C2F4B000830D74 /* UIView+GMGridViewAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 656B2CEF19C2F4B000830D74 /* UIView+GMGridViewAdditions.m */; };
-		656B2CFB19C3058200830D74 /* PreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 656B2CF919C3058200830D74 /* PreviewViewController.m */; };
-		656B2CFC19C3058200830D74 /* PreviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 656B2CFA19C3058200830D74 /* PreviewViewController.xib */; };
 		656B2D0019C30AAB00830D74 /* SPUserResizableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 656B2CFF19C30AAB00830D74 /* SPUserResizableView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		656B2D0319C30F5000830D74 /* PreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = 656B2D0219C30F5000830D74 /* PreviewView.m */; };
 		656B2D0519C30F6400830D74 /* PreviewView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 656B2D0419C30F6400830D74 /* PreviewView.xib */; };
+		65B76DD819C355C500AA1743 /* HBLockCameraView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B76DD719C355C500AA1743 /* HBLockCameraView.m */; };
+		65B76DDA19C355D800AA1743 /* HBLockCameraView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65B76DD919C355D800AA1743 /* HBLockCameraView.xib */; };
 		65D55BE0196A3BB4005C557B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D55BDF196A3BB4005C557B /* Foundation.framework */; };
 		65D55BE2196A3BB4005C557B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D55BE1196A3BB4005C557B /* CoreGraphics.framework */; };
 		65D55BE4196A3BB4005C557B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D55BE3196A3BB4005C557B /* UIKit.framework */; };
@@ -248,6 +260,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		65371CE219C44F7F0017DE49 /* pattern_iphone5_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pattern_iphone5_2.jpg; sourceTree = "<group>"; };
+		65371CE419C4524E0017DE49 /* partern_iphone4_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = partern_iphone4_2.jpg; sourceTree = "<group>"; };
+		65371CE519C4524E0017DE49 /* partern_iphone4_3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = partern_iphone4_3.jpg; sourceTree = "<group>"; };
+		65371CE819C455BE0017DE49 /* patterns.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = patterns.txt; sourceTree = "<group>"; };
+		65371CEB19C45BE70017DE49 /* UIImage+HBLock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+HBLock.h"; sourceTree = "<group>"; };
+		65371CEC19C45BE70017DE49 /* UIImage+HBLock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+HBLock.m"; sourceTree = "<group>"; };
+		65371CEE19C4678B0017DE49 /* photo_from_facebook_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photo_from_facebook_icon.png; sourceTree = "<group>"; };
+		65371CEF19C4678B0017DE49 /* photo_from_hbtechs_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photo_from_hbtechs_icon.png; sourceTree = "<group>"; };
+		65371CF019C4678B0017DE49 /* photo_from_instagram_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photo_from_instagram_icon.png; sourceTree = "<group>"; };
+		65371CF419C4988F0017DE49 /* abount_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = abount_icon.png; sourceTree = "<group>"; };
+		65371CF519C4988F0017DE49 /* save_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = save_icon.png; sourceTree = "<group>"; };
+		65371CF619C4988F0017DE49 /* select_background_icon.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = select_background_icon.PNG; sourceTree = "<group>"; };
+		65371CFA19C49A5B0017DE49 /* collection_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = collection_icon.png; sourceTree = "<group>"; };
 		654A8A0619C18A1200077AC1 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		654A8A0719C18A1200077AC1 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		654A8A0819C18A1200077AC1 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
@@ -614,14 +639,14 @@
 		656B2CED19C2F4B000830D74 /* UIGestureRecognizer+GMGridViewAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIGestureRecognizer+GMGridViewAdditions.m"; sourceTree = "<group>"; };
 		656B2CEE19C2F4B000830D74 /* UIView+GMGridViewAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+GMGridViewAdditions.h"; sourceTree = "<group>"; };
 		656B2CEF19C2F4B000830D74 /* UIView+GMGridViewAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+GMGridViewAdditions.m"; sourceTree = "<group>"; };
-		656B2CF819C3058200830D74 /* PreviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreviewViewController.h; sourceTree = "<group>"; };
-		656B2CF919C3058200830D74 /* PreviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreviewViewController.m; sourceTree = "<group>"; };
-		656B2CFA19C3058200830D74 /* PreviewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PreviewViewController.xib; sourceTree = "<group>"; };
 		656B2CFE19C30AAB00830D74 /* SPUserResizableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPUserResizableView.h; sourceTree = "<group>"; };
 		656B2CFF19C30AAB00830D74 /* SPUserResizableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPUserResizableView.m; sourceTree = "<group>"; };
 		656B2D0119C30F5000830D74 /* PreviewView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreviewView.h; sourceTree = "<group>"; };
 		656B2D0219C30F5000830D74 /* PreviewView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreviewView.m; sourceTree = "<group>"; };
 		656B2D0419C30F6400830D74 /* PreviewView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PreviewView.xib; sourceTree = "<group>"; };
+		65B76DD619C355C500AA1743 /* HBLockCameraView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBLockCameraView.h; sourceTree = "<group>"; };
+		65B76DD719C355C500AA1743 /* HBLockCameraView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBLockCameraView.m; sourceTree = "<group>"; };
+		65B76DD919C355D800AA1743 /* HBLockCameraView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HBLockCameraView.xib; sourceTree = "<group>"; };
 		65D55BDC196A3BB4005C557B /* HBLock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HBLock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65D55BDF196A3BB4005C557B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		65D55BE1196A3BB4005C557B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -720,11 +745,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		65371CEA19C45BD70017DE49 /* UIImage+HBLock */ = {
+			isa = PBXGroup;
+			children = (
+				65371CEB19C45BE70017DE49 /* UIImage+HBLock.h */,
+				65371CEC19C45BE70017DE49 /* UIImage+HBLock.m */,
+			);
+			path = "UIImage+HBLock";
+			sourceTree = "<group>";
+		};
 		654A8A1019C18B0900077AC1 /* 03.Parterns */ = {
 			isa = PBXGroup;
 			children = (
+				65371CE819C455BE0017DE49 /* patterns.txt */,
+				65371CE419C4524E0017DE49 /* partern_iphone4_2.jpg */,
+				65371CE519C4524E0017DE49 /* partern_iphone4_3.jpg */,
 				654A8A1119C18B0900077AC1 /* partern_iphone4.png */,
 				654A8A1219C18B0900077AC1 /* partern_iphone5.png */,
+				65371CE219C44F7F0017DE49 /* pattern_iphone5_2.jpg */,
 			);
 			path = 03.Parterns;
 			sourceTree = "<group>";
@@ -744,6 +782,9 @@
 				656B2ACC19C2D64600830D74 /* EffectCameraView_2_5.h */,
 				656B2ACD19C2D64600830D74 /* EffectCameraView_2_5.m */,
 				656B2ACE19C2D64600830D74 /* EffectCameraView_2_5.xib */,
+				65B76DD619C355C500AA1743 /* HBLockCameraView.h */,
+				65B76DD719C355C500AA1743 /* HBLockCameraView.m */,
+				65B76DD919C355D800AA1743 /* HBLockCameraView.xib */,
 			);
 			path = Camera;
 			sourceTree = "<group>";
@@ -1195,9 +1236,6 @@
 				656B2CDA19C2F42C00830D74 /* PatternLibaryViewController.h */,
 				656B2CDB19C2F42C00830D74 /* PatternLibaryViewController.m */,
 				656B2CDC19C2F42C00830D74 /* PatternLibaryViewController.xib */,
-				656B2CF819C3058200830D74 /* PreviewViewController.h */,
-				656B2CF919C3058200830D74 /* PreviewViewController.m */,
-				656B2CFA19C3058200830D74 /* PreviewViewController.xib */,
 			);
 			path = 03.Controllers;
 			sourceTree = "<group>";
@@ -1221,6 +1259,7 @@
 		65D55C13196A3C74005C557B /* 05.Libs */ = {
 			isa = PBXGroup;
 			children = (
+				65371CEA19C45BD70017DE49 /* UIImage+HBLock */,
 				656B2CFD19C30A9E00830D74 /* SPUserResizableView */,
 				656B2CDF19C2F4B000830D74 /* GridTable */,
 				656B2AD119C2D67A00830D74 /* GPUFilter */,
@@ -1239,6 +1278,13 @@
 		65D55C14196A3C74005C557B /* 06.Resouces */ = {
 			isa = PBXGroup;
 			children = (
+				65371CFA19C49A5B0017DE49 /* collection_icon.png */,
+				65371CF419C4988F0017DE49 /* abount_icon.png */,
+				65371CF519C4988F0017DE49 /* save_icon.png */,
+				65371CF619C4988F0017DE49 /* select_background_icon.PNG */,
+				65371CEE19C4678B0017DE49 /* photo_from_facebook_icon.png */,
+				65371CEF19C4678B0017DE49 /* photo_from_hbtechs_icon.png */,
+				65371CF019C4678B0017DE49 /* photo_from_instagram_icon.png */,
 				656B2CB119C2DDD500830D74 /* icon_picture_capture.png */,
 				656B2CAF19C2DDC400830D74 /* VK_Social_close_icon.png */,
 				656B2CAB19C2DDAD00830D74 /* switch_camera_icon.png */,
@@ -1457,7 +1503,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				656B2CAA19C2DD7600830D74 /* icon_flash.png in Resources */,
+				65371CF119C4678B0017DE49 /* photo_from_facebook_icon.png in Resources */,
 				656B2ACA19C2D36100830D74 /* close_x_white@2x.png in Resources */,
+				65371CF319C4678B0017DE49 /* photo_from_instagram_icon.png in Resources */,
+				65371CFB19C49A5B0017DE49 /* collection_icon.png in Resources */,
+				65371CF919C4988F0017DE49 /* select_background_icon.PNG in Resources */,
+				65371CE319C44F7F0017DE49 /* pattern_iphone5_2.jpg in Resources */,
+				65371CE619C4524E0017DE49 /* partern_iphone4_2.jpg in Resources */,
 				656B2CA819C2DD3700830D74 /* profile_bg_bottom_line.png in Resources */,
 				656B2AC119C2D16600830D74 /* message_camera.png in Resources */,
 				656B2CB219C2DDD500830D74 /* icon_picture_capture.png in Resources */,
@@ -1471,17 +1523,22 @@
 				65D55C7D196A43A3005C557B /* README.mdown in Resources */,
 				65D55BEA196A3BB4005C557B /* InfoPlist.strings in Resources */,
 				65D55BF2196A3BB4005C557B /* Images.xcassets in Resources */,
+				65371CE719C4524E0017DE49 /* partern_iphone4_3.jpg in Resources */,
+				65371CF219C4678B0017DE49 /* photo_from_hbtechs_icon.png in Resources */,
+				65B76DDA19C355D800AA1743 /* HBLockCameraView.xib in Resources */,
+				65371CE919C455BE0017DE49 /* patterns.txt in Resources */,
 				654A8A1319C18B0900077AC1 /* partern_iphone4.png in Resources */,
 				656B2CF019C2F4B000830D74 /* close_x.png in Resources */,
 				656B2AC919C2D36100830D74 /* close_x_white.png in Resources */,
 				656B2CAC19C2DDAD00830D74 /* switch_camera_icon.png in Resources */,
+				65371CF819C4988F0017DE49 /* save_icon.png in Resources */,
 				656B2D0519C30F6400830D74 /* PreviewView.xib in Resources */,
 				656B2CB019C2DDC400830D74 /* VK_Social_close_icon.png in Resources */,
 				656B2AC219C2D16600830D74 /* message_camera@2x.png in Resources */,
-				656B2CFC19C3058200830D74 /* PreviewViewController.xib in Resources */,
 				656B2AC619C2D18900830D74 /* VK_Social_ButtonContainer.png in Resources */,
 				654A8A0A19C18A1200077AC1 /* MainViewController.xib in Resources */,
 				654A8A1419C18B0900077AC1 /* partern_iphone5.png in Resources */,
+				65371CF719C4988F0017DE49 /* abount_icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1539,8 +1596,9 @@
 				654A8A1C19C1A92000077AC1 /* UIActionSheet+Blocks.m in Sources */,
 				656B2C7819C2D67C00830D74 /* GPUImageRGBFilter.m in Sources */,
 				656B2C1519C2D67C00830D74 /* GPUImageBrightnessFilter.m in Sources */,
-				656B2CFB19C3058200830D74 /* PreviewViewController.m in Sources */,
+				65371CED19C45BE70017DE49 /* UIImage+HBLock.m in Sources */,
 				654A8A2219C1AD3900077AC1 /* DataCenter.m in Sources */,
+				65B76DD819C355C500AA1743 /* HBLockCameraView.m in Sources */,
 				656B2C9119C2D67C00830D74 /* GPUImageThresholdedNonMaximumSuppressionFilter.m in Sources */,
 				65D55C42196A3DB3005C557B /* AFSecurityPolicy.m in Sources */,
 				656B2CA319C2D67C00830D74 /* GPUImageXYDerivativeFilter.m in Sources */,
@@ -1797,6 +1855,7 @@
 				INFOPLIST_FILE = "HabuTemplate/HBLock-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = HBLock;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1811,6 +1870,7 @@
 				INFOPLIST_FILE = "HabuTemplate/HBLock-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = HBLock;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

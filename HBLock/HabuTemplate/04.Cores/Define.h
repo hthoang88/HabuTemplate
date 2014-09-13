@@ -37,7 +37,7 @@ typedef enum {
 
 typedef enum
 {
-    enumPhoneType_iPhone4 = 0,
+    enumPhoneType_iPhone4 = 1,
     enumPhoneType_iPhone5,
     enumPhoneType_iPhone6,
     enumPhoneType_iPhonePlus,
