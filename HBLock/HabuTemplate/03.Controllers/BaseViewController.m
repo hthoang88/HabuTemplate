@@ -30,22 +30,35 @@
     // Do any additional setup after loading the view.
 }
 
-- (void)didReceiveMemoryWarning
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    return interfaceOrientation == UIInterfaceOrientationPortrait;
 }
 
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+- (BOOL) automaticallyForwardAppearanceAndRotationMethodsToChildViewControllers
 {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    return YES;
 }
-*/
 
+//For iO6
+
+// iOS 6.x and later
+- (BOOL)shouldAutorotate {
+    return [UIApplication sharedApplication].statusBarOrientation == UIInterfaceOrientationPortrait;
+}
+//for ios 7
+- (NSUInteger)supportedInterfaceOrientations {
+    //for ipad
+    return UIInterfaceOrientationMaskPortrait;
+}
+
+- (BOOL)shouldAutomaticallyForwardRotationMethods
+{
+    return  YES;
+}
+
+- (BOOL)shouldAutomaticallyForwardAppearanceMethods
+{
+    return  YES;
+}
 @end

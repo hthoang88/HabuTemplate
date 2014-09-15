@@ -15,7 +15,7 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         sharedClient = [[APIManager alloc] initWithBaseURL:[NSURL URLWithString:@""]];
-        sharedClient.securityPolicy.SSLPinningMode = AFSSLPinningModeCertificate;
+//        sharedClient.securityPolicy.SSLPinningMode = AFSSLPinningModeCertificate;
     });
     
     return sharedClient;
@@ -66,24 +66,37 @@
     NSString *path = nil;
     AFHTTPRequestOperation *operation;
 
-//    switch (type) {
-//        case ENUM_API_REQUEST_TYPE_GET_RTUI_COUPONS_CATEGORY:
-//        {
-//            path = STRING_REQUEST_URL_GET_RTUI_COUPONS_CATEGORY;
-//            
-//            [self executedOperation:params path:path methodKind:methodKind block:block failureBlock:failureBlock view:view type:type operation_p:&operation queue:queue];
-//            break;
-//        }
-//    }
-    path = @"http://www.raywenderlich.com/demos/weather_sample/weather.php?format=json";
-    [self executedOperation:&operation
-                   withType:type
-                 methodKind:methodKind
-                       view:view
-                       path:path
-                     params:nil
-                      block:block
-               failureBlock:failureBlock];
+    switch (type) {
+            
+        case ENUM_API_REQUEST_TYPE_CHECK_SHOW_INVITE:
+            break;
+            
+        case ENUM_API_REQUEST_TYPE_GET_FB_LIST_FRIENDS:
+        {
+            NSString *accessToken = params[@"accessToken"];
+            https://graph.facebook.com/me/friends?limit=25&offset=25&access_token=%@&format=json
+            
+            path = [NSString stringWithFormat:@"https://graph.facebook.com/me/friends?fields=id,name&access_token=%@&limit=25&offset=25&format=json", accessToken];
+            [self executedOperation:&operation
+                           withType:type
+                         methodKind:methodKind
+                               view:view
+                               path:path
+                             params:nil
+                              block:block
+                       failureBlock:failureBlock];
+            break;
+        }
+    }
+//    path = @"http://www.raywenderlich.com/demos/weather_sample/weather.php?format=json";
+//    [self executedOperation:&operation
+//                   withType:type
+//                 methodKind:methodKind
+//                       view:view
+//                       path:path
+//                     params:nil
+//                      block:block
+//               failureBlock:failureBlock];
     return operation;
 }
 
@@ -98,14 +111,8 @@
 {
     NSMutableURLRequest *request;
     if (!methodKind) {
-        request = [self.requestSerializer requestWithMethod:@"GET"
-                                                  URLString:path
-                                                 parameters:params
-                                                      error:nil];
-    } else request = [self.requestSerializer requestWithMethod:@"POST"
-                                                     URLString:path
-                                                    parameters:params
-                                                         error:nil];
+        request = [self requestWithMethod:@"GET" path:path parameters:params];
+    } else request = [self requestWithMethod:@"POST" path:path parameters:params];
     request.timeoutInterval = TIMER_REQUEST_TIMEOUT;
     
     *operation = [self constructOperationwithType:type
@@ -133,7 +140,7 @@
     }
     
     AFHTTPRequestOperation *operation= [[AFHTTPRequestOperation alloc] initWithRequest:request];
-    operation.responseSerializer = [AFJSONResponseSerializer serializer];
+//    operation.responseSerializer = [AFJSONResponseSerializer serializer];
     
     operation.userInfo = [NSDictionary dictionaryWithObjects:@[[NSNumber numberWithInt:type]] forKeys:@[@"type"]];
     
@@ -141,6 +148,13 @@
         NSLog(@"API Success %@", operation.request.URL.absoluteString);
         if (view) {
             [Utils hideHUDForView:view];
+        }
+        if ([responseObject isKindOfClass:[NSData class]]) {
+            NSError* error;
+            responseObject = [NSJSONSerialization
+                                  JSONObjectWithData:responseObject
+                                  options:kNilOptions 
+                                  error:&error];
         }
         block(responseObject);
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
@@ -166,4 +180,50 @@
     }
 }
 
+- (NSMutableURLRequest *)requestWithMethod:(NSString *)method
+                                      path:(NSString *)path
+                                parameters:(NSDictionary *)parameters
+{
+    NSParameterAssert(method);
+    
+    if (!path) {
+        path = @"";
+    }
+    
+    NSURL *url = [NSURL URLWithString:path relativeToURL:self.baseURL];
+	NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:url];
+    [request setHTTPMethod:method];
+//    [request setAllHTTPHeaderFields:self.defaultHeaders];
+    
+    if (parameters) {
+        if ([method isEqualToString:@"GET"] || [method isEqualToString:@"HEAD"] || [method isEqualToString:@"DELETE"]) {
+            url = [NSURL URLWithString:[[url absoluteString] stringByAppendingFormat:[path rangeOfString:@"?"].location == NSNotFound ? @"?%@" : @"&%@", AFQueryStringFromParametersWithEncoding(parameters, self.stringEncoding)]];
+            [request setURL:url];
+        } else {
+            NSString *charset = (__bridge NSString *)CFStringConvertEncodingToIANACharSetName(CFStringConvertNSStringEncodingToEncoding(self.stringEncoding));
+            NSError *error = nil;
+            
+            switch (self.parameterEncoding) {
+                case AFFormURLParameterEncoding:;
+                    [request setValue:[NSString stringWithFormat:@"application/x-www-form-urlencoded; charset=%@", charset] forHTTPHeaderField:@"Content-Type"];
+                    [request setHTTPBody:[AFQueryStringFromParametersWithEncoding(parameters, self.stringEncoding) dataUsingEncoding:self.stringEncoding]];
+                    break;
+                case AFJSONParameterEncoding:;
+                    [request setValue:[NSString stringWithFormat:@"application/json; charset=%@", charset] forHTTPHeaderField:@"Content-Type"];
+                    [request setHTTPBody:[NSJSONSerialization dataWithJSONObject:parameters options:0 error:&error]];
+                    break;
+                case AFPropertyListParameterEncoding:;
+                    [request setValue:[NSString stringWithFormat:@"application/x-plist; charset=%@", charset] forHTTPHeaderField:@"Content-Type"];
+                    [request setHTTPBody:[NSPropertyListSerialization dataWithPropertyList:parameters format:NSPropertyListXMLFormat_v1_0 options:0 error:&error]];
+                    break;
+            }
+            
+            if (error) {
+                NSLog(@"%@ %@: %@", [self class], NSStringFromSelector(_cmd), error);
+            }
+        }
+    }
+    
+	return request;
+}
 @end

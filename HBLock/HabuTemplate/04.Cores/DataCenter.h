@@ -12,7 +12,7 @@
 @property (strong, nonatomic) UIImage *homeBackgroundImage;
 @property (strong, nonatomic) UIImage *leftBackgroundImage;
 @property (strong, nonatomic) UIImage *rightBackgroundImage;
-
+@property (assign, nonatomic) enumPhoneType currentPhoneType;
 + (DataCenter*)shared;
 
 //Core data

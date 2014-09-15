@@ -31,6 +31,7 @@
     self.homeBackgroundImage  = [UIImage imageNamed:@"Stars"];
     self.leftBackgroundImage  = [UIImage imageNamed:@"Stars"];
     self.rightBackgroundImage  = [UIImage imageNamed:@"Stars"];
+    self.currentPhoneType = IS_IPAD ? enumPhoneType_iPad : (IS_4_INCHES ?  enumPhoneType_iPhone5 : enumPhoneType_iPhone4);
 }
 
 - (void)saveContext

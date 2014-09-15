@@ -7,6 +7,8 @@
 //
 
 #import "BaseViewController.h"
+#import <AssetsLibrary/ALAsset.h>
+#import <AssetsLibrary/AssetsLibrary.h>
 
 @class PatternModel;
 @interface MainViewController : BaseViewController

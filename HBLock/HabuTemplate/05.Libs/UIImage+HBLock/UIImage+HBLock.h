@@ -14,4 +14,9 @@
 - (UIImage*)imageByCropFromCenterWithSize:(CGSize)aSize;
 - (UIImage*)imageByCropFromCenterWithSize:(CGSize)aSize scaleFactor:(float)scale;
 - (UIImage*)imageByCropWithNewSize:(CGSize)nSize point:(CGPoint)nPoint;
+
+//Scale
+- (UIImage *)imageByScalingToSize:(CGSize)size withOption:(enumImageScalingType)type;
+- (NSData*)getImageDataWithMaxSize:(CGSize)size andQuality:(float)quality;
+
 @end

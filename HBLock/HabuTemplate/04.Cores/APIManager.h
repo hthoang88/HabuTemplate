@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "AFNetworking.h"
 
-@interface APIManager : AFHTTPRequestOperationManager
+@interface APIManager : AFHTTPClient
 
 + (APIManager*)sharedManager;
 

@@ -19,6 +19,14 @@
 		65371CF819C4988F0017DE49 /* save_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 65371CF519C4988F0017DE49 /* save_icon.png */; };
 		65371CF919C4988F0017DE49 /* select_background_icon.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 65371CF619C4988F0017DE49 /* select_background_icon.PNG */; };
 		65371CFB19C49A5B0017DE49 /* collection_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 65371CFA19C49A5B0017DE49 /* collection_icon.png */; };
+		65371CFE19C4A3760017DE49 /* MainViewController~iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65371CFC19C4A3760017DE49 /* MainViewController~iphone.xib */; };
+		65371CFF19C4A3760017DE49 /* PatternLibraryViewController~iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65371CFD19C4A3760017DE49 /* PatternLibraryViewController~iphone.xib */; };
+		65371D0319C4A4A80017DE49 /* pattern_ipad_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65371D0019C4A4A80017DE49 /* pattern_ipad_2.jpg */; };
+		65371D0419C4A4A80017DE49 /* pattern_ipad_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65371D0119C4A4A80017DE49 /* pattern_ipad_3.jpg */; };
+		65371D0519C4A4A80017DE49 /* pattern_ipad.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65371D0219C4A4A80017DE49 /* pattern_ipad.jpg */; };
+		65371D0719C4B6F00017DE49 /* HBLockCameraView~iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65371D0619C4B6F00017DE49 /* HBLockCameraView~iphone.xib */; };
+		65371D0919C4B91E0017DE49 /* PreviewView~iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65371D0819C4B91E0017DE49 /* PreviewView~iphone.xib */; };
+		65371D0D19C4BBBE0017DE49 /* ALAssetsLibrary+CustomPhotoAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = 65371D0C19C4BBBE0017DE49 /* ALAssetsLibrary+CustomPhotoAlbum.m */; };
 		654A8A0919C18A1200077AC1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 654A8A0719C18A1200077AC1 /* MainViewController.m */; };
 		654A8A0A19C18A1200077AC1 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 654A8A0819C18A1200077AC1 /* MainViewController.xib */; };
 		654A8A1319C18B0900077AC1 /* partern_iphone4.png in Resources */ = {isa = PBXBuildFile; fileRef = 654A8A1119C18B0900077AC1 /* partern_iphone4.png */; };
@@ -29,6 +37,9 @@
 		654A8A1F19C1AB9800077AC1 /* HBLock.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 654A8A1D19C1AB9800077AC1 /* HBLock.xcdatamodeld */; };
 		654A8A2219C1AD3900077AC1 /* DataCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 654A8A2119C1AD3900077AC1 /* DataCenter.m */; };
 		654A8A2419C1AD9C00077AC1 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 654A8A2319C1AD9C00077AC1 /* CoreData.framework */; };
+		6567395619C681C000B17B37 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6567395519C681C000B17B37 /* FacebookSDK.framework */; };
+		6567395919C6827000B17B37 /* FacebookHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6567395819C6827000B17B37 /* FacebookHelper.m */; };
+		6567395B19C6863300B17B37 /* icon_done_choose_friend.png in Resources */ = {isa = PBXBuildFile; fileRef = 6567395A19C6863300B17B37 /* icon_done_choose_friend.png */; };
 		656B2AC119C2D16600830D74 /* message_camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 656B2ABF19C2D16600830D74 /* message_camera.png */; };
 		656B2AC219C2D16600830D74 /* message_camera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 656B2AC019C2D16600830D74 /* message_camera@2x.png */; };
 		656B2AC519C2D18900830D74 /* bg_VKSocial.png in Resources */ = {isa = PBXBuildFile; fileRef = 656B2AC319C2D18900830D74 /* bg_VKSocial.png */; };
@@ -202,8 +213,8 @@
 		656B2CC719C2E3E600830D74 /* BaseManagedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 656B2CC619C2E3E600830D74 /* BaseManagedObject.m */; };
 		656B2CD619C2F1B100830D74 /* PatternModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 656B2CD519C2F1B100830D74 /* PatternModel.m */; };
 		656B2CD919C2F22A00830D74 /* PhotoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 656B2CD819C2F22A00830D74 /* PhotoItem.m */; };
-		656B2CDD19C2F42C00830D74 /* PatternLibaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 656B2CDB19C2F42C00830D74 /* PatternLibaryViewController.m */; };
-		656B2CDE19C2F42C00830D74 /* PatternLibaryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 656B2CDC19C2F42C00830D74 /* PatternLibaryViewController.xib */; };
+		656B2CDD19C2F42C00830D74 /* PatternLibraryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 656B2CDB19C2F42C00830D74 /* PatternLibraryViewController.m */; };
+		656B2CDE19C2F42C00830D74 /* PatternLibraryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 656B2CDC19C2F42C00830D74 /* PatternLibraryViewController.xib */; };
 		656B2CF019C2F4B000830D74 /* close_x.png in Resources */ = {isa = PBXBuildFile; fileRef = 656B2CE019C2F4B000830D74 /* close_x.png */; };
 		656B2CF119C2F4B000830D74 /* close_x@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 656B2CE119C2F4B000830D74 /* close_x@2x.png */; };
 		656B2CF219C2F4B000830D74 /* GMGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 656B2CE419C2F4B000830D74 /* GMGridView.m */; };
@@ -217,6 +228,37 @@
 		656B2D0519C30F6400830D74 /* PreviewView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 656B2D0419C30F6400830D74 /* PreviewView.xib */; };
 		65B76DD819C355C500AA1743 /* HBLockCameraView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B76DD719C355C500AA1743 /* HBLockCameraView.m */; };
 		65B76DDA19C355D800AA1743 /* HBLockCameraView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65B76DD919C355D800AA1743 /* HBLockCameraView.xib */; };
+		65BE42C519C5806B00013759 /* Stars.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65BE42C419C5806B00013759 /* Stars.jpg */; };
+		65BE42C819C5826800013759 /* HBInstagramSelectionPhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65BE42C719C5826800013759 /* HBInstagramSelectionPhotoView.m */; };
+		65BE42CA19C5828100013759 /* HBInstagramSelectionPhotoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65BE42C919C5828100013759 /* HBInstagramSelectionPhotoView.xib */; };
+		65BE42FB19C584D500013759 /* HSInstagram.m in Sources */ = {isa = PBXBuildFile; fileRef = 65BE42DE19C584D500013759 /* HSInstagram.m */; };
+		65BE42FC19C584D500013759 /* HSInstagramUserMedia.m in Sources */ = {isa = PBXBuildFile; fileRef = 65BE42E019C584D500013759 /* HSInstagramUserMedia.m */; };
+		65BE42FD19C584D500013759 /* HSInstagramLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 65BE42E319C584D500013759 /* HSInstagramLocation.m */; };
+		65BE42FE19C584D500013759 /* HSInstagramLocationMedia.m in Sources */ = {isa = PBXBuildFile; fileRef = 65BE42E519C584D500013759 /* HSInstagramLocationMedia.m */; };
+		65BE42FF19C584D500013759 /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 65BE42E819C584D500013759 /* AFHTTPClient.m */; };
+		65BE430019C584D500013759 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 65BE42EA19C584D500013759 /* AFHTTPRequestOperation.m */; };
+		65BE430119C584D500013759 /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 65BE42EC19C584D500013759 /* AFImageRequestOperation.m */; };
+		65BE430219C584D500013759 /* AFJSONRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 65BE42EE19C584D500013759 /* AFJSONRequestOperation.m */; };
+		65BE430319C584D500013759 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 65BE42F119C584D500013759 /* AFNetworkActivityIndicatorManager.m */; };
+		65BE430419C584D500013759 /* AFPropertyListRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 65BE42F419C584D500013759 /* AFPropertyListRequestOperation.m */; };
+		65BE430519C584D500013759 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 65BE42F619C584D500013759 /* AFURLConnectionOperation.m */; };
+		65BE430619C584D500013759 /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 65BE42F819C584D500013759 /* AFXMLRequestOperation.m */; };
+		65BE430719C584D500013759 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 65BE42FA19C584D500013759 /* UIImageView+AFNetworking.m */; };
+		65BE430919C5868C00013759 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65BE430819C5868C00013759 /* SystemConfiguration.framework */; };
+		65BE430B19C586A000013759 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65BE430A19C586A000013759 /* MobileCoreServices.framework */; };
+		65BE432819C5895900013759 /* NSData+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 65BE430E19C5895900013759 /* NSData+GIF.m */; };
+		65BE432919C5895900013759 /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 65BE431019C5895900013759 /* SDImageCache.m */; };
+		65BE432A19C5895900013759 /* SDWebImageCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = 65BE431219C5895900013759 /* SDWebImageCompat.m */; };
+		65BE432B19C5895900013759 /* SDWebImageDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 65BE431419C5895900013759 /* SDWebImageDecoder.m */; };
+		65BE432C19C5895900013759 /* SDWebImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 65BE431619C5895900013759 /* SDWebImageDownloader.m */; };
+		65BE432D19C5895900013759 /* SDWebImageDownloaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 65BE431819C5895900013759 /* SDWebImageDownloaderOperation.m */; };
+		65BE432E19C5895900013759 /* SDWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 65BE431A19C5895900013759 /* SDWebImageManager.m */; };
+		65BE432F19C5895900013759 /* SDWebImagePrefetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 65BE431D19C5895900013759 /* SDWebImagePrefetcher.m */; };
+		65BE433019C5895900013759 /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 65BE431F19C5895900013759 /* UIButton+WebCache.m */; };
+		65BE433119C5895900013759 /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 65BE432119C5895900013759 /* UIImage+GIF.m */; };
+		65BE433219C5895900013759 /* UIImage+MultiFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 65BE432319C5895900013759 /* UIImage+MultiFormat.m */; };
+		65BE433319C5895900013759 /* UIImage+WebP.m in Sources */ = {isa = PBXBuildFile; fileRef = 65BE432519C5895900013759 /* UIImage+WebP.m */; };
+		65BE433419C5895900013759 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 65BE432719C5895900013759 /* UIImageView+WebCache.m */; };
 		65D55BE0196A3BB4005C557B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D55BDF196A3BB4005C557B /* Foundation.framework */; };
 		65D55BE2196A3BB4005C557B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D55BE1196A3BB4005C557B /* CoreGraphics.framework */; };
 		65D55BE4196A3BB4005C557B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D55BE3196A3BB4005C557B /* UIKit.framework */; };
@@ -224,23 +266,6 @@
 		65D55BEC196A3BB4005C557B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D55BEB196A3BB4005C557B /* main.m */; };
 		65D55BF0196A3BB4005C557B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D55BEF196A3BB4005C557B /* AppDelegate.m */; };
 		65D55BF2196A3BB4005C557B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65D55BF1196A3BB4005C557B /* Images.xcassets */; };
-		65D55C3E196A3DB3005C557B /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D55C1A196A3DB3005C557B /* AFHTTPRequestOperation.m */; };
-		65D55C3F196A3DB3005C557B /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D55C1C196A3DB3005C557B /* AFHTTPRequestOperationManager.m */; };
-		65D55C40196A3DB3005C557B /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D55C1E196A3DB3005C557B /* AFHTTPSessionManager.m */; };
-		65D55C41196A3DB3005C557B /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D55C21196A3DB3005C557B /* AFNetworkReachabilityManager.m */; };
-		65D55C42196A3DB3005C557B /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D55C23196A3DB3005C557B /* AFSecurityPolicy.m */; };
-		65D55C43196A3DB3005C557B /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D55C25196A3DB3005C557B /* AFURLConnectionOperation.m */; };
-		65D55C44196A3DB3005C557B /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D55C27196A3DB3005C557B /* AFURLRequestSerialization.m */; };
-		65D55C45196A3DB3005C557B /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D55C29196A3DB3005C557B /* AFURLResponseSerialization.m */; };
-		65D55C46196A3DB3005C557B /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D55C2B196A3DB3005C557B /* AFURLSessionManager.m */; };
-		65D55C47196A3DB3005C557B /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D55C2E196A3DB3005C557B /* AFNetworkActivityIndicatorManager.m */; };
-		65D55C48196A3DB3005C557B /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D55C30196A3DB3005C557B /* UIActivityIndicatorView+AFNetworking.m */; };
-		65D55C49196A3DB3005C557B /* UIAlertView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D55C32196A3DB3005C557B /* UIAlertView+AFNetworking.m */; };
-		65D55C4A196A3DB3005C557B /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D55C34196A3DB3005C557B /* UIButton+AFNetworking.m */; };
-		65D55C4B196A3DB3005C557B /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D55C36196A3DB3005C557B /* UIImageView+AFNetworking.m */; };
-		65D55C4C196A3DB3005C557B /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D55C39196A3DB3005C557B /* UIProgressView+AFNetworking.m */; };
-		65D55C4D196A3DB3005C557B /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D55C3B196A3DB3005C557B /* UIRefreshControl+AFNetworking.m */; };
-		65D55C4E196A3DB3005C557B /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D55C3D196A3DB3005C557B /* UIWebView+AFNetworking.m */; };
 		65D55C51196A3DD6005C557B /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D55C50196A3DD6005C557B /* BaseModel.m */; };
 		65D55C54196A3DE6005C557B /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D55C53196A3DE6005C557B /* BaseViewController.m */; };
 		65D55C58196A3E08005C557B /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D55C57196A3E08005C557B /* Utils.m */; };
@@ -273,6 +298,15 @@
 		65371CF519C4988F0017DE49 /* save_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = save_icon.png; sourceTree = "<group>"; };
 		65371CF619C4988F0017DE49 /* select_background_icon.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = select_background_icon.PNG; sourceTree = "<group>"; };
 		65371CFA19C49A5B0017DE49 /* collection_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = collection_icon.png; sourceTree = "<group>"; };
+		65371CFC19C4A3760017DE49 /* MainViewController~iphone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "MainViewController~iphone.xib"; sourceTree = "<group>"; };
+		65371CFD19C4A3760017DE49 /* PatternLibraryViewController~iphone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "PatternLibraryViewController~iphone.xib"; sourceTree = "<group>"; };
+		65371D0019C4A4A80017DE49 /* pattern_ipad_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pattern_ipad_2.jpg; sourceTree = "<group>"; };
+		65371D0119C4A4A80017DE49 /* pattern_ipad_3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pattern_ipad_3.jpg; sourceTree = "<group>"; };
+		65371D0219C4A4A80017DE49 /* pattern_ipad.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pattern_ipad.jpg; sourceTree = "<group>"; };
+		65371D0619C4B6F00017DE49 /* HBLockCameraView~iphone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "HBLockCameraView~iphone.xib"; sourceTree = "<group>"; };
+		65371D0819C4B91E0017DE49 /* PreviewView~iphone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "PreviewView~iphone.xib"; sourceTree = "<group>"; };
+		65371D0B19C4BBBE0017DE49 /* ALAssetsLibrary+CustomPhotoAlbum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ALAssetsLibrary+CustomPhotoAlbum.h"; sourceTree = "<group>"; };
+		65371D0C19C4BBBE0017DE49 /* ALAssetsLibrary+CustomPhotoAlbum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ALAssetsLibrary+CustomPhotoAlbum.m"; sourceTree = "<group>"; };
 		654A8A0619C18A1200077AC1 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		654A8A0719C18A1200077AC1 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		654A8A0819C18A1200077AC1 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
@@ -286,6 +320,10 @@
 		654A8A2019C1AD3900077AC1 /* DataCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataCenter.h; sourceTree = "<group>"; };
 		654A8A2119C1AD3900077AC1 /* DataCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataCenter.m; sourceTree = "<group>"; };
 		654A8A2319C1AD9C00077AC1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		6567395519C681C000B17B37 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		6567395719C6827000B17B37 /* FacebookHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookHelper.h; sourceTree = "<group>"; };
+		6567395819C6827000B17B37 /* FacebookHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookHelper.m; sourceTree = "<group>"; };
+		6567395A19C6863300B17B37 /* icon_done_choose_friend.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_done_choose_friend.png; sourceTree = "<group>"; };
 		656B2ABF19C2D16600830D74 /* message_camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = message_camera.png; sourceTree = "<group>"; };
 		656B2AC019C2D16600830D74 /* message_camera@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "message_camera@2x.png"; sourceTree = "<group>"; };
 		656B2AC319C2D18900830D74 /* bg_VKSocial.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_VKSocial.png; sourceTree = "<group>"; };
@@ -620,9 +658,9 @@
 		656B2CD519C2F1B100830D74 /* PatternModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PatternModel.m; sourceTree = "<group>"; };
 		656B2CD719C2F22A00830D74 /* PhotoItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoItem.h; sourceTree = "<group>"; };
 		656B2CD819C2F22A00830D74 /* PhotoItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoItem.m; sourceTree = "<group>"; };
-		656B2CDA19C2F42C00830D74 /* PatternLibaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PatternLibaryViewController.h; sourceTree = "<group>"; };
-		656B2CDB19C2F42C00830D74 /* PatternLibaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PatternLibaryViewController.m; sourceTree = "<group>"; };
-		656B2CDC19C2F42C00830D74 /* PatternLibaryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PatternLibaryViewController.xib; sourceTree = "<group>"; };
+		656B2CDA19C2F42C00830D74 /* PatternLibraryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PatternLibraryViewController.h; sourceTree = "<group>"; };
+		656B2CDB19C2F42C00830D74 /* PatternLibraryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PatternLibraryViewController.m; sourceTree = "<group>"; };
+		656B2CDC19C2F42C00830D74 /* PatternLibraryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PatternLibraryViewController.xib; sourceTree = "<group>"; };
 		656B2CE019C2F4B000830D74 /* close_x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close_x.png; sourceTree = "<group>"; };
 		656B2CE119C2F4B000830D74 /* close_x@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "close_x@2x.png"; sourceTree = "<group>"; };
 		656B2CE219C2F4B000830D74 /* GMGridView-Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GMGridView-Constants.h"; sourceTree = "<group>"; };
@@ -647,6 +685,67 @@
 		65B76DD619C355C500AA1743 /* HBLockCameraView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBLockCameraView.h; sourceTree = "<group>"; };
 		65B76DD719C355C500AA1743 /* HBLockCameraView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBLockCameraView.m; sourceTree = "<group>"; };
 		65B76DD919C355D800AA1743 /* HBLockCameraView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HBLockCameraView.xib; sourceTree = "<group>"; };
+		65BE42C419C5806B00013759 /* Stars.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Stars.jpg; sourceTree = "<group>"; };
+		65BE42C619C5826800013759 /* HBInstagramSelectionPhotoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBInstagramSelectionPhotoView.h; sourceTree = "<group>"; };
+		65BE42C719C5826800013759 /* HBInstagramSelectionPhotoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBInstagramSelectionPhotoView.m; sourceTree = "<group>"; };
+		65BE42C919C5828100013759 /* HBInstagramSelectionPhotoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HBInstagramSelectionPhotoView.xib; sourceTree = "<group>"; };
+		65BE42DD19C584D500013759 /* HSInstagram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSInstagram.h; sourceTree = "<group>"; };
+		65BE42DE19C584D500013759 /* HSInstagram.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSInstagram.m; sourceTree = "<group>"; };
+		65BE42DF19C584D500013759 /* HSInstagramUserMedia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSInstagramUserMedia.h; sourceTree = "<group>"; };
+		65BE42E019C584D500013759 /* HSInstagramUserMedia.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSInstagramUserMedia.m; sourceTree = "<group>"; };
+		65BE42E219C584D500013759 /* HSInstagramLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSInstagramLocation.h; sourceTree = "<group>"; };
+		65BE42E319C584D500013759 /* HSInstagramLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSInstagramLocation.m; sourceTree = "<group>"; };
+		65BE42E419C584D500013759 /* HSInstagramLocationMedia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSInstagramLocationMedia.h; sourceTree = "<group>"; };
+		65BE42E519C584D500013759 /* HSInstagramLocationMedia.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSInstagramLocationMedia.m; sourceTree = "<group>"; };
+		65BE42E719C584D500013759 /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPClient.h; sourceTree = "<group>"; };
+		65BE42E819C584D500013759 /* AFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPClient.m; sourceTree = "<group>"; };
+		65BE42E919C584D500013759 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		65BE42EA19C584D500013759 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		65BE42EB19C584D500013759 /* AFImageRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFImageRequestOperation.h; sourceTree = "<group>"; };
+		65BE42EC19C584D500013759 /* AFImageRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFImageRequestOperation.m; sourceTree = "<group>"; };
+		65BE42ED19C584D500013759 /* AFJSONRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFJSONRequestOperation.h; sourceTree = "<group>"; };
+		65BE42EE19C584D500013759 /* AFJSONRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFJSONRequestOperation.m; sourceTree = "<group>"; };
+		65BE42EF19C584D500013759 /* AFJSONUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFJSONUtilities.h; sourceTree = "<group>"; };
+		65BE42F019C584D500013759 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
+		65BE42F119C584D500013759 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
+		65BE42F219C584D500013759 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		65BE42F319C584D500013759 /* AFPropertyListRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFPropertyListRequestOperation.h; sourceTree = "<group>"; };
+		65BE42F419C584D500013759 /* AFPropertyListRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFPropertyListRequestOperation.m; sourceTree = "<group>"; };
+		65BE42F519C584D500013759 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		65BE42F619C584D500013759 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		65BE42F719C584D500013759 /* AFXMLRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFXMLRequestOperation.h; sourceTree = "<group>"; };
+		65BE42F819C584D500013759 /* AFXMLRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFXMLRequestOperation.m; sourceTree = "<group>"; };
+		65BE42F919C584D500013759 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		65BE42FA19C584D500013759 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		65BE430819C5868C00013759 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		65BE430A19C586A000013759 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		65BE430D19C5895900013759 /* NSData+GIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+GIF.h"; sourceTree = "<group>"; };
+		65BE430E19C5895900013759 /* NSData+GIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+GIF.m"; sourceTree = "<group>"; };
+		65BE430F19C5895900013759 /* SDImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDImageCache.h; sourceTree = "<group>"; };
+		65BE431019C5895900013759 /* SDImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDImageCache.m; sourceTree = "<group>"; };
+		65BE431119C5895900013759 /* SDWebImageCompat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageCompat.h; sourceTree = "<group>"; };
+		65BE431219C5895900013759 /* SDWebImageCompat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageCompat.m; sourceTree = "<group>"; };
+		65BE431319C5895900013759 /* SDWebImageDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageDecoder.h; sourceTree = "<group>"; };
+		65BE431419C5895900013759 /* SDWebImageDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageDecoder.m; sourceTree = "<group>"; };
+		65BE431519C5895900013759 /* SDWebImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageDownloader.h; sourceTree = "<group>"; };
+		65BE431619C5895900013759 /* SDWebImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageDownloader.m; sourceTree = "<group>"; };
+		65BE431719C5895900013759 /* SDWebImageDownloaderOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageDownloaderOperation.h; sourceTree = "<group>"; };
+		65BE431819C5895900013759 /* SDWebImageDownloaderOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageDownloaderOperation.m; sourceTree = "<group>"; };
+		65BE431919C5895900013759 /* SDWebImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageManager.h; sourceTree = "<group>"; };
+		65BE431A19C5895900013759 /* SDWebImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageManager.m; sourceTree = "<group>"; };
+		65BE431B19C5895900013759 /* SDWebImageOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageOperation.h; sourceTree = "<group>"; };
+		65BE431C19C5895900013759 /* SDWebImagePrefetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImagePrefetcher.h; sourceTree = "<group>"; };
+		65BE431D19C5895900013759 /* SDWebImagePrefetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImagePrefetcher.m; sourceTree = "<group>"; };
+		65BE431E19C5895900013759 /* UIButton+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+WebCache.h"; sourceTree = "<group>"; };
+		65BE431F19C5895900013759 /* UIButton+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+WebCache.m"; sourceTree = "<group>"; };
+		65BE432019C5895900013759 /* UIImage+GIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GIF.h"; sourceTree = "<group>"; };
+		65BE432119C5895900013759 /* UIImage+GIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GIF.m"; sourceTree = "<group>"; };
+		65BE432219C5895900013759 /* UIImage+MultiFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+MultiFormat.h"; sourceTree = "<group>"; };
+		65BE432319C5895900013759 /* UIImage+MultiFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MultiFormat.m"; sourceTree = "<group>"; };
+		65BE432419C5895900013759 /* UIImage+WebP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+WebP.h"; sourceTree = "<group>"; };
+		65BE432519C5895900013759 /* UIImage+WebP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+WebP.m"; sourceTree = "<group>"; };
+		65BE432619C5895900013759 /* UIImageView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+WebCache.h"; sourceTree = "<group>"; };
+		65BE432719C5895900013759 /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
 		65D55BDC196A3BB4005C557B /* HBLock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HBLock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65D55BDF196A3BB4005C557B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		65D55BE1196A3BB4005C557B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -659,42 +758,6 @@
 		65D55BEF196A3BB4005C557B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		65D55BF1196A3BB4005C557B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		65D55BF8196A3BB4005C557B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		65D55C19196A3DB3005C557B /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
-		65D55C1A196A3DB3005C557B /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
-		65D55C1B196A3DB3005C557B /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
-		65D55C1C196A3DB3005C557B /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
-		65D55C1D196A3DB3005C557B /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
-		65D55C1E196A3DB3005C557B /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
-		65D55C1F196A3DB3005C557B /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
-		65D55C20196A3DB3005C557B /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
-		65D55C21196A3DB3005C557B /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
-		65D55C22196A3DB3005C557B /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
-		65D55C23196A3DB3005C557B /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
-		65D55C24196A3DB3005C557B /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
-		65D55C25196A3DB3005C557B /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
-		65D55C26196A3DB3005C557B /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
-		65D55C27196A3DB3005C557B /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
-		65D55C28196A3DB3005C557B /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
-		65D55C29196A3DB3005C557B /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
-		65D55C2A196A3DB3005C557B /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
-		65D55C2B196A3DB3005C557B /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
-		65D55C2D196A3DB3005C557B /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
-		65D55C2E196A3DB3005C557B /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
-		65D55C2F196A3DB3005C557B /* UIActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
-		65D55C30196A3DB3005C557B /* UIActivityIndicatorView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActivityIndicatorView+AFNetworking.m"; sourceTree = "<group>"; };
-		65D55C31196A3DB3005C557B /* UIAlertView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+AFNetworking.h"; sourceTree = "<group>"; };
-		65D55C32196A3DB3005C557B /* UIAlertView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+AFNetworking.m"; sourceTree = "<group>"; };
-		65D55C33196A3DB3005C557B /* UIButton+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+AFNetworking.h"; sourceTree = "<group>"; };
-		65D55C34196A3DB3005C557B /* UIButton+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+AFNetworking.m"; sourceTree = "<group>"; };
-		65D55C35196A3DB3005C557B /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
-		65D55C36196A3DB3005C557B /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
-		65D55C37196A3DB3005C557B /* UIKit+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIKit+AFNetworking.h"; sourceTree = "<group>"; };
-		65D55C38196A3DB3005C557B /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
-		65D55C39196A3DB3005C557B /* UIProgressView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIProgressView+AFNetworking.m"; sourceTree = "<group>"; };
-		65D55C3A196A3DB3005C557B /* UIRefreshControl+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIRefreshControl+AFNetworking.h"; sourceTree = "<group>"; };
-		65D55C3B196A3DB3005C557B /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
-		65D55C3C196A3DB3005C557B /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
-		65D55C3D196A3DB3005C557B /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
 		65D55C4F196A3DD6005C557B /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
 		65D55C50196A3DD6005C557B /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
 		65D55C52196A3DE6005C557B /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
@@ -733,9 +796,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65BE430B19C586A000013759 /* MobileCoreServices.framework in Frameworks */,
+				65BE430919C5868C00013759 /* SystemConfiguration.framework in Frameworks */,
 				656B2CA619C2D7D500830D74 /* AssetsLibrary.framework in Frameworks */,
 				654A8A2419C1AD9C00077AC1 /* CoreData.framework in Frameworks */,
 				65D55C89196A5573005C557B /* QuartzCore.framework in Frameworks */,
+				6567395619C681C000B17B37 /* FacebookSDK.framework in Frameworks */,
 				65D55BE2196A3BB4005C557B /* CoreGraphics.framework in Frameworks */,
 				65D55BE4196A3BB4005C557B /* UIKit.framework in Frameworks */,
 				65D55BE0196A3BB4005C557B /* Foundation.framework in Frameworks */,
@@ -754,10 +820,23 @@
 			path = "UIImage+HBLock";
 			sourceTree = "<group>";
 		};
+		65371D0A19C4BBBE0017DE49 /* ALAssetsLibrary_CustomPhotoAlbum */ = {
+			isa = PBXGroup;
+			children = (
+				65371D0B19C4BBBE0017DE49 /* ALAssetsLibrary+CustomPhotoAlbum.h */,
+				65371D0C19C4BBBE0017DE49 /* ALAssetsLibrary+CustomPhotoAlbum.m */,
+			);
+			path = ALAssetsLibrary_CustomPhotoAlbum;
+			sourceTree = "<group>";
+		};
 		654A8A1019C18B0900077AC1 /* 03.Parterns */ = {
 			isa = PBXGroup;
 			children = (
+				65371D0019C4A4A80017DE49 /* pattern_ipad_2.jpg */,
+				65371D0119C4A4A80017DE49 /* pattern_ipad_3.jpg */,
+				65371D0219C4A4A80017DE49 /* pattern_ipad.jpg */,
 				65371CE819C455BE0017DE49 /* patterns.txt */,
+				65BE42C419C5806B00013759 /* Stars.jpg */,
 				65371CE419C4524E0017DE49 /* partern_iphone4_2.jpg */,
 				65371CE519C4524E0017DE49 /* partern_iphone4_3.jpg */,
 				654A8A1119C18B0900077AC1 /* partern_iphone4.png */,
@@ -776,6 +855,14 @@
 			path = "UIActionSheet+Blocks";
 			sourceTree = "<group>";
 		};
+		6567395419C681C000B17B37 /* Facebook */ = {
+			isa = PBXGroup;
+			children = (
+				6567395519C681C000B17B37 /* FacebookSDK.framework */,
+			);
+			path = Facebook;
+			sourceTree = "<group>";
+		};
 		656B2ACB19C2D63100830D74 /* Camera */ = {
 			isa = PBXGroup;
 			children = (
@@ -785,6 +872,7 @@
 				65B76DD619C355C500AA1743 /* HBLockCameraView.h */,
 				65B76DD719C355C500AA1743 /* HBLockCameraView.m */,
 				65B76DD919C355D800AA1743 /* HBLockCameraView.xib */,
+				65371D0619C4B6F00017DE49 /* HBLockCameraView~iphone.xib */,
 			);
 			path = Camera;
 			sourceTree = "<group>";
@@ -1140,6 +1228,99 @@
 			path = SPUserResizableView;
 			sourceTree = "<group>";
 		};
+		65BE42CB19C582D500013759 /* HSInstagram */ = {
+			isa = PBXGroup;
+			children = (
+				65BE42DC19C584D500013759 /* HSInstagram */,
+				65BE42E619C584D500013759 /* AFNetworking */,
+			);
+			path = HSInstagram;
+			sourceTree = "<group>";
+		};
+		65BE42DC19C584D500013759 /* HSInstagram */ = {
+			isa = PBXGroup;
+			children = (
+				65BE42DD19C584D500013759 /* HSInstagram.h */,
+				65BE42DE19C584D500013759 /* HSInstagram.m */,
+				65BE42DF19C584D500013759 /* HSInstagramUserMedia.h */,
+				65BE42E019C584D500013759 /* HSInstagramUserMedia.m */,
+				65BE42E119C584D500013759 /* Models */,
+			);
+			path = HSInstagram;
+			sourceTree = "<group>";
+		};
+		65BE42E119C584D500013759 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				65BE42E219C584D500013759 /* HSInstagramLocation.h */,
+				65BE42E319C584D500013759 /* HSInstagramLocation.m */,
+				65BE42E419C584D500013759 /* HSInstagramLocationMedia.h */,
+				65BE42E519C584D500013759 /* HSInstagramLocationMedia.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		65BE42E619C584D500013759 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				65BE42E719C584D500013759 /* AFHTTPClient.h */,
+				65BE42E819C584D500013759 /* AFHTTPClient.m */,
+				65BE42E919C584D500013759 /* AFHTTPRequestOperation.h */,
+				65BE42EA19C584D500013759 /* AFHTTPRequestOperation.m */,
+				65BE42EB19C584D500013759 /* AFImageRequestOperation.h */,
+				65BE42EC19C584D500013759 /* AFImageRequestOperation.m */,
+				65BE42ED19C584D500013759 /* AFJSONRequestOperation.h */,
+				65BE42EE19C584D500013759 /* AFJSONRequestOperation.m */,
+				65BE42EF19C584D500013759 /* AFJSONUtilities.h */,
+				65BE42F019C584D500013759 /* AFNetworkActivityIndicatorManager.h */,
+				65BE42F119C584D500013759 /* AFNetworkActivityIndicatorManager.m */,
+				65BE42F219C584D500013759 /* AFNetworking.h */,
+				65BE42F319C584D500013759 /* AFPropertyListRequestOperation.h */,
+				65BE42F419C584D500013759 /* AFPropertyListRequestOperation.m */,
+				65BE42F519C584D500013759 /* AFURLConnectionOperation.h */,
+				65BE42F619C584D500013759 /* AFURLConnectionOperation.m */,
+				65BE42F719C584D500013759 /* AFXMLRequestOperation.h */,
+				65BE42F819C584D500013759 /* AFXMLRequestOperation.m */,
+				65BE42F919C584D500013759 /* UIImageView+AFNetworking.h */,
+				65BE42FA19C584D500013759 /* UIImageView+AFNetworking.m */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		65BE430C19C5895900013759 /* SDWebImage */ = {
+			isa = PBXGroup;
+			children = (
+				65BE430D19C5895900013759 /* NSData+GIF.h */,
+				65BE430E19C5895900013759 /* NSData+GIF.m */,
+				65BE430F19C5895900013759 /* SDImageCache.h */,
+				65BE431019C5895900013759 /* SDImageCache.m */,
+				65BE431119C5895900013759 /* SDWebImageCompat.h */,
+				65BE431219C5895900013759 /* SDWebImageCompat.m */,
+				65BE431319C5895900013759 /* SDWebImageDecoder.h */,
+				65BE431419C5895900013759 /* SDWebImageDecoder.m */,
+				65BE431519C5895900013759 /* SDWebImageDownloader.h */,
+				65BE431619C5895900013759 /* SDWebImageDownloader.m */,
+				65BE431719C5895900013759 /* SDWebImageDownloaderOperation.h */,
+				65BE431819C5895900013759 /* SDWebImageDownloaderOperation.m */,
+				65BE431919C5895900013759 /* SDWebImageManager.h */,
+				65BE431A19C5895900013759 /* SDWebImageManager.m */,
+				65BE431B19C5895900013759 /* SDWebImageOperation.h */,
+				65BE431C19C5895900013759 /* SDWebImagePrefetcher.h */,
+				65BE431D19C5895900013759 /* SDWebImagePrefetcher.m */,
+				65BE431E19C5895900013759 /* UIButton+WebCache.h */,
+				65BE431F19C5895900013759 /* UIButton+WebCache.m */,
+				65BE432019C5895900013759 /* UIImage+GIF.h */,
+				65BE432119C5895900013759 /* UIImage+GIF.m */,
+				65BE432219C5895900013759 /* UIImage+MultiFormat.h */,
+				65BE432319C5895900013759 /* UIImage+MultiFormat.m */,
+				65BE432419C5895900013759 /* UIImage+WebP.h */,
+				65BE432519C5895900013759 /* UIImage+WebP.m */,
+				65BE432619C5895900013759 /* UIImageView+WebCache.h */,
+				65BE432719C5895900013759 /* UIImageView+WebCache.m */,
+			);
+			path = SDWebImage;
+			sourceTree = "<group>";
+		};
 		65D55BD3196A3BB4005C557B = {
 			isa = PBXGroup;
 			children = (
@@ -1164,6 +1345,8 @@
 		65D55BDE196A3BB4005C557B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				65BE430A19C586A000013759 /* MobileCoreServices.framework */,
+				65BE430819C5868C00013759 /* SystemConfiguration.framework */,
 				656B2CA519C2D7D500830D74 /* AssetsLibrary.framework */,
 				654A8A2319C1AD9C00077AC1 /* CoreData.framework */,
 				65D55C88196A5573005C557B /* QuartzCore.framework */,
@@ -1215,11 +1398,15 @@
 		65D55C10196A3C74005C557B /* 02.Views */ = {
 			isa = PBXGroup;
 			children = (
+				65371D0819C4B91E0017DE49 /* PreviewView~iphone.xib */,
 				65D55C5C196A3E50005C557B /* BaseTableViewCell.h */,
 				65D55C5D196A3E50005C557B /* BaseTableViewCell.m */,
 				656B2D0119C30F5000830D74 /* PreviewView.h */,
 				656B2D0219C30F5000830D74 /* PreviewView.m */,
 				656B2D0419C30F6400830D74 /* PreviewView.xib */,
+				65BE42C619C5826800013759 /* HBInstagramSelectionPhotoView.h */,
+				65BE42C719C5826800013759 /* HBInstagramSelectionPhotoView.m */,
+				65BE42C919C5828100013759 /* HBInstagramSelectionPhotoView.xib */,
 			);
 			path = 02.Views;
 			sourceTree = "<group>";
@@ -1233,9 +1420,11 @@
 				654A8A0619C18A1200077AC1 /* MainViewController.h */,
 				654A8A0719C18A1200077AC1 /* MainViewController.m */,
 				654A8A0819C18A1200077AC1 /* MainViewController.xib */,
-				656B2CDA19C2F42C00830D74 /* PatternLibaryViewController.h */,
-				656B2CDB19C2F42C00830D74 /* PatternLibaryViewController.m */,
-				656B2CDC19C2F42C00830D74 /* PatternLibaryViewController.xib */,
+				65371CFC19C4A3760017DE49 /* MainViewController~iphone.xib */,
+				65371CFD19C4A3760017DE49 /* PatternLibraryViewController~iphone.xib */,
+				656B2CDA19C2F42C00830D74 /* PatternLibraryViewController.h */,
+				656B2CDB19C2F42C00830D74 /* PatternLibraryViewController.m */,
+				656B2CDC19C2F42C00830D74 /* PatternLibraryViewController.xib */,
 			);
 			path = 03.Controllers;
 			sourceTree = "<group>";
@@ -1243,6 +1432,8 @@
 		65D55C12196A3C74005C557B /* 04.Cores */ = {
 			isa = PBXGroup;
 			children = (
+				6567395719C6827000B17B37 /* FacebookHelper.h */,
+				6567395819C6827000B17B37 /* FacebookHelper.m */,
 				654A8A2019C1AD3900077AC1 /* DataCenter.h */,
 				654A8A2119C1AD3900077AC1 /* DataCenter.m */,
 				65D55C5F196A3EB6005C557B /* HBMacros.h */,
@@ -1259,6 +1450,10 @@
 		65D55C13196A3C74005C557B /* 05.Libs */ = {
 			isa = PBXGroup;
 			children = (
+				6567395419C681C000B17B37 /* Facebook */,
+				65BE430C19C5895900013759 /* SDWebImage */,
+				65BE42CB19C582D500013759 /* HSInstagram */,
+				65371D0A19C4BBBE0017DE49 /* ALAssetsLibrary_CustomPhotoAlbum */,
 				65371CEA19C45BD70017DE49 /* UIImage+HBLock */,
 				656B2CFD19C30A9E00830D74 /* SPUserResizableView */,
 				656B2CDF19C2F4B000830D74 /* GridTable */,
@@ -1270,7 +1465,6 @@
 				65D55C66196A422B005C557B /* UIImage+BlurredFrame */,
 				65D55C6B196A422B005C557B /* UIScrollViewTouchBegan */,
 				65D55C62196A3F7B005C557B /* UIDevice+Resolutions */,
-				65D55C17196A3DB3005C557B /* AFNetworking */,
 			);
 			path = 05.Libs;
 			sourceTree = "<group>";
@@ -1278,6 +1472,7 @@
 		65D55C14196A3C74005C557B /* 06.Resouces */ = {
 			isa = PBXGroup;
 			children = (
+				6567395A19C6863300B17B37 /* icon_done_choose_friend.png */,
 				65371CFA19C49A5B0017DE49 /* collection_icon.png */,
 				65371CF419C4988F0017DE49 /* abount_icon.png */,
 				65371CF519C4988F0017DE49 /* save_icon.png */,
@@ -1321,65 +1516,6 @@
 			children = (
 			);
 			path = 02.App_Lauchings;
-			sourceTree = "<group>";
-		};
-		65D55C17196A3DB3005C557B /* AFNetworking */ = {
-			isa = PBXGroup;
-			children = (
-				65D55C18196A3DB3005C557B /* AFNetworking */,
-				65D55C2C196A3DB3005C557B /* UIKit+AFNetworking */,
-			);
-			path = AFNetworking;
-			sourceTree = "<group>";
-		};
-		65D55C18196A3DB3005C557B /* AFNetworking */ = {
-			isa = PBXGroup;
-			children = (
-				65D55C19196A3DB3005C557B /* AFHTTPRequestOperation.h */,
-				65D55C1A196A3DB3005C557B /* AFHTTPRequestOperation.m */,
-				65D55C1B196A3DB3005C557B /* AFHTTPRequestOperationManager.h */,
-				65D55C1C196A3DB3005C557B /* AFHTTPRequestOperationManager.m */,
-				65D55C1D196A3DB3005C557B /* AFHTTPSessionManager.h */,
-				65D55C1E196A3DB3005C557B /* AFHTTPSessionManager.m */,
-				65D55C1F196A3DB3005C557B /* AFNetworking.h */,
-				65D55C20196A3DB3005C557B /* AFNetworkReachabilityManager.h */,
-				65D55C21196A3DB3005C557B /* AFNetworkReachabilityManager.m */,
-				65D55C22196A3DB3005C557B /* AFSecurityPolicy.h */,
-				65D55C23196A3DB3005C557B /* AFSecurityPolicy.m */,
-				65D55C24196A3DB3005C557B /* AFURLConnectionOperation.h */,
-				65D55C25196A3DB3005C557B /* AFURLConnectionOperation.m */,
-				65D55C26196A3DB3005C557B /* AFURLRequestSerialization.h */,
-				65D55C27196A3DB3005C557B /* AFURLRequestSerialization.m */,
-				65D55C28196A3DB3005C557B /* AFURLResponseSerialization.h */,
-				65D55C29196A3DB3005C557B /* AFURLResponseSerialization.m */,
-				65D55C2A196A3DB3005C557B /* AFURLSessionManager.h */,
-				65D55C2B196A3DB3005C557B /* AFURLSessionManager.m */,
-			);
-			path = AFNetworking;
-			sourceTree = "<group>";
-		};
-		65D55C2C196A3DB3005C557B /* UIKit+AFNetworking */ = {
-			isa = PBXGroup;
-			children = (
-				65D55C2D196A3DB3005C557B /* AFNetworkActivityIndicatorManager.h */,
-				65D55C2E196A3DB3005C557B /* AFNetworkActivityIndicatorManager.m */,
-				65D55C2F196A3DB3005C557B /* UIActivityIndicatorView+AFNetworking.h */,
-				65D55C30196A3DB3005C557B /* UIActivityIndicatorView+AFNetworking.m */,
-				65D55C31196A3DB3005C557B /* UIAlertView+AFNetworking.h */,
-				65D55C32196A3DB3005C557B /* UIAlertView+AFNetworking.m */,
-				65D55C33196A3DB3005C557B /* UIButton+AFNetworking.h */,
-				65D55C34196A3DB3005C557B /* UIButton+AFNetworking.m */,
-				65D55C35196A3DB3005C557B /* UIImageView+AFNetworking.h */,
-				65D55C36196A3DB3005C557B /* UIImageView+AFNetworking.m */,
-				65D55C37196A3DB3005C557B /* UIKit+AFNetworking.h */,
-				65D55C38196A3DB3005C557B /* UIProgressView+AFNetworking.h */,
-				65D55C39196A3DB3005C557B /* UIProgressView+AFNetworking.m */,
-				65D55C3A196A3DB3005C557B /* UIRefreshControl+AFNetworking.h */,
-				65D55C3B196A3DB3005C557B /* UIRefreshControl+AFNetworking.m */,
-				65D55C3C196A3DB3005C557B /* UIWebView+AFNetworking.h */,
-				65D55C3D196A3DB3005C557B /* UIWebView+AFNetworking.m */,
-			);
-			path = "UIKit+AFNetworking";
 			sourceTree = "<group>";
 		};
 		65D55C62196A3F7B005C557B /* UIDevice+Resolutions */ = {
@@ -1503,32 +1639,42 @@
 			buildActionMask = 2147483647;
 			files = (
 				656B2CAA19C2DD7600830D74 /* icon_flash.png in Resources */,
+				65371D0919C4B91E0017DE49 /* PreviewView~iphone.xib in Resources */,
 				65371CF119C4678B0017DE49 /* photo_from_facebook_icon.png in Resources */,
+				6567395B19C6863300B17B37 /* icon_done_choose_friend.png in Resources */,
 				656B2ACA19C2D36100830D74 /* close_x_white@2x.png in Resources */,
+				65BE42C519C5806B00013759 /* Stars.jpg in Resources */,
 				65371CF319C4678B0017DE49 /* photo_from_instagram_icon.png in Resources */,
 				65371CFB19C49A5B0017DE49 /* collection_icon.png in Resources */,
+				65371CFE19C4A3760017DE49 /* MainViewController~iphone.xib in Resources */,
+				65371CFF19C4A3760017DE49 /* PatternLibraryViewController~iphone.xib in Resources */,
 				65371CF919C4988F0017DE49 /* select_background_icon.PNG in Resources */,
 				65371CE319C44F7F0017DE49 /* pattern_iphone5_2.jpg in Resources */,
 				65371CE619C4524E0017DE49 /* partern_iphone4_2.jpg in Resources */,
+				65371D0719C4B6F00017DE49 /* HBLockCameraView~iphone.xib in Resources */,
 				656B2CA819C2DD3700830D74 /* profile_bg_bottom_line.png in Resources */,
 				656B2AC119C2D16600830D74 /* message_camera.png in Resources */,
+				65371D0519C4A4A80017DE49 /* pattern_ipad.jpg in Resources */,
 				656B2CB219C2DDD500830D74 /* icon_picture_capture.png in Resources */,
 				656B2CAE19C2DDB900830D74 /* pic-icon-1.png in Resources */,
 				656B2AD019C2D64600830D74 /* EffectCameraView_2_5.xib in Resources */,
 				654A8A1719C18B8A00077AC1 /* avatar_01.jpg in Resources */,
 				656B2CF119C2F4B000830D74 /* close_x@2x.png in Resources */,
-				656B2CDE19C2F42C00830D74 /* PatternLibaryViewController.xib in Resources */,
+				656B2CDE19C2F42C00830D74 /* PatternLibraryViewController.xib in Resources */,
 				654A8A1819C18B8A00077AC1 /* bg_number.png in Resources */,
 				656B2AC519C2D18900830D74 /* bg_VKSocial.png in Resources */,
 				65D55C7D196A43A3005C557B /* README.mdown in Resources */,
 				65D55BEA196A3BB4005C557B /* InfoPlist.strings in Resources */,
 				65D55BF2196A3BB4005C557B /* Images.xcassets in Resources */,
+				65371D0419C4A4A80017DE49 /* pattern_ipad_3.jpg in Resources */,
 				65371CE719C4524E0017DE49 /* partern_iphone4_3.jpg in Resources */,
+				65BE42CA19C5828100013759 /* HBInstagramSelectionPhotoView.xib in Resources */,
 				65371CF219C4678B0017DE49 /* photo_from_hbtechs_icon.png in Resources */,
 				65B76DDA19C355D800AA1743 /* HBLockCameraView.xib in Resources */,
 				65371CE919C455BE0017DE49 /* patterns.txt in Resources */,
 				654A8A1319C18B0900077AC1 /* partern_iphone4.png in Resources */,
 				656B2CF019C2F4B000830D74 /* close_x.png in Resources */,
+				65371D0319C4A4A80017DE49 /* pattern_ipad_2.jpg in Resources */,
 				656B2AC919C2D36100830D74 /* close_x_white.png in Resources */,
 				656B2CAC19C2DDAD00830D74 /* switch_camera_icon.png in Resources */,
 				65371CF819C4988F0017DE49 /* save_icon.png in Resources */,
@@ -1552,16 +1698,19 @@
 				656B2C5A19C2D67C00830D74 /* GPUImageMosaicFilter.m in Sources */,
 				656B2C7019C2D67C00830D74 /* GPUImagePolkaDotFilter.m in Sources */,
 				656B2C5619C2D67C00830D74 /* GPUImageMaskFilter.m in Sources */,
-				65D55C44196A3DB3005C557B /* AFURLRequestSerialization.m in Sources */,
+				65BE42FF19C584D500013759 /* AFHTTPClient.m in Sources */,
 				656B2C8319C2D67C00830D74 /* GPUImageSmoothToonFilter.m in Sources */,
 				656B2C9B19C2D67C00830D74 /* GPUImageUIElement.m in Sources */,
 				656B2C6719C2D67C00830D74 /* GPUImageOverlayBlendFilter.m in Sources */,
 				656B2C4719C2D67C00830D74 /* GPUImageHueFilter.m in Sources */,
 				656B2C1719C2D67C00830D74 /* GPUImageBulgeDistortionFilter.m in Sources */,
+				65BE430319C584D500013759 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				65BE430419C584D500013759 /* AFPropertyListRequestOperation.m in Sources */,
 				656B2C1819C2D67C00830D74 /* GPUImageCannyEdgeDetectionFilter.m in Sources */,
 				656B2C7419C2D67C00830D74 /* GPUImageRawDataOutput.m in Sources */,
 				656B2C1219C2D67C00830D74 /* GPUImageAverageLuminanceThresholdFilter.m in Sources */,
 				656B2C6B19C2D67C00830D74 /* GPUImagePinchDistortionFilter.m in Sources */,
+				65BE430619C584D500013759 /* AFXMLRequestOperation.m in Sources */,
 				656B2C5019C2D67C00830D74 /* GPUImageLocalBinaryPatternFilter.m in Sources */,
 				65D55C58196A3E08005C557B /* Utils.m in Sources */,
 				656B2C4219C2D67C00830D74 /* GPUImageHighPassFilter.m in Sources */,
@@ -1585,22 +1734,26 @@
 				656B2C8919C2D67C00830D74 /* GPUImageSphereRefractionFilter.m in Sources */,
 				656B2C8819C2D67C00830D74 /* GPUImageSourceOverBlendFilter.m in Sources */,
 				656B2C8419C2D67C00830D74 /* GPUImageSobelEdgeDetectionFilter.m in Sources */,
-				65D55C43196A3DB3005C557B /* AFURLConnectionOperation.m in Sources */,
 				654A8A1F19C1AB9800077AC1 /* HBLock.xcdatamodeld in Sources */,
-				65D55C49196A3DB3005C557B /* UIAlertView+AFNetworking.m in Sources */,
+				65BE42FD19C584D500013759 /* HSInstagramLocation.m in Sources */,
 				656B2C9D19C2D67C00830D74 /* GPUImageVideoCamera.m in Sources */,
+				65BE430519C584D500013759 /* AFURLConnectionOperation.m in Sources */,
 				656B2C9E19C2D67C00830D74 /* GPUImageView.m in Sources */,
 				656B2C1319C2D67C00830D74 /* GPUImageBilateralFilter.m in Sources */,
 				656B2CD619C2F1B100830D74 /* PatternModel.m in Sources */,
+				65BE430719C584D500013759 /* UIImageView+AFNetworking.m in Sources */,
 				654A8A0919C18A1200077AC1 /* MainViewController.m in Sources */,
+				65BE432F19C5895900013759 /* SDWebImagePrefetcher.m in Sources */,
 				654A8A1C19C1A92000077AC1 /* UIActionSheet+Blocks.m in Sources */,
 				656B2C7819C2D67C00830D74 /* GPUImageRGBFilter.m in Sources */,
+				6567395919C6827000B17B37 /* FacebookHelper.m in Sources */,
 				656B2C1519C2D67C00830D74 /* GPUImageBrightnessFilter.m in Sources */,
+				65BE42FE19C584D500013759 /* HSInstagramLocationMedia.m in Sources */,
 				65371CED19C45BE70017DE49 /* UIImage+HBLock.m in Sources */,
 				654A8A2219C1AD3900077AC1 /* DataCenter.m in Sources */,
 				65B76DD819C355C500AA1743 /* HBLockCameraView.m in Sources */,
+				65BE433419C5895900013759 /* UIImageView+WebCache.m in Sources */,
 				656B2C9119C2D67C00830D74 /* GPUImageThresholdedNonMaximumSuppressionFilter.m in Sources */,
-				65D55C42196A3DB3005C557B /* AFSecurityPolicy.m in Sources */,
 				656B2CA319C2D67C00830D74 /* GPUImageXYDerivativeFilter.m in Sources */,
 				656B2C7619C2D67C00830D74 /* GPUImageRGBDilationFilter.m in Sources */,
 				656B2C3919C2D67C00830D74 /* GPUImageGaussianBlurPositionFilter.m in Sources */,
@@ -1608,38 +1761,37 @@
 				656B2C2D19C2D67C00830D74 /* GPUImageDivideBlendFilter.m in Sources */,
 				656B2C9019C2D67C00830D74 /* GPUImageThresholdEdgeDetectionFilter.m in Sources */,
 				656B2C7319C2D67C00830D74 /* GPUImageRawDataInput.m in Sources */,
+				65BE430019C584D500013759 /* AFHTTPRequestOperation.m in Sources */,
 				656B2C6819C2D67C00830D74 /* GPUImageParallelCoordinateLineTransformFilter.m in Sources */,
 				656B2C1119C2D67C00830D74 /* GPUImageAverageColor.m in Sources */,
 				656B2C9819C2D67C00830D74 /* GPUImageTwoInputFilter.m in Sources */,
 				656B2C6519C2D67C00830D74 /* GPUImageOpeningFilter.m in Sources */,
 				656B2C2A19C2D67C00830D74 /* GPUImageDirectionalNonMaximumSuppressionFilter.m in Sources */,
-				65D55C3E196A3DB3005C557B /* AFHTTPRequestOperation.m in Sources */,
 				656B2C5719C2D67C00830D74 /* GPUImageMedianFilter.m in Sources */,
+				65BE42FC19C584D500013759 /* HSInstagramUserMedia.m in Sources */,
 				656B2C3F19C2D67C00830D74 /* GPUImageHarrisCornerDetectionFilter.m in Sources */,
-				65D55C46196A3DB3005C557B /* AFURLSessionManager.m in Sources */,
-				65D55C45196A3DB3005C557B /* AFURLResponseSerialization.m in Sources */,
 				656B2C3B19C2D67C00830D74 /* GPUImageGlassSphereFilter.m in Sources */,
-				656B2CDD19C2F42C00830D74 /* PatternLibaryViewController.m in Sources */,
+				656B2CDD19C2F42C00830D74 /* PatternLibraryViewController.m in Sources */,
 				65D55BF0196A3BB4005C557B /* AppDelegate.m in Sources */,
 				656B2C5819C2D67C00830D74 /* GPUImageMissEtikateFilter.m in Sources */,
 				656B2C3819C2D67C00830D74 /* GPUImageGaussianBlurFilter.m in Sources */,
 				656B2C8F19C2D67C00830D74 /* GPUImageTextureOutput.m in Sources */,
+				65BE430219C584D500013759 /* AFJSONRequestOperation.m in Sources */,
 				656B2C9219C2D67C00830D74 /* GPUImageThresholdSketchFilter.m in Sources */,
 				656B2C7A19C2D67C00830D74 /* GPUImageSaturationBlendFilter.m in Sources */,
+				65BE432E19C5895900013759 /* SDWebImageManager.m in Sources */,
 				656B2CF719C2F4B000830D74 /* UIView+GMGridViewAdditions.m in Sources */,
 				656B2C6019C2D67C00830D74 /* GPUImageNobleCornerDetectionFilter.m in Sources */,
 				656B2C0E19C2D67C00830D74 /* GPUImageAddBlendFilter.m in Sources */,
 				656B2C3419C2D67C00830D74 /* GPUImageFilter.m in Sources */,
 				656B2C6D19C2D67C00830D74 /* GPUImagePixellatePositionFilter.m in Sources */,
+				65BE433219C5895900013759 /* UIImage+MultiFormat.m in Sources */,
 				656B2C3E19C2D67C00830D74 /* GPUImageHardLightBlendFilter.m in Sources */,
-				65D55C4C196A3DB3005C557B /* UIProgressView+AFNetworking.m in Sources */,
 				656B2C8D19C2D67C00830D74 /* GPUImageSwirlFilter.m in Sources */,
-				65D55C40196A3DB3005C557B /* AFHTTPSessionManager.m in Sources */,
 				65D55C5E196A3E50005C557B /* BaseTableViewCell.m in Sources */,
 				656B2C2419C2D67C00830D74 /* GPUImageCropFilter.m in Sources */,
 				656B2CF419C2F4B000830D74 /* GMGridViewLayoutStrategies.m in Sources */,
 				656B2C1B19C2D67C00830D74 /* GPUImageChromaKeyFilter.m in Sources */,
-				65D55C47196A3DB3005C557B /* AFNetworkActivityIndicatorManager.m in Sources */,
 				656B2C4E19C2D67C00830D74 /* GPUImageLinearBurnBlendFilter.m in Sources */,
 				656B2C8219C2D67C00830D74 /* GPUImageSketchFilter.m in Sources */,
 				656B2C4919C2D67C00830D74 /* GPUImageKuwaharaFilter.m in Sources */,
@@ -1652,7 +1804,6 @@
 				656B2C5C19C2D67C00830D74 /* GPUImageMotionDetector.m in Sources */,
 				656B2C4519C2D67C00830D74 /* GPUImageHoughTransformLineDetector.m in Sources */,
 				656B2C2619C2D67C00830D74 /* GPUImageCrosshatchFilter.m in Sources */,
-				65D55C3F196A3DB3005C557B /* AFHTTPRequestOperationManager.m in Sources */,
 				656B2C4619C2D67C00830D74 /* GPUImageHueBlendFilter.m in Sources */,
 				656B2C7D19C2D67C00830D74 /* GPUImageSepiaFilter.m in Sources */,
 				656B2CF619C2F4B000830D74 /* UIGestureRecognizer+GMGridViewAdditions.m in Sources */,
@@ -1670,15 +1821,17 @@
 				656B2D0019C30AAB00830D74 /* SPUserResizableView.m in Sources */,
 				656B2C5F19C2D67C00830D74 /* GPUImageMultiplyBlendFilter.m in Sources */,
 				656B2C3C19C2D67C00830D74 /* GPUImageGrayscaleFilter.m in Sources */,
+				65BE432A19C5895900013759 /* SDWebImageCompat.m in Sources */,
 				656B2C3319C2D67C00830D74 /* GPUImageFastBlurFilter.m in Sources */,
 				656B2C4F19C2D67C00830D74 /* GPUImageLineGenerator.m in Sources */,
+				65BE432C19C5895900013759 /* SDWebImageDownloader.m in Sources */,
 				65D55C6F196A422B005C557B /* UIImage+ImageEffects.m in Sources */,
 				656B2C1E19C2D67C00830D74 /* GPUImageColorBurnBlendFilter.m in Sources */,
+				65BE432B19C5895900013759 /* SDWebImageDecoder.m in Sources */,
 				656B2C4319C2D67C00830D74 /* GPUImageHistogramFilter.m in Sources */,
 				656B2C9719C2D67C00830D74 /* GPUImageTwoInputCrossTextureSamplingFilter.m in Sources */,
 				656B2C8619C2D67C00830D74 /* GPUImageSoftLightBlendFilter.m in Sources */,
 				656B2C6419C2D67C00830D74 /* GPUImageOpenGLESContext.m in Sources */,
-				65D55C4B196A3DB3005C557B /* UIImageView+AFNetworking.m in Sources */,
 				656B2C6C19C2D67C00830D74 /* GPUImagePixellateFilter.m in Sources */,
 				656B2C4819C2D67C00830D74 /* GPUImageJFAVoronoiFilter.m in Sources */,
 				656B2C0C19C2D67C00830D74 /* GPUImage3x3TextureSamplingFilter.m in Sources */,
@@ -1690,17 +1843,14 @@
 				65D55C87196A5560005C557B /* UIAlertView+CompletedBlock.m in Sources */,
 				656B2C6A19C2D67C00830D74 /* GPUImagePicture.m in Sources */,
 				656B2C5319C2D67C00830D74 /* GPUImageLuminanceThresholdFilter.m in Sources */,
-				65D55C4A196A3DB3005C557B /* UIButton+AFNetworking.m in Sources */,
 				656B2C2019C2D67C00830D74 /* GPUImageColorInvertFilter.m in Sources */,
 				65D55C70196A422B005C557B /* UIScrollViewTouchBegan.m in Sources */,
 				656B2C6619C2D67C00830D74 /* GPUImageOutput.m in Sources */,
-				65D55C4D196A3DB3005C557B /* UIRefreshControl+AFNetworking.m in Sources */,
 				656B2CF519C2F4B000830D74 /* GMGridViewNew.m in Sources */,
 				656B2C4119C2D67C00830D74 /* GPUImageHighlightShadowFilter.m in Sources */,
 				65D55C7C196A43A3005C557B /* MBProgressHUD.m in Sources */,
-				65D55C4E196A3DB3005C557B /* UIWebView+AFNetworking.m in Sources */,
-				65D55C41196A3DB3005C557B /* AFNetworkReachabilityManager.m in Sources */,
 				656B2C1019C2D67C00830D74 /* GPUImageAmatorkaFilter.m in Sources */,
+				65BE432819C5895900013759 /* NSData+GIF.m in Sources */,
 				656B2C3519C2D67C00830D74 /* GPUImageFilterGroup.m in Sources */,
 				65D55C51196A3DD6005C557B /* BaseModel.m in Sources */,
 				656B2C1C19C2D67C00830D74 /* GPUImageClosingFilter.m in Sources */,
@@ -1712,8 +1862,11 @@
 				656B2C4C19C2D67C00830D74 /* GPUImageLevelsFilter.m in Sources */,
 				656B2C2C19C2D67C00830D74 /* GPUImageDissolveBlendFilter.m in Sources */,
 				65D55BEC196A3BB4005C557B /* main.m in Sources */,
+				65BE430119C584D500013759 /* AFImageRequestOperation.m in Sources */,
+				65BE42C819C5826800013759 /* HBInstagramSelectionPhotoView.m in Sources */,
 				656B2C3619C2D67C00830D74 /* GPUImageFilterPipeline.m in Sources */,
 				656B2C3A19C2D67C00830D74 /* GPUImageGaussianSelectiveBlurFilter.m in Sources */,
+				65BE432919C5895900013759 /* SDImageCache.m in Sources */,
 				65D55C65196A3F95005C557B /* UIDevice+Resolutions.m in Sources */,
 				656B2C0A19C2D67C00830D74 /* GLProgram.m in Sources */,
 				656B2C3719C2D67C00830D74 /* GPUImageGammaFilter.m in Sources */,
@@ -1725,8 +1878,10 @@
 				656B2C0B19C2D67C00830D74 /* GPUImage3x3ConvolutionFilter.m in Sources */,
 				65D55C74196A424A005C557B /* NSDate+CompareDay.m in Sources */,
 				656B2C9C19C2D67C00830D74 /* GPUImageUnsharpMaskFilter.m in Sources */,
+				65BE432D19C5895900013759 /* SDWebImageDownloaderOperation.m in Sources */,
 				656B2CF219C2F4B000830D74 /* GMGridView.m in Sources */,
 				656B2C1A19C2D67C00830D74 /* GPUImageChromaKeyBlendFilter.m in Sources */,
+				65BE433119C5895900013759 /* UIImage+GIF.m in Sources */,
 				656B2C2519C2D67C00830D74 /* GPUImageCrosshairGenerator.m in Sources */,
 				656B2C4419C2D67C00830D74 /* GPUImageHistogramGenerator.m in Sources */,
 				656B2C7919C2D67C00830D74 /* GPUImageRGBOpeningFilter.m in Sources */,
@@ -1737,9 +1892,13 @@
 				656B2C8E19C2D67C00830D74 /* GPUImageTextureInput.m in Sources */,
 				656B2C7219C2D67C00830D74 /* GPUImagePrewittEdgeDetectionFilter.m in Sources */,
 				656B2C6219C2D67C00830D74 /* GPUImageNormalBlendFilter.m in Sources */,
+				65BE42FB19C584D500013759 /* HSInstagram.m in Sources */,
 				656B2C9F19C2D67C00830D74 /* GPUImageVignetteFilter.m in Sources */,
 				656B2C9519C2D67C00830D74 /* GPUImageToonFilter.m in Sources */,
 				656B2CD919C2F22A00830D74 /* PhotoItem.m in Sources */,
+				65BE433019C5895900013759 /* UIButton+WebCache.m in Sources */,
+				65BE433319C5895900013759 /* UIImage+WebP.m in Sources */,
+				65371D0D19C4BBBE0017DE49 /* ALAssetsLibrary+CustomPhotoAlbum.m in Sources */,
 				656B2C9919C2D67C00830D74 /* GPUImageTwoPassFilter.m in Sources */,
 				656B2C7F19C2D67C00830D74 /* GPUImageShiTomasiFeatureDetectionFilter.m in Sources */,
 				656B2C0F19C2D67C00830D74 /* GPUImageAlphaBlendFilter.m in Sources */,
@@ -1752,7 +1911,6 @@
 				656B2C8C19C2D67C00830D74 /* GPUImageSubtractBlendFilter.m in Sources */,
 				656B2C5119C2D67C00830D74 /* GPUImageLookupFilter.m in Sources */,
 				656B2C5219C2D67C00830D74 /* GPUImageLowPassFilter.m in Sources */,
-				65D55C48196A3DB3005C557B /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				656B2C2F19C2D67C00830D74 /* GPUImageErosionFilter.m in Sources */,
 				656B2C2219C2D67C00830D74 /* GPUImageColorPackingFilter.m in Sources */,
 				656B2C8B19C2D67C00830D74 /* GPUImageStretchDistortionFilter.m in Sources */,
@@ -1850,12 +2008,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HabuTemplate/05.Libs/Facebook",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HabuTemplate/HBLock-Prefix.pch";
 				INFOPLIST_FILE = "HabuTemplate/HBLock-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = HBLock;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1865,12 +2028,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HabuTemplate/05.Libs/Facebook",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HabuTemplate/HBLock-Prefix.pch";
 				INFOPLIST_FILE = "HabuTemplate/HBLock-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = HBLock;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
