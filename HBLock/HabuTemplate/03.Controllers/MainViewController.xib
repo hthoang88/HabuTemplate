@@ -213,12 +213,12 @@
                                 <action selector="btnSelectBackgroundTouchUpInside:" destination="-1" eventType="touchUpInside" id="lGV-6C-Ai7"/>
                             </connections>
                         </button>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_done_choose_friend.png" id="qFe-Os-12K">
-                            <rect key="frame" x="81" y="7" width="30" height="30"/>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="select_background_icon.PNG" id="qFe-Os-12K">
+                            <rect key="frame" x="77" y="0.0" width="40" height="40"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </imageView>
                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Background" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yrK-om-XdZ">
-                            <rect key="frame" x="0.0" y="37" width="192" height="21"/>
+                            <rect key="frame" x="0.0" y="38" width="192" height="20"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
@@ -239,11 +239,11 @@
                             </connections>
                         </button>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_done_choose_friend.png" id="I4M-Tb-ouG">
-                            <rect key="frame" x="273" y="7" width="30" height="30"/>
+                            <rect key="frame" x="269" y="0.0" width="40" height="40"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </imageView>
                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Save" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ehU-oG-foc">
-                            <rect key="frame" x="192" y="37" width="192" height="21"/>
+                            <rect key="frame" x="192" y="38" width="192" height="20"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
@@ -263,12 +263,12 @@
                                 <action selector="btnYourLibraryTouchUpInside:" destination="-1" eventType="touchUpInside" id="Kpn-bS-Mk0"/>
                             </connections>
                         </button>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_done_choose_friend.png" id="ml7-wn-xSs">
-                            <rect key="frame" x="465" y="7" width="30" height="30"/>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_collection.png" id="ml7-wn-xSs">
+                            <rect key="frame" x="461" y="0.0" width="40" height="40"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </imageView>
-                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Library" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hsy-hy-Qyg">
-                            <rect key="frame" x="384" y="37" width="192" height="21"/>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Collection" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hsy-hy-Qyg">
+                            <rect key="frame" x="384" y="38" width="192" height="20"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
@@ -288,12 +288,12 @@
                                 <action selector="btnAboutTouchUpInside:" destination="-1" eventType="touchUpInside" id="5rU-uC-qTY"/>
                             </connections>
                         </button>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_done_choose_friend.png" id="WWh-kY-yJG">
-                            <rect key="frame" x="657" y="7" width="30" height="30"/>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="abount_icon.png" id="WWh-kY-yJG">
+                            <rect key="frame" x="653" y="0.0" width="40" height="40"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </imageView>
                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aV0-WB-Knm">
-                            <rect key="frame" x="576" y="37" width="192" height="21"/>
+                            <rect key="frame" x="576" y="38" width="192" height="20"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
@@ -390,14 +390,17 @@
     </objects>
     <resources>
         <image name="VK_Social_ButtonContainer.png" width="76" height="26"/>
+        <image name="abount_icon.png" width="256" height="256"/>
         <image name="bg_VKSocial.png" width="76" height="26"/>
         <image name="bg_number.png" width="131" height="133"/>
         <image name="bg_number_drop.png" width="640" height="1136"/>
-        <image name="close_x_white.png" width="29" height="29"/>
-        <image name="icon_done_choose_friend.png" width="52" height="54"/>
+        <image name="close_x_white.png" width="256" height="256"/>
+        <image name="icon_collection.png" width="256" height="256"/>
+        <image name="icon_done_choose_friend.png" width="256" height="256"/>
         <image name="pattern_ipad_2.jpg" width="1536" height="2048"/>
         <image name="photo_from_facebook_icon.png" width="341" height="106"/>
         <image name="photo_from_hbtechs_icon.png" width="341" height="106"/>
         <image name="photo_from_instagram_icon.png" width="341" height="106"/>
+        <image name="select_background_icon.PNG" width="256" height="256"/>
     </resources>
 </document>

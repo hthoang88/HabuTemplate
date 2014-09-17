@@ -137,7 +137,7 @@
 - (void)setPattern:(PatternModel *)pattern
 {
     _pattern = pattern;
-    UIImage *image = [UIImage imageWithData:pattern.screenShot];
+    UIImage *image = [UIImage imageWithData:pattern.background];
     [self setBackgroundImage:image];
     for (int i = 0; i < pattern.items.count; i++) {
         PhotoItem *photoItem = [pattern.items allObjects][i];
