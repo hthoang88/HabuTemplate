@@ -5,34 +5,46 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>B97A6FDD-5B6E-40A3-AF10-85FA2F269742</string>
+	<string>1BB87824-28D2-4067-BEB5-BFC5E1DCAC36</string>
 	<key>IDESourceControlProjectName</key>
 	<string>HBLock</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>3B4E5AEF-C141-4011-BC8C-577F229D68F9</key>
+		<key>31A886275276A0AF8104980931D39A7989C7AEC7</key>
 		<string>https://github.com/hthoang88/HabuTemplate.git</string>
+		<key>3FE2EFEECA201F4CDDAF57113FE3C0109EAEE2F7</key>
+		<string>https://git.assembla.com/habutechs.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>HBLock/HBLock.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>3B4E5AEF-C141-4011-BC8C-577F229D68F9</key>
+		<key>31A886275276A0AF8104980931D39A7989C7AEC7</key>
 		<string>../../..</string>
+		<key>3FE2EFEECA201F4CDDAF57113FE3C0109EAEE2F7</key>
+		<string>../../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/hthoang88/HabuTemplate.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>3B4E5AEF-C141-4011-BC8C-577F229D68F9</string>
+	<string>31A886275276A0AF8104980931D39A7989C7AEC7</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>3B4E5AEF-C141-4011-BC8C-577F229D68F9</string>
+			<string>3FE2EFEECA201F4CDDAF57113FE3C0109EAEE2F7</string>
+			<key>IDESourceControlWCCName</key>
+			<string>..</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>31A886275276A0AF8104980931D39A7989C7AEC7</string>
 			<key>IDESourceControlWCCName</key>
 			<string>HBLock</string>
 		</dict>

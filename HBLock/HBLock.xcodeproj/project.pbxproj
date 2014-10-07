@@ -227,6 +227,7 @@
 		656B2D0519C30F6400830D74 /* PreviewView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 656B2D0419C30F6400830D74 /* PreviewView.xib */; };
 		658B270B19C98A1F00B99F5E /* icon_circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 658B270919C98A1F00B99F5E /* icon_circle.png */; };
 		658B270C19C98A1F00B99F5E /* icon_collection.png in Resources */ = {isa = PBXBuildFile; fileRef = 658B270A19C98A1F00B99F5E /* icon_collection.png */; };
+		658B270E19C998A600B99F5E /* about-me-cloud-md.png in Resources */ = {isa = PBXBuildFile; fileRef = 658B270D19C998A600B99F5E /* about-me-cloud-md.png */; };
 		65B76DD819C355C500AA1743 /* HBLockCameraView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B76DD719C355C500AA1743 /* HBLockCameraView.m */; };
 		65B76DDA19C355D800AA1743 /* HBLockCameraView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65B76DD919C355D800AA1743 /* HBLockCameraView.xib */; };
 		65BE42C519C5806B00013759 /* Stars.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65BE42C419C5806B00013759 /* Stars.jpg */; };
@@ -684,6 +685,7 @@
 		656B2D0419C30F6400830D74 /* PreviewView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PreviewView.xib; sourceTree = "<group>"; };
 		658B270919C98A1F00B99F5E /* icon_circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_circle.png; sourceTree = "<group>"; };
 		658B270A19C98A1F00B99F5E /* icon_collection.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_collection.png; sourceTree = "<group>"; };
+		658B270D19C998A600B99F5E /* about-me-cloud-md.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "about-me-cloud-md.png"; sourceTree = "<group>"; };
 		65B76DD619C355C500AA1743 /* HBLockCameraView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBLockCameraView.h; sourceTree = "<group>"; };
 		65B76DD719C355C500AA1743 /* HBLockCameraView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBLockCameraView.m; sourceTree = "<group>"; };
 		65B76DD919C355D800AA1743 /* HBLockCameraView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HBLockCameraView.xib; sourceTree = "<group>"; };
@@ -1474,6 +1476,7 @@
 		65D55C14196A3C74005C557B /* 06.Resouces */ = {
 			isa = PBXGroup;
 			children = (
+				658B270D19C998A600B99F5E /* about-me-cloud-md.png */,
 				658B270919C98A1F00B99F5E /* icon_circle.png */,
 				658B270A19C98A1F00B99F5E /* icon_collection.png */,
 				6567395A19C6863300B17B37 /* icon_done_choose_friend.png */,
@@ -1684,6 +1687,7 @@
 				656B2D0519C30F6400830D74 /* PreviewView.xib in Resources */,
 				656B2CB019C2DDC400830D74 /* VK_Social_close_icon.png in Resources */,
 				656B2AC219C2D16600830D74 /* message_camera@2x.png in Resources */,
+				658B270E19C998A600B99F5E /* about-me-cloud-md.png in Resources */,
 				656B2AC619C2D18900830D74 /* VK_Social_ButtonContainer.png in Resources */,
 				658B270B19C98A1F00B99F5E /* icon_circle.png in Resources */,
 				654A8A0A19C18A1200077AC1 /* MainViewController.xib in Resources */,
@@ -2022,6 +2026,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = HBLock;
+				PROVISIONING_PROFILE = "4d05c7d6-74da-4f99-84ab-7148c5148e16";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -2042,6 +2047,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = HBLock;
+				PROVISIONING_PROFILE = "4d05c7d6-74da-4f99-84ab-7148c5148e16";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};

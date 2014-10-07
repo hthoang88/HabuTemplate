@@ -223,69 +223,70 @@ NSString *const kGPUImageToneCurveFragmentShaderString = SHADER_STRING
 
 - (NSArray *)getPreparedSplineCurve:(NSArray *)points
 {
-    if (points && [points count] > 0) 
-    {
-        // Sort the array.
-        NSArray *sortedPoints = [points sortedArrayUsingComparator:^(id a, id b) {
-            float x1 = [(NSValue *)a CGPointValue].x;
-            float x2 = [(NSValue *)b CGPointValue].x;            
-            return x1 > x2;
-        }];
-                
-        // Convert from (0, 1) to (0, 255).
-        NSMutableArray *convertedPoints = [NSMutableArray arrayWithCapacity:[sortedPoints count]];
-        for (int i=0; i<[points count]; i++){
-            CGPoint point = [[sortedPoints objectAtIndex:i] CGPointValue];
-            point.x = point.x * 255;
-            point.y = point.y * 255;
-                        
-            [convertedPoints addObject:[NSValue valueWithCGPoint:point]];
-        }
-        
-        
-        NSMutableArray *splinePoints = [self splineCurve:convertedPoints];
-        
-        // If we have a first point like (0.3, 0) we'll be missing some points at the beginning
-        // that should be 0.
-        CGPoint firstSplinePoint = [[splinePoints objectAtIndex:0] CGPointValue];
-        
-        if (firstSplinePoint.x > 0) {
-            for (int i=firstSplinePoint.x; i >= 0; i--) {
-                CGPoint newCGPoint = CGPointMake(i, 0);
-                [splinePoints insertObject:[NSValue valueWithCGPoint:newCGPoint] atIndex:0];
-            }
-        }
-
-        // Insert points similarly at the end, if necessary.
-        CGPoint lastSplinePoint = [[splinePoints objectAtIndex:([splinePoints count] - 1)] CGPointValue];
-
-        if (lastSplinePoint.x < 255) {
-            for (int i = lastSplinePoint.x + 1; i <= 255; i++) {
-                CGPoint newCGPoint = CGPointMake(i, 255);
-                [splinePoints addObject:[NSValue valueWithCGPoint:newCGPoint]];
-            }
-        }
-        
-        
-        // Prepare the spline points.
-        NSMutableArray *preparedSplinePoints = [NSMutableArray arrayWithCapacity:[splinePoints count]];
-        for (int i=0; i<[splinePoints count]; i++) 
-        {
-            CGPoint newPoint = [[splinePoints objectAtIndex:i] CGPointValue];
-            CGPoint origPoint = CGPointMake(newPoint.x, newPoint.x);
-            
-            float distance = sqrt(pow((origPoint.x - newPoint.x), 2.0) + pow((origPoint.y - newPoint.y), 2.0));
-            
-            if (origPoint.y > newPoint.y) 
-            {
-                distance = -distance;
-            }
-            
-            [preparedSplinePoints addObject:[NSNumber numberWithFloat:distance]];
-        }
-        
-        return preparedSplinePoints;
-    }
+    return nil;
+//    if (points && [points count] > 0) 
+//    {
+//        // Sort the array.
+//        NSArray *sortedPoints = [points sortedArrayUsingComparator:^(id a, id b) {
+//            float x1 = [(NSValue *)a CGPointValue].x;
+//            float x2 = [(NSValue *)b CGPointValue].x;            
+//            return x1 > x2;
+//        }];
+//                
+//        // Convert from (0, 1) to (0, 255).
+//        NSMutableArray *convertedPoints = [NSMutableArray arrayWithCapacity:[sortedPoints count]];
+//        for (int i=0; i<[points count]; i++){
+//            CGPoint point = [[sortedPoints objectAtIndex:i] CGPointValue];
+//            point.x = point.x * 255;
+//            point.y = point.y * 255;
+//                        
+//            [convertedPoints addObject:[NSValue valueWithCGPoint:point]];
+//        }
+//        
+//        
+//        NSMutableArray *splinePoints = [self splineCurve:convertedPoints];
+//        
+//        // If we have a first point like (0.3, 0) we'll be missing some points at the beginning
+//        // that should be 0.
+//        CGPoint firstSplinePoint = [[splinePoints objectAtIndex:0] CGPointValue];
+//        
+//        if (firstSplinePoint.x > 0) {
+//            for (int i=firstSplinePoint.x; i >= 0; i--) {
+//                CGPoint newCGPoint = CGPointMake(i, 0);
+//                [splinePoints insertObject:[NSValue valueWithCGPoint:newCGPoint] atIndex:0];
+//            }
+//        }
+//
+//        // Insert points similarly at the end, if necessary.
+//        CGPoint lastSplinePoint = [[splinePoints objectAtIndex:([splinePoints count] - 1)] CGPointValue];
+//
+//        if (lastSplinePoint.x < 255) {
+//            for (int i = lastSplinePoint.x + 1; i <= 255; i++) {
+//                CGPoint newCGPoint = CGPointMake(i, 255);
+//                [splinePoints addObject:[NSValue valueWithCGPoint:newCGPoint]];
+//            }
+//        }
+//        
+//        
+//        // Prepare the spline points.
+//        NSMutableArray *preparedSplinePoints = [NSMutableArray arrayWithCapacity:[splinePoints count]];
+//        for (int i=0; i<[splinePoints count]; i++) 
+//        {
+//            CGPoint newPoint = [[splinePoints objectAtIndex:i] CGPointValue];
+//            CGPoint origPoint = CGPointMake(newPoint.x, newPoint.x);
+//            
+//            float distance = sqrt(pow((origPoint.x - newPoint.x), 2.0) + pow((origPoint.y - newPoint.y), 2.0));
+//            
+//            if (origPoint.y > newPoint.y) 
+//            {
+//                distance = -distance;
+//            }
+//            
+//            [preparedSplinePoints addObject:[NSNumber numberWithFloat:distance]];
+//        }
+//        
+//        return preparedSplinePoints;
+//    }
     
     return nil;
 }

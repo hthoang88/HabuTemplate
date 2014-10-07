@@ -18,10 +18,7 @@
                 <outlet property="btn8" destination="BCI-ub-xiX" id="YtU-3q-xAs"/>
                 <outlet property="btn9" destination="DU3-ea-gYR" id="nS7-Ig-8fQ"/>
                 <outlet property="btnAbout" destination="pGq-Gp-tF4" id="ZiE-Q3-dFv"/>
-                <outlet property="btnFacebook" destination="D4q-f3-RdQ" id="Gd2-Jb-tuU"/>
-                <outlet property="btnInstagram" destination="zBR-VB-BUg" id="v9s-cw-Yqi"/>
                 <outlet property="btnLibrary" destination="x9W-S4-37H" id="Vkx-zC-XYx"/>
-                <outlet property="btnMore" destination="1WY-XP-kbe" id="CJA-BA-3g1"/>
                 <outlet property="btnSave" destination="npE-F0-N8I" id="Lo5-nv-Dau"/>
                 <outlet property="btnSelectBackground" destination="246-Iz-IKU" id="AXY-B1-nQz"/>
                 <outlet property="btnTakePhoto" destination="Pm3-p6-Mxc" id="C4y-fK-YFm"/>
@@ -317,11 +314,11 @@
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="Pm3-p6-Mxc">
-                    <rect key="frame" x="16" y="31" width="130" height="38"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <rect key="frame" x="58" y="36" width="217" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="0.4823529412" green="0.79607843140000001" blue="0.7843137255" alpha="1" colorSpace="calibratedRGB"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
-                    <state key="normal" title="Take Photo">
+                    <state key="normal" title="Take A Photo">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
@@ -329,52 +326,19 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="x9W-S4-37H">
-                    <rect key="frame" x="174" y="31" width="130" height="38"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <rect key="frame" x="58" y="121" width="217" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES"/>
                     <color key="backgroundColor" red="0.4823529412" green="0.79607843140000001" blue="0.7843137255" alpha="1" colorSpace="calibratedRGB"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
-                    <state key="normal" title="Library">
+                    <state key="normal" title="Select From Library">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
                         <action selector="btnLibraryTouchUpInside:" destination="-1" eventType="touchUpInside" id="GOX-6t-8Uu"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="D4q-f3-RdQ">
-                    <rect key="frame" x="13" y="87" width="137" height="45"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                    <state key="normal" backgroundImage="photo_from_facebook_icon.png">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="btnFacebookTouchUpInside:" destination="-1" eventType="touchUpInside" id="RaX-To-Id9"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="zBR-VB-BUg">
-                    <rect key="frame" x="172" y="88" width="135" height="43"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                    <state key="normal" backgroundImage="photo_from_instagram_icon.png">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="btnInstagramTouchUpInside:" destination="-1" eventType="touchUpInside" id="Fuk-HA-QyG"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="1WY-XP-kbe">
-                    <rect key="frame" x="42" y="142" width="236" height="60"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                    <state key="normal" backgroundImage="photo_from_hbtechs_icon.png">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="btnMoreTouchUpInside:" destination="-1" eventType="touchUpInside" id="d8W-bU-6pI"/>
-                    </connections>
-                </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="Zjm-Zs-sDb">
-                    <rect key="frame" x="287" y="-14" width="35" height="35"/>
+                    <rect key="frame" x="270" y="-19" width="50" height="50"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" backgroundImage="close_x_white.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -387,10 +351,35 @@
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
         </view>
+        <view contentMode="scaleToFill" id="GPe-Im-cr8" userLabel="View - about view">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="400"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="about-me-cloud-md.png" id="LXW-Tx-9pO">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="400"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                </imageView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HBLock" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="SRb-cS-7xV">
+                    <rect key="frame" x="47" y="60" width="227" height="36"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                    <color key="textColor" red="1" green="0.49019607840000001" blue="0.01176470588" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A product of Habutechs " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ITG-aq-TsM">
+                    <rect key="frame" x="33" y="132" width="227" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+        </view>
     </objects>
     <resources>
         <image name="VK_Social_ButtonContainer.png" width="76" height="26"/>
         <image name="abount_icon.png" width="256" height="256"/>
+        <image name="about-me-cloud-md.png" width="298" height="255"/>
         <image name="bg_VKSocial.png" width="76" height="26"/>
         <image name="bg_number.png" width="131" height="133"/>
         <image name="bg_number_drop.png" width="640" height="1136"/>
@@ -398,9 +387,6 @@
         <image name="icon_collection.png" width="256" height="256"/>
         <image name="icon_done_choose_friend.png" width="256" height="256"/>
         <image name="pattern_ipad_2.jpg" width="1536" height="2048"/>
-        <image name="photo_from_facebook_icon.png" width="341" height="106"/>
-        <image name="photo_from_hbtechs_icon.png" width="341" height="106"/>
-        <image name="photo_from_instagram_icon.png" width="341" height="106"/>
         <image name="select_background_icon.PNG" width="256" height="256"/>
     </resources>
 </document>

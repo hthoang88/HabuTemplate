@@ -282,7 +282,11 @@
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
     if (self.selectPhotoView.superview) {
-        [self hideSelectPhotoView:YES];
+        UITouch *touch = [touches anyObject];
+        CGPoint point = [touch locationInView:self.view];
+        if (!CGRectContainsPoint(self.selectPhotoView.frame, point)) {
+            [self hideSelectPhotoView:YES];
+        }
     }else{
         isShowingMenu = !isShowingMenu;
         [self showTopAndBottomView:isShowingMenu];
@@ -381,12 +385,18 @@
 
 - (void)showSelectPhotoView
 {
-    if (IS_IPHONE) {
+    if (IS_IPHONE  || true) {
+        self.selectPhotoView.clipsToBounds = YES;
         [self.view addSubview:self.selectPhotoView];
         [self.view bringSubviewToFront:self.selectPhotoView];
-        self.selectPhotoView.frame = RECT_WITH_Y(self.selectPhotoView.frame, -self.selectPhotoView.frame.size.height);
+        self.selectPhotoView.frame = CGRectMake(self.view.center.x - self.selectPhotoView.frame.size.width / 2, self.view.center.y - self.selectPhotoView.frame.size.height / 2, self.selectPhotoView.frame.size.width, self.selectPhotoView.frame.size.height);
+        CGRect originFrame = self.selectPhotoView.frame;
+        self.selectPhotoView.frame = CGRectMake(self.view.center.x, self.view.center.y, 5, 5);
+        
         [UIView animateWithDuration:0.5f animations:^{
-            self.selectPhotoView.frame = RECT_WITH_Y(self.selectPhotoView.frame, (self.view.frame.size.height - self.selectPhotoView.frame.size.height) / 2);
+            self.selectPhotoView.frame = originFrame;
+        } completion:^(BOOL finished) {
+            self.selectPhotoView.clipsToBounds = NO;
         }];
     }else{
         [self showSelectionPopupFromView:activeButton ? activeButton : activeView];
@@ -405,16 +415,25 @@
     popOver.popoverContentSize = tempVC.preferredContentSize;
     popOver.backgroundColor = [UIColor clearColor];
     popOver.delegate =self;
-    [popOver presentPopoverFromRect:aView.frame inView:self.view permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
+    [popOver presentPopoverFromRect:aView.frame
+                             inView:self.view
+           permittedArrowDirections:UIPopoverArrowDirectionAny
+                           animated:YES];
+    
 }
 
 - (void)hideSelectPhotoView:(BOOL)resetSelection
 {
-    if (IS_IPHONE) {
+    if (IS_IPHONE || true) {
+        self.selectPhotoView.clipsToBounds = YES;
+        CGRect originFrame = self.selectPhotoView.frame;
+        CGRect frame = CGRectMake(self.view.center.x , self.view.center.y, 5, 5);
         [UIView animateWithDuration:0.5f animations:^{
-            self.selectPhotoView.frame = RECT_WITH_Y(self.selectPhotoView.frame, -self.selectPhotoView.frame.size.height);
+            self.selectPhotoView.frame = frame;
         } completion:^(BOOL finished) {
             [self.selectPhotoView removeFromSuperview];
+            self.selectPhotoView.frame = originFrame;
+            self.selectPhotoView.clipsToBounds = NO;
             if (resetSelection)
                 activeView = activeButton = nil;
         }];
