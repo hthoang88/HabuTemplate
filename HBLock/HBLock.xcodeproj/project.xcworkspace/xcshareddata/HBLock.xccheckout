@@ -16,13 +16,13 @@
 		<string>https://git.assembla.com/habutechs.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>HBLock/HBLock.xcodeproj/project.xcworkspace</string>
+	<string>HBLock/HBLock.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>31A886275276A0AF8104980931D39A7989C7AEC7</key>
 		<string>../../..</string>
 		<key>3FE2EFEECA201F4CDDAF57113FE3C0109EAEE2F7</key>
-		<string>../../../../..</string>
+		<string>../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/hthoang88/HabuTemplate.git</string>
@@ -38,7 +38,7 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>3FE2EFEECA201F4CDDAF57113FE3C0109EAEE2F7</string>
 			<key>IDESourceControlWCCName</key>
-			<string>..</string>
+			<string></string>
 		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
