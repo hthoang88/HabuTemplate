@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ListCategoryViewController.h"
 
 @implementation AppDelegate
 
@@ -16,9 +17,8 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
-    [[APIManager sharedManager] operationWithType:0 andPostMethodKind:NO shouldCancelAllCurrentRequest:NO andParams:nil inView:self.window completeBlock:^(id responseObject) {
-        
-    }];
+    self.window.rootViewController = [[ListCategoryViewController alloc] init];
+    
     return YES;
 }
 

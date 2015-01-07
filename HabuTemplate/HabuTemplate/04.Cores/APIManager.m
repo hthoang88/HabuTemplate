@@ -7,6 +7,7 @@
 //
 
 #import "APIManager.h"
+#import <objc/runtime.h>
 
 @implementation APIManager
 + (APIManager*)sharedManager
@@ -16,6 +17,7 @@
     dispatch_once(&onceToken, ^{
         sharedClient = [[APIManager alloc] initWithBaseURL:[NSURL URLWithString:@""]];
         sharedClient.securityPolicy.SSLPinningMode = AFSSLPinningModeCertificate;
+        [sharedClient.requestSerializer setCachePolicy:NSURLRequestReturnCacheDataElseLoad];
     });
     
     return sharedClient;
@@ -87,6 +89,22 @@
     return operation;
 }
 
+- (AFHTTPRequestOperation *)operationWithTypePath:(NSString*)path inView:(UIView *)view
+                                    completeBlock:(void (^)(id responseObject))block
+                                     failureBlock:(void (^)(NSError *error))failureBlock
+{
+    AFHTTPRequestOperation *operation;
+    [self executedOperation:&operation
+                   withType:ENUM_API_REQUEST_TYPE_INVALID
+                 methodKind:NO
+                       view:view
+                       path:path
+                     params:nil
+                      block:block
+               failureBlock:failureBlock];
+    return operation;
+}
+
 - (void)executedOperation:(AFHTTPRequestOperation **)operation
                  withType:(ENUM_API_REQUEST_TYPE)type
                methodKind:(BOOL)methodKind
@@ -133,7 +151,8 @@
     }
     
     AFHTTPRequestOperation *operation= [[AFHTTPRequestOperation alloc] initWithRequest:request];
-    operation.responseSerializer = [AFJSONResponseSerializer serializer];
+    [AFHTTPRequestOperation addAcceptableContentTypes:[NSSet setWithObjects:@"text/html",nil]];
+//    operation.responseSerializer = [AFJSONResponseSerializer serializer];
     
     operation.userInfo = [NSDictionary dictionaryWithObjects:@[[NSNumber numberWithInt:type]] forKeys:@[@"type"]];
     
@@ -142,6 +161,8 @@
         if (view) {
             [Utils hideHUDForView:view];
         }
+        NSString *string = [[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
+        NSLog(@"%@", string);
         block(responseObject);
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"API Fail %@", operation.request.URL.absoluteString);
@@ -166,4 +187,32 @@
     }
 }
 
+@end
+
+// Workaround for change in imp_implementationWithBlock() with Xcode 4.5
+#if defined(__IPHONE_6_0) || defined(__MAC_10_8)
+#define AF_CAST_TO_BLOCK id
+#else
+#define AF_CAST_TO_BLOCK __bridge void *
+#endif
+
+
+@implementation AFHTTPRequestOperation (contentType)
+
++ (NSSet *)acceptableContentTypes {
+    return nil;
+}
+
++ (void)addAcceptableContentTypes:(NSSet *)contentTypes {
+    NSMutableSet *mutableContentTypes = [[NSMutableSet alloc] initWithSet:[self acceptableContentTypes] copyItems:YES];
+    [mutableContentTypes unionSet:contentTypes];
+    AFSwizzleClassMethodWithClassAndSelectorUsingBlock([self class], @selector(acceptableContentTypes), ^(__unused id _self) {
+        return mutableContentTypes;
+    });
+}
+static void AFSwizzleClassMethodWithClassAndSelectorUsingBlock(Class klass, SEL selector, id block) {
+    Method originalMethod = class_getClassMethod(klass, selector);
+    IMP implementation = imp_implementationWithBlock((AF_CAST_TO_BLOCK)block);
+    class_replaceMethod(objc_getMetaClass([NSStringFromClass(klass) UTF8String]), selector, implementation, method_getTypeEncoding(originalMethod));
+}
 @end

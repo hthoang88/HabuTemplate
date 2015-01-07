@@ -34,7 +34,7 @@
 + (void)hideHUDForView:(UIView*)v
 {
     [MBProgressHUD hideHUDForView:v
-                         animated:YES];
+                         animated:NO];
 }
 
 

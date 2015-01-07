@@ -17,4 +17,5 @@
 #import "HBMacros.h"
 #import "Utils.h"
 #import "APIManager.h"
+#import "HDWallpapersDownloader.h"
 #endif

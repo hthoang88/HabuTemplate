@@ -47,6 +47,15 @@
 		65D55C7E196A43A3005C557B /* SVPullToRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D55C7B196A43A3005C557B /* SVPullToRefresh.m */; };
 		65D55C87196A5560005C557B /* UIAlertView+CompletedBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D55C86196A5560005C557B /* UIAlertView+CompletedBlock.m */; };
 		65D55C89196A5573005C557B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D55C88196A5573005C557B /* QuartzCore.framework */; };
+		ADE12DAB1A5D7FBB004C2B31 /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE12DA61A5D7FBB004C2B31 /* TFHpple.m */; };
+		ADE12DAC1A5D7FBB004C2B31 /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE12DA81A5D7FBB004C2B31 /* TFHppleElement.m */; };
+		ADE12DAD1A5D7FBB004C2B31 /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE12DAA1A5D7FBB004C2B31 /* XPathQuery.m */; };
+		ADE12DAF1A5D801A004C2B31 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = ADE12DAE1A5D801A004C2B31 /* libxml2.dylib */; };
+		ADE12DB21A5D8431004C2B31 /* CategoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE12DB11A5D8431004C2B31 /* CategoryModel.m */; };
+		ADE12DB51A5D8470004C2B31 /* HDWallpapersDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE12DB41A5D8470004C2B31 /* HDWallpapersDownloader.m */; };
+		ADE12DB91A5D85D4004C2B31 /* ListCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE12DB71A5D85D4004C2B31 /* ListCategoryViewController.m */; };
+		ADE12DBA1A5D85D4004C2B31 /* ListCategoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADE12DB81A5D85D4004C2B31 /* ListCategoryViewController.xib */; };
+		ADE12DC01A5D92FE004C2B31 /* WallPaperModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE12DBF1A5D92FE004C2B31 /* WallPaperModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -129,6 +138,22 @@
 		65D55C85196A5560005C557B /* UIAlertView+CompletedBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+CompletedBlock.h"; sourceTree = "<group>"; };
 		65D55C86196A5560005C557B /* UIAlertView+CompletedBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+CompletedBlock.m"; sourceTree = "<group>"; };
 		65D55C88196A5573005C557B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		ADE12DA51A5D7FBB004C2B31 /* TFHpple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHpple.h; sourceTree = "<group>"; };
+		ADE12DA61A5D7FBB004C2B31 /* TFHpple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHpple.m; sourceTree = "<group>"; };
+		ADE12DA71A5D7FBB004C2B31 /* TFHppleElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHppleElement.h; sourceTree = "<group>"; };
+		ADE12DA81A5D7FBB004C2B31 /* TFHppleElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHppleElement.m; sourceTree = "<group>"; };
+		ADE12DA91A5D7FBB004C2B31 /* XPathQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPathQuery.h; sourceTree = "<group>"; };
+		ADE12DAA1A5D7FBB004C2B31 /* XPathQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPathQuery.m; sourceTree = "<group>"; };
+		ADE12DAE1A5D801A004C2B31 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		ADE12DB01A5D8431004C2B31 /* CategoryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryModel.h; sourceTree = "<group>"; };
+		ADE12DB11A5D8431004C2B31 /* CategoryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryModel.m; sourceTree = "<group>"; };
+		ADE12DB31A5D8470004C2B31 /* HDWallpapersDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDWallpapersDownloader.h; sourceTree = "<group>"; };
+		ADE12DB41A5D8470004C2B31 /* HDWallpapersDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDWallpapersDownloader.m; sourceTree = "<group>"; };
+		ADE12DB61A5D85D4004C2B31 /* ListCategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListCategoryViewController.h; sourceTree = "<group>"; };
+		ADE12DB71A5D85D4004C2B31 /* ListCategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListCategoryViewController.m; sourceTree = "<group>"; };
+		ADE12DB81A5D85D4004C2B31 /* ListCategoryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListCategoryViewController.xib; sourceTree = "<group>"; };
+		ADE12DBE1A5D92FE004C2B31 /* WallPaperModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WallPaperModel.h; sourceTree = "<group>"; };
+		ADE12DBF1A5D92FE004C2B31 /* WallPaperModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WallPaperModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +161,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADE12DAF1A5D801A004C2B31 /* libxml2.dylib in Frameworks */,
 				65D55C89196A5573005C557B /* QuartzCore.framework in Frameworks */,
 				65D55BE2196A3BB4005C557B /* CoreGraphics.framework in Frameworks */,
 				65D55BE4196A3BB4005C557B /* UIKit.framework in Frameworks */,
@@ -166,6 +192,7 @@
 		65D55BDE196A3BB4005C557B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				ADE12DAE1A5D801A004C2B31 /* libxml2.dylib */,
 				65D55C88196A5573005C557B /* QuartzCore.framework */,
 				65D55BDF196A3BB4005C557B /* Foundation.framework */,
 				65D55BE1196A3BB4005C557B /* CoreGraphics.framework */,
@@ -208,6 +235,10 @@
 			children = (
 				65D55C4F196A3DD6005C557B /* BaseMode.h */,
 				65D55C50196A3DD6005C557B /* BaseMode.m */,
+				ADE12DB01A5D8431004C2B31 /* CategoryModel.h */,
+				ADE12DB11A5D8431004C2B31 /* CategoryModel.m */,
+				ADE12DBE1A5D92FE004C2B31 /* WallPaperModel.h */,
+				ADE12DBF1A5D92FE004C2B31 /* WallPaperModel.m */,
 			);
 			path = 01.Models;
 			sourceTree = "<group>";
@@ -226,6 +257,9 @@
 			children = (
 				65D55C52196A3DE6005C557B /* BaseViewController.h */,
 				65D55C53196A3DE6005C557B /* BaseViewController.m */,
+				ADE12DB61A5D85D4004C2B31 /* ListCategoryViewController.h */,
+				ADE12DB71A5D85D4004C2B31 /* ListCategoryViewController.m */,
+				ADE12DB81A5D85D4004C2B31 /* ListCategoryViewController.xib */,
 			);
 			path = 03.Controllers;
 			sourceTree = "<group>";
@@ -240,6 +274,8 @@
 				65D55C57196A3E08005C557B /* Utils.m */,
 				65D55C59196A3E2A005C557B /* APIManager.h */,
 				65D55C5A196A3E2A005C557B /* APIManager.m */,
+				ADE12DB31A5D8470004C2B31 /* HDWallpapersDownloader.h */,
+				ADE12DB41A5D8470004C2B31 /* HDWallpapersDownloader.m */,
 			);
 			path = 04.Cores;
 			sourceTree = "<group>";
@@ -247,6 +283,7 @@
 		65D55C13196A3C74005C557B /* 05.Libs */ = {
 			isa = PBXGroup;
 			children = (
+				ADE12DA41A5D7FBB004C2B31 /* TFHpple */,
 				65D55C84196A5560005C557B /* UIAlertView+CompletedBlock */,
 				65D55C75196A43A3005C557B /* MBProgressHUD */,
 				65D55C79196A43A3005C557B /* SVPullToRefresh */,
@@ -409,6 +446,19 @@
 			path = "UIAlertView+CompletedBlock";
 			sourceTree = "<group>";
 		};
+		ADE12DA41A5D7FBB004C2B31 /* TFHpple */ = {
+			isa = PBXGroup;
+			children = (
+				ADE12DA51A5D7FBB004C2B31 /* TFHpple.h */,
+				ADE12DA61A5D7FBB004C2B31 /* TFHpple.m */,
+				ADE12DA71A5D7FBB004C2B31 /* TFHppleElement.h */,
+				ADE12DA81A5D7FBB004C2B31 /* TFHppleElement.m */,
+				ADE12DA91A5D7FBB004C2B31 /* XPathQuery.h */,
+				ADE12DAA1A5D7FBB004C2B31 /* XPathQuery.m */,
+			);
+			path = TFHpple;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -460,6 +510,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADE12DBA1A5D85D4004C2B31 /* ListCategoryViewController.xib in Resources */,
 				65D55C7D196A43A3005C557B /* README.mdown in Resources */,
 				65D55BEA196A3BB4005C557B /* InfoPlist.strings in Resources */,
 				65D55BF2196A3BB4005C557B /* Images.xcassets in Resources */,
@@ -474,6 +525,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65D55C44196A3DB3005C557B /* AFURLRequestSerialization.m in Sources */,
+				ADE12DB51A5D8470004C2B31 /* HDWallpapersDownloader.m in Sources */,
 				65D55C58196A3E08005C557B /* Utils.m in Sources */,
 				65D55C6E196A422B005C557B /* UIImage+BlurredFrame.m in Sources */,
 				65D55C5B196A3E2A005C557B /* APIManager.m in Sources */,
@@ -484,6 +536,9 @@
 				65D55C3E196A3DB3005C557B /* AFHTTPRequestOperation.m in Sources */,
 				65D55C46196A3DB3005C557B /* AFURLSessionManager.m in Sources */,
 				65D55C45196A3DB3005C557B /* AFURLResponseSerialization.m in Sources */,
+				ADE12DC01A5D92FE004C2B31 /* WallPaperModel.m in Sources */,
+				ADE12DAB1A5D7FBB004C2B31 /* TFHpple.m in Sources */,
+				ADE12DB21A5D8431004C2B31 /* CategoryModel.m in Sources */,
 				65D55BF0196A3BB4005C557B /* AppDelegate.m in Sources */,
 				65D55C4C196A3DB3005C557B /* UIProgressView+AFNetworking.m in Sources */,
 				65D55C40196A3DB3005C557B /* AFHTTPSessionManager.m in Sources */,
@@ -494,13 +549,16 @@
 				65D55C4B196A3DB3005C557B /* UIImageView+AFNetworking.m in Sources */,
 				65D55C61196A3EB6005C557B /* HBMacros.m in Sources */,
 				65D55C87196A5560005C557B /* UIAlertView+CompletedBlock.m in Sources */,
+				ADE12DAD1A5D7FBB004C2B31 /* XPathQuery.m in Sources */,
 				65D55C4A196A3DB3005C557B /* UIButton+AFNetworking.m in Sources */,
 				65D55C70196A422B005C557B /* UIScrollViewTouchBegan.m in Sources */,
+				ADE12DB91A5D85D4004C2B31 /* ListCategoryViewController.m in Sources */,
 				65D55C4D196A3DB3005C557B /* UIRefreshControl+AFNetworking.m in Sources */,
 				65D55C7C196A43A3005C557B /* MBProgressHUD.m in Sources */,
 				65D55C4E196A3DB3005C557B /* UIWebView+AFNetworking.m in Sources */,
 				65D55C41196A3DB3005C557B /* AFNetworkReachabilityManager.m in Sources */,
 				65D55C51196A3DD6005C557B /* BaseMode.m in Sources */,
+				ADE12DAC1A5D7FBB004C2B31 /* TFHppleElement.m in Sources */,
 				65D55BEC196A3BB4005C557B /* main.m in Sources */,
 				65D55C65196A3F95005C557B /* UIDevice+Resolutions.m in Sources */,
 				65D55C74196A424A005C557B /* NSDate+CompareDay.m in Sources */,
@@ -602,6 +660,11 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HabuTemplate/HabuTemplate-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode6_1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SDKROOT)/usr/include/libxml2",
+				);
 				INFOPLIST_FILE = "HabuTemplate/HabuTemplate-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -615,6 +678,11 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HabuTemplate/HabuTemplate-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode6_1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SDKROOT)/usr/include/libxml2",
+				);
 				INFOPLIST_FILE = "HabuTemplate/HabuTemplate-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;

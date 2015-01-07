@@ -33,5 +33,12 @@
                                 completeBlock:(void (^)(id responseObject))block
                                  failureBlock:(void (^)(NSError *error))failureBlock;
 
+- (AFHTTPRequestOperation *)operationWithTypePath:(NSString*)path inView:(UIView *)view
+                                completeBlock:(void (^)(id responseObject))block
+                                 failureBlock:(void (^)(NSError *error))failureBlock;
 - (void)cancelAllOperations;
+@end
+
+@interface AFHTTPRequestOperation (contentType)
++ (void)addAcceptableContentTypes:(NSSet *)contentTypes;
 @end
