@@ -8,7 +8,7 @@
 
 #import "APIManager.h"
 #import <objc/runtime.h>
-
+#import "AFNetworkActivityIndicatorManager.h"
 @implementation APIManager
 + (APIManager*)sharedManager
 {
@@ -18,6 +18,12 @@
         sharedClient = [[APIManager alloc] initWithBaseURL:[NSURL URLWithString:@""]];
         sharedClient.securityPolicy.SSLPinningMode = AFSSLPinningModeCertificate;
         [sharedClient.requestSerializer setCachePolicy:NSURLRequestReturnCacheDataElseLoad];
+        [AFNetworkActivityIndicatorManager sharedManager].enabled = YES;
+//        [[NSURLCache sharedURLCache] setMemoryCapacity:(20*1024*1024)];
+//        [[NSURLCache sharedURLCache] setDiskCapacity:(200*1024*1024)];
+        
+        [[NSURLCache sharedURLCache] setMemoryCapacity:(200000*1024*1024)];
+        [[NSURLCache sharedURLCache] setDiskCapacity:(2000000*1024*1024)];
     });
     
     return sharedClient;
@@ -157,12 +163,12 @@
     operation.userInfo = [NSDictionary dictionaryWithObjects:@[[NSNumber numberWithInt:type]] forKeys:@[@"type"]];
     
     [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
-        NSLog(@"API Success %@", operation.request.URL.absoluteString);
+//        NSLog(@"API Success %@", operation.request.URL.absoluteString);
         if (view) {
             [Utils hideHUDForView:view];
         }
-        NSString *string = [[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
-        NSLog(@"%@", string);
+//        NSString *string = [[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
+//        NSLog(@"%@", string);
         block(responseObject);
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"API Fail %@", operation.request.URL.absoluteString);

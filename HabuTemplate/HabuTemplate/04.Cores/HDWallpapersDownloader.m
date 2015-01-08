@@ -63,7 +63,9 @@
 - (void)getItemsForCategory:(CategoryModel*)ct
                  completion:(void(^)(NSMutableArray *items))completion
 {
+    [Utils showHUDForView:[ListCategoryViewController getInstancedView]];
     [self getHtmlStringFromPath:ct.url completion:^(id responseObject) {
+        [Utils hideHUDForView:[ListCategoryViewController getInstancedView]];
         NSString *tutorialsXpathQueryString = @"//div[@class='pagination']/a";
         //        NSString *tutorialsXpathQueryString = @"//div[@class='right-panel']/div[@class='left_panel_top']/div[@class='spacer']/ul[@class='side-panel categories']";
         TFHpple *tutorialsParser = [TFHpple hppleWithHTMLData:responseObject];
@@ -71,9 +73,32 @@
         if (tutorialsNodes.count > 1) {
             TFHppleElement *ulTag = tutorialsNodes[tutorialsNodes.count - 2];//get number page
             int numberPage = [ulTag content].intValue;
-            [self getItemsForCategory:ct pageIndex:1 totalPage:numberPage completion:^{
+            NSLog(@"FOUND %d pages for %@", numberPage, ct.name);
+            if (numberPage == 92) {
                 
+            }
+            [self getItemsForCategory:ct pageIndex:1 totalPage:numberPage completion:^{
+                if (completion) {
+                    completion(ct.items);
+                }
             }];
+        }else{//only one page
+            tutorialsXpathQueryString = @"//div[@class='pagination']/span[@class='selected']";
+            tutorialsNodes = [tutorialsParser searchWithXPathQuery:tutorialsXpathQueryString];
+            if (tutorialsNodes.count > 0) {
+                TFHppleElement *ulTag = tutorialsNodes[tutorialsNodes.count - 1];//get number page
+                int numberPage = [ulTag content].intValue;
+                NSLog(@"FOUND %d pages for %@", numberPage, ct.name);
+                [self getItemsForCategory:ct pageIndex:1 totalPage:numberPage completion:^{
+                    if (completion) {
+                        completion(ct.items);
+                    }
+                }];
+            }else{//skip category
+                if (completion) {
+                    completion(ct.items);
+                }
+            }
         }
     }];
 }
@@ -126,8 +151,14 @@
                             [self getItemsForCategory:ct pageIndex:nextIndex totalPage:totalPage completion:completion];
                         }
                     }];
+                }else{
+                    NSLog(@"NULL TAG");
                 }
             }
+        }else{
+            [Utils hideHUDForView:[ListCategoryViewController getInstancedView]];
+            int nextIndex = index + 1;
+            [self getItemsForCategory:ct pageIndex:nextIndex totalPage:totalPage completion:completion];
         }
     }];
 }
