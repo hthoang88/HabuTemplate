@@ -12,6 +12,10 @@
 #import "SDWebImageManager.h"
 #import "AFImageRequestOperation.h"
 
+#import "HBWallPaperManager.h"
+#import "HBWPCategoryModel.h"
+#import "HBWPItem.h"
+
 @interface ListCategoryViewController ()
 {
     NSMutableArray *data;
@@ -32,15 +36,48 @@ ListCategoryViewController *instance;
     instance = self;
     return self;
 }
+
+- (void)insertToSQLite
+{
+    for (CategoryModel *ct in data) {
+        HBWPCategoryModel *hbCt = [HBWPCategoryModel new];
+        hbCt.name = ct.name;
+        hbCt.numberItems = @(ct.items.count);
+        if (ct.items.count>0) {
+            WallPaperModel *wp = [ct.items firstObject];
+            hbCt.thumnailUrl = wp.thumnailUrl;
+        }
+        hbCt.categoryID = [Utils getRandStringLength:20];
+        [SharedHBWPManager insertCategory:hbCt];
+        
+        int position = 1;
+        for (WallPaperModel *wp in ct.items) {
+            HBWPItem *item = [HBWPItem new];
+            item.name = wp.name;
+            item.thumnailUrl = wp.thumnailUrl;
+            item.originUrl = wp.originUrl;
+            item.categoryID = hbCt.categoryID;
+            item.position = @(position);
+            item.itemID = [NSString stringWithFormat:@"%@_%@",hbCt.categoryID,[Utils getRandStringLength:20]];
+            
+            [SharedHBWPManager insertItem:item];
+            
+            position++;
+        }
+    }
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     [SharedDownloader getCategoryCompletion:^(NSMutableArray *dt) {
         data = dt;
+//        data = [NSMutableArray arrayWithObject:[dt firstObject]];
         [self.tbCategories reloadData];
         [self fetchDataForCategoryIndex:0 completion:^{
-            [self downLoadAllImageForCategoryIndex:0 imageIndex:0 completion:^{
-                
-            }];
+            //insert to sqlite
+            [self insertToSQLite];
+//            [self downLoadAllImageForCategoryIndex:0 imageIndex:0 completion:^{
+//                
+//            }];
         }];
     }];
 }

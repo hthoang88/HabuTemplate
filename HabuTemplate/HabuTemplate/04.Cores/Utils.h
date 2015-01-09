@@ -15,4 +15,6 @@
 
 //Object
 + (NSString*)autoDescribe:(id)instance;
+
++ (NSString *)getRandStringLength:(int)len;
 @end

@@ -6,9 +6,9 @@
 //  Copyright (c) 2014 Hoang Ho. All rights reserved.
 //
 
-#import "BaseMode.h"
+#import "BaseModel.h"
 
-@implementation BaseMode
+@implementation BaseModel
 
 - (NSString *)description
 {

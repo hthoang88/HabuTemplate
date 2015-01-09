@@ -31,7 +31,7 @@
 		65D55C4C196A3DB3005C557B /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D55C39196A3DB3005C557B /* UIProgressView+AFNetworking.m */; };
 		65D55C4D196A3DB3005C557B /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D55C3B196A3DB3005C557B /* UIRefreshControl+AFNetworking.m */; };
 		65D55C4E196A3DB3005C557B /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D55C3D196A3DB3005C557B /* UIWebView+AFNetworking.m */; };
-		65D55C51196A3DD6005C557B /* BaseMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D55C50196A3DD6005C557B /* BaseMode.m */; };
+		65D55C51196A3DD6005C557B /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D55C50196A3DD6005C557B /* BaseModel.m */; };
 		65D55C54196A3DE6005C557B /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D55C53196A3DE6005C557B /* BaseViewController.m */; };
 		65D55C58196A3E08005C557B /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D55C57196A3E08005C557B /* Utils.m */; };
 		65D55C5B196A3E2A005C557B /* APIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D55C5A196A3E2A005C557B /* APIManager.m */; };
@@ -62,6 +62,16 @@
 		ADAB05981A5E1495003B074B /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAB058B1A5E1495003B074B /* UIImageView+WebCache.m */; };
 		ADAB059C1A5E1655003B074B /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAB059B1A5E1655003B074B /* AFImageRequestOperation.m */; };
 		ADAB05A01A5E1712003B074B /* UIImage+HBLock.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAB059F1A5E1712003B074B /* UIImage+HBLock.m */; };
+		ADDBABE31A5E784300EC03D9 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDBABD21A5E784300EC03D9 /* FMDatabase.m */; };
+		ADDBABE41A5E784300EC03D9 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDBABD41A5E784300EC03D9 /* FMDatabaseAdditions.m */; };
+		ADDBABE51A5E784300EC03D9 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDBABD61A5E784300EC03D9 /* FMDatabasePool.m */; };
+		ADDBABE61A5E784300EC03D9 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDBABD81A5E784300EC03D9 /* FMDatabaseQueue.m */; };
+		ADDBABE71A5E784300EC03D9 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDBABDB1A5E784300EC03D9 /* FMResultSet.m */; };
+		ADDBABE81A5E784300EC03D9 /* HBWallPaperManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDBABDD1A5E784300EC03D9 /* HBWallPaperManager.m */; };
+		ADDBABE91A5E784300EC03D9 /* HBWPCategoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDBABE01A5E784300EC03D9 /* HBWPCategoryModel.m */; };
+		ADDBABEA1A5E784300EC03D9 /* HBWPItem.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDBABE21A5E784300EC03D9 /* HBWPItem.m */; };
+		ADDBABEC1A5E787B00EC03D9 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = ADDBABEB1A5E787B00EC03D9 /* libsqlite3.dylib */; };
+		ADDBABEE1A5E795B00EC03D9 /* HBWallPaper.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = ADDBABED1A5E795B00EC03D9 /* HBWallPaper.sqlite */; };
 		ADE12DAB1A5D7FBB004C2B31 /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE12DA61A5D7FBB004C2B31 /* TFHpple.m */; };
 		ADE12DAC1A5D7FBB004C2B31 /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE12DA81A5D7FBB004C2B31 /* TFHppleElement.m */; };
 		ADE12DAD1A5D7FBB004C2B31 /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE12DAA1A5D7FBB004C2B31 /* XPathQuery.m */; };
@@ -122,8 +132,8 @@
 		65D55C3B196A3DB3005C557B /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
 		65D55C3C196A3DB3005C557B /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
 		65D55C3D196A3DB3005C557B /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
-		65D55C4F196A3DD6005C557B /* BaseMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseMode.h; sourceTree = "<group>"; };
-		65D55C50196A3DD6005C557B /* BaseMode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseMode.m; sourceTree = "<group>"; };
+		65D55C4F196A3DD6005C557B /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
+		65D55C50196A3DD6005C557B /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
 		65D55C52196A3DE6005C557B /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		65D55C53196A3DE6005C557B /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		65D55C55196A3DF3005C557B /* Define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Define.h; sourceTree = "<group>"; };
@@ -184,6 +194,25 @@
 		ADAB059B1A5E1655003B074B /* AFImageRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFImageRequestOperation.m; sourceTree = "<group>"; };
 		ADAB059E1A5E1712003B074B /* UIImage+HBLock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+HBLock.h"; sourceTree = "<group>"; };
 		ADAB059F1A5E1712003B074B /* UIImage+HBLock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+HBLock.m"; sourceTree = "<group>"; };
+		ADDBABD11A5E784300EC03D9 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		ADDBABD21A5E784300EC03D9 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		ADDBABD31A5E784300EC03D9 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		ADDBABD41A5E784300EC03D9 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		ADDBABD51A5E784300EC03D9 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		ADDBABD61A5E784300EC03D9 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		ADDBABD71A5E784300EC03D9 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		ADDBABD81A5E784300EC03D9 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		ADDBABD91A5E784300EC03D9 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		ADDBABDA1A5E784300EC03D9 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		ADDBABDB1A5E784300EC03D9 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		ADDBABDC1A5E784300EC03D9 /* HBWallPaperManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBWallPaperManager.h; sourceTree = "<group>"; };
+		ADDBABDD1A5E784300EC03D9 /* HBWallPaperManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBWallPaperManager.m; sourceTree = "<group>"; };
+		ADDBABDF1A5E784300EC03D9 /* HBWPCategoryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBWPCategoryModel.h; sourceTree = "<group>"; };
+		ADDBABE01A5E784300EC03D9 /* HBWPCategoryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBWPCategoryModel.m; sourceTree = "<group>"; };
+		ADDBABE11A5E784300EC03D9 /* HBWPItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBWPItem.h; sourceTree = "<group>"; };
+		ADDBABE21A5E784300EC03D9 /* HBWPItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBWPItem.m; sourceTree = "<group>"; };
+		ADDBABEB1A5E787B00EC03D9 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		ADDBABED1A5E795B00EC03D9 /* HBWallPaper.sqlite */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HBWallPaper.sqlite; sourceTree = "<group>"; };
 		ADE12DA51A5D7FBB004C2B31 /* TFHpple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHpple.h; sourceTree = "<group>"; };
 		ADE12DA61A5D7FBB004C2B31 /* TFHpple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHpple.m; sourceTree = "<group>"; };
 		ADE12DA71A5D7FBB004C2B31 /* TFHppleElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHppleElement.h; sourceTree = "<group>"; };
@@ -207,6 +236,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADDBABEC1A5E787B00EC03D9 /* libsqlite3.dylib in Frameworks */,
 				ADE12DAF1A5D801A004C2B31 /* libxml2.dylib in Frameworks */,
 				65D55C89196A5573005C557B /* QuartzCore.framework in Frameworks */,
 				65D55BE2196A3BB4005C557B /* CoreGraphics.framework in Frameworks */,
@@ -238,6 +268,7 @@
 		65D55BDE196A3BB4005C557B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				ADDBABEB1A5E787B00EC03D9 /* libsqlite3.dylib */,
 				ADE12DAE1A5D801A004C2B31 /* libxml2.dylib */,
 				65D55C88196A5573005C557B /* QuartzCore.framework */,
 				65D55BDF196A3BB4005C557B /* Foundation.framework */,
@@ -279,8 +310,8 @@
 		65D55C0F196A3C74005C557B /* 01.Models */ = {
 			isa = PBXGroup;
 			children = (
-				65D55C4F196A3DD6005C557B /* BaseMode.h */,
-				65D55C50196A3DD6005C557B /* BaseMode.m */,
+				65D55C4F196A3DD6005C557B /* BaseModel.h */,
+				65D55C50196A3DD6005C557B /* BaseModel.m */,
 				ADE12DB01A5D8431004C2B31 /* CategoryModel.h */,
 				ADE12DB11A5D8431004C2B31 /* CategoryModel.m */,
 				ADE12DBE1A5D92FE004C2B31 /* WallPaperModel.h */,
@@ -313,6 +344,7 @@
 		65D55C12196A3C74005C557B /* 04.Cores */ = {
 			isa = PBXGroup;
 			children = (
+				ADDBABCF1A5E784300EC03D9 /* HBWallPaperModule */,
 				65D55C5F196A3EB6005C557B /* HBMacros.h */,
 				65D55C60196A3EB6005C557B /* HBMacros.m */,
 				65D55C55196A3DF3005C557B /* Define.h */,
@@ -547,6 +579,47 @@
 			path = "UIImage+HBLock";
 			sourceTree = "<group>";
 		};
+		ADDBABCF1A5E784300EC03D9 /* HBWallPaperModule */ = {
+			isa = PBXGroup;
+			children = (
+				ADDBABED1A5E795B00EC03D9 /* HBWallPaper.sqlite */,
+				ADDBABD01A5E784300EC03D9 /* fmdb */,
+				ADDBABDC1A5E784300EC03D9 /* HBWallPaperManager.h */,
+				ADDBABDD1A5E784300EC03D9 /* HBWallPaperManager.m */,
+				ADDBABDE1A5E784300EC03D9 /* Models */,
+			);
+			path = HBWallPaperModule;
+			sourceTree = "<group>";
+		};
+		ADDBABD01A5E784300EC03D9 /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				ADDBABD11A5E784300EC03D9 /* FMDatabase.h */,
+				ADDBABD21A5E784300EC03D9 /* FMDatabase.m */,
+				ADDBABD31A5E784300EC03D9 /* FMDatabaseAdditions.h */,
+				ADDBABD41A5E784300EC03D9 /* FMDatabaseAdditions.m */,
+				ADDBABD51A5E784300EC03D9 /* FMDatabasePool.h */,
+				ADDBABD61A5E784300EC03D9 /* FMDatabasePool.m */,
+				ADDBABD71A5E784300EC03D9 /* FMDatabaseQueue.h */,
+				ADDBABD81A5E784300EC03D9 /* FMDatabaseQueue.m */,
+				ADDBABD91A5E784300EC03D9 /* FMDB.h */,
+				ADDBABDA1A5E784300EC03D9 /* FMResultSet.h */,
+				ADDBABDB1A5E784300EC03D9 /* FMResultSet.m */,
+			);
+			path = fmdb;
+			sourceTree = "<group>";
+		};
+		ADDBABDE1A5E784300EC03D9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ADDBABDF1A5E784300EC03D9 /* HBWPCategoryModel.h */,
+				ADDBABE01A5E784300EC03D9 /* HBWPCategoryModel.m */,
+				ADDBABE11A5E784300EC03D9 /* HBWPItem.h */,
+				ADDBABE21A5E784300EC03D9 /* HBWPItem.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		ADE12DA41A5D7FBB004C2B31 /* TFHpple */ = {
 			isa = PBXGroup;
 			children = (
@@ -612,6 +685,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADE12DBA1A5D85D4004C2B31 /* ListCategoryViewController.xib in Resources */,
+				ADDBABEE1A5E795B00EC03D9 /* HBWallPaper.sqlite in Resources */,
 				65D55C7D196A43A3005C557B /* README.mdown in Resources */,
 				65D55BEA196A3BB4005C557B /* InfoPlist.strings in Resources */,
 				65D55BF2196A3BB4005C557B /* Images.xcassets in Resources */,
@@ -643,6 +717,7 @@
 				ADAB05921A5E1495003B074B /* SDWebImageManager.m in Sources */,
 				ADE12DC01A5D92FE004C2B31 /* WallPaperModel.m in Sources */,
 				ADAB058D1A5E1495003B074B /* SDImageCache.m in Sources */,
+				ADDBABE91A5E784300EC03D9 /* HBWPCategoryModel.m in Sources */,
 				ADE12DAB1A5D7FBB004C2B31 /* TFHpple.m in Sources */,
 				ADAB058F1A5E1495003B074B /* SDWebImageDecoder.m in Sources */,
 				ADE12DB21A5D8431004C2B31 /* CategoryModel.m in Sources */,
@@ -651,12 +726,16 @@
 				65D55C4C196A3DB3005C557B /* UIProgressView+AFNetworking.m in Sources */,
 				65D55C40196A3DB3005C557B /* AFHTTPSessionManager.m in Sources */,
 				ADAB058C1A5E1495003B074B /* NSData+GIF.m in Sources */,
+				ADDBABEA1A5E784300EC03D9 /* HBWPItem.m in Sources */,
 				ADAB05961A5E1495003B074B /* UIImage+MultiFormat.m in Sources */,
 				65D55C5E196A3E50005C557B /* BaseTableViewCell.m in Sources */,
 				ADAB05971A5E1495003B074B /* UIImage+WebP.m in Sources */,
 				65D55C47196A3DB3005C557B /* AFNetworkActivityIndicatorManager.m in Sources */,
+				ADDBABE81A5E784300EC03D9 /* HBWallPaperManager.m in Sources */,
 				ADAB05A01A5E1712003B074B /* UIImage+HBLock.m in Sources */,
+				ADDBABE31A5E784300EC03D9 /* FMDatabase.m in Sources */,
 				65D55C3F196A3DB3005C557B /* AFHTTPRequestOperationManager.m in Sources */,
+				ADDBABE51A5E784300EC03D9 /* FMDatabasePool.m in Sources */,
 				65D55C6F196A422B005C557B /* UIImage+ImageEffects.m in Sources */,
 				65D55C4B196A3DB3005C557B /* UIImageView+AFNetworking.m in Sources */,
 				65D55C61196A3EB6005C557B /* HBMacros.m in Sources */,
@@ -669,14 +748,17 @@
 				65D55C4D196A3DB3005C557B /* UIRefreshControl+AFNetworking.m in Sources */,
 				ADAB05951A5E1495003B074B /* UIImage+GIF.m in Sources */,
 				65D55C7C196A43A3005C557B /* MBProgressHUD.m in Sources */,
+				ADDBABE61A5E784300EC03D9 /* FMDatabaseQueue.m in Sources */,
 				65D55C4E196A3DB3005C557B /* UIWebView+AFNetworking.m in Sources */,
 				ADAB05981A5E1495003B074B /* UIImageView+WebCache.m in Sources */,
 				65D55C41196A3DB3005C557B /* AFNetworkReachabilityManager.m in Sources */,
-				65D55C51196A3DD6005C557B /* BaseMode.m in Sources */,
+				65D55C51196A3DD6005C557B /* BaseModel.m in Sources */,
 				ADE12DAC1A5D7FBB004C2B31 /* TFHppleElement.m in Sources */,
 				ADAB05911A5E1495003B074B /* SDWebImageDownloaderOperation.m in Sources */,
 				65D55BEC196A3BB4005C557B /* main.m in Sources */,
+				ADDBABE71A5E784300EC03D9 /* FMResultSet.m in Sources */,
 				65D55C65196A3F95005C557B /* UIDevice+Resolutions.m in Sources */,
+				ADDBABE41A5E784300EC03D9 /* FMDatabaseAdditions.m in Sources */,
 				65D55C74196A424A005C557B /* NSDate+CompareDay.m in Sources */,
 				65D55C54196A3DE6005C557B /* BaseViewController.m in Sources */,
 				65D55C48196A3DB3005C557B /* UIActivityIndicatorView+AFNetworking.m in Sources */,
