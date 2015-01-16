@@ -15,6 +15,6 @@
     #import <Foundation/Foundation.h>
 #import "Define.h"
 #import "HBMacros.h"
-#import "Utils.h"
-#import "APIManager.h"
+#import "HBUtils.h"
+#import "HBRequestOperationManager.h"
 #endif
